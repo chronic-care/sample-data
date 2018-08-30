@@ -1,0 +1,244 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/cc-careplan-betsy-ckd"
+      },
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "cc-careplan-betsy-ckd",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Betsy's CKD care plan (dynamic)"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "status": "active",
+        "intent": "plan",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://clinicalcloud.solutions/fhir/CodeSystem/careplan-category",
+                "code": "dynamic"
+              }
+            ],
+            "text": "Dynamic"
+          }
+        ],
+        "title": "CKD Care Plan",
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-betsy-diabetes"
+          },
+          {
+            "reference": "Condition/cc-cond-betsy-ckd"
+          },
+          {
+            "reference": "Condition/cc-cond-betsy-chf"
+          }
+        ],
+        "careTeam": [
+          {
+            "reference": "CareTeam/cc-team-betsy"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/cc-careplan-betsy-personal"
+      },
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "cc-careplan-betsy-personal",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Betsy's personal care plan (dynamic)"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "status": "active",
+        "intent": "plan",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://clinicalcloud.solutions/fhir/CodeSystem/careplan-category",
+                "code": "dynamic"
+              }
+            ],
+            "text": "Dynamic"
+          }
+        ],
+        "title": "Personal Care Plan",
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-betsy-retinopathy"
+          },
+          {
+            "reference": "Condition/cc-cond-betsy-depression"
+          },
+          {
+            "reference": "Condition/cc-cond-betsy-transportation"
+          }
+        ],
+        "careTeam": [
+          {
+            "reference": "CareTeam/cc-team-betsy-support"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/cc-careplan-betsy-nutrition"
+      },
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "cc-careplan-betsy-nutrition",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Nutrition Plan Alignment"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "status": "active",
+        "intent": "plan",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://clinicalcloud.solutions/fhir/CodeSystem/careplan-category",
+                "code": "static"
+              }
+            ],
+            "text": "Static"
+          }
+        ],
+        "title": "Nutrition Plan Alignment",
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-betsy-transportation"
+          }
+        ],
+        "careTeam": [
+          {
+            "reference": "CareTeam/cc-team-betsy-support"
+          }
+        ],
+        "activity": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Walk at a comfortable pace"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "procedure",
+                    "display": "Procedure"
+                  }
+                ],
+                "text": "Procedure"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "226029000",
+                    "display": "Exercises"
+                  }
+                ],
+                "text": "Exercise 30 minutes per day"
+              },
+              "description": "Walk daily at a comfortable pace for as long as you are able. Stop if you develop shortness of breath, chest pain, or palpatations.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2017-11-30",
+                    "end": "2018-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Daily Step Count"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "41950-7",
+                    "display": "Number of steps in 24 hour Measured"
+                  }
+                ],
+                "text": "Steps"
+              },
+              "description": "Record your daily total step count before going to bed each evening.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2017-11-30",
+                    "end": "2018-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

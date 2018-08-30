@@ -1,0 +1,440 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/cc-med-betsy-lisinopril"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "cc-med-betsy-lisinopril",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "Lisinopril 40 MG Oral Tablet"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/goal-pertainsToGoal",
+            "valueReference": [
+              {
+                "reference": "Goal/cc-goal-betsy-a1c"
+              }
+            ]
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "???",
+              "display": "Lisinopril 40 MG Oral Tablet"
+            }
+          ],
+          "text": "Lisinopril 40 MG Oral Tablet"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "authoredOn": "2017-08-01",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/cc-cond-betsy-hypertension"
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "text": "Take Lisinopril 40mg tablet once a day for high blood pressure.",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2017-08-01",
+                  "end": "2018-06-30"
+                },
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "Oral route"
+            },
+            "doseQuantity": {
+              "value": 40,
+              "unit": "mg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/cc-med-betsy-simvastatin"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "cc-med-betsy-simvastatin",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "Simvastatin 40 MG Oral Tablet"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "???",
+              "display": "Simvastatin 40 MG Oral Tablet"
+            }
+          ],
+          "text": "Simvastatin 40 MG Oral Tablet"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "authoredOn": "2017-08-01",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/cc-cond-betsy-dyslipidemia"
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "text": "Take Simvastatin 40mg tablet once a day for high cholesterol.",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2017-08-01",
+                  "end": "2018-06-30"
+                },
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "Oral route"
+            },
+            "doseQuantity": {
+              "value": 40,
+              "unit": "mg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/cc-med-betsy-furosemide"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "cc-med-betsy-furosemide",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "Furosemide 20 MG Oral Tablet"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "???",
+              "display": "Furosemide 20 MG Oral Tablet"
+            }
+          ],
+          "text": "Furosemide 20 MG Oral Tablet"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "authoredOn": "2017-08-01",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/cc-cond-betsy-chf"
+          }
+        ],
+        "note": [
+          {
+            "text": "Furosemide is a 'water pill' (diuretic) that causes you to make more urine. This helps your body get rid of extra water and salt."
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "text": "Take Furosemide 20mg tablet once a day for swelling in arms and legs.",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2017-08-01",
+                  "end": "2018-06-30"
+                },
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "Oral route"
+            },
+            "doseQuantity": {
+              "value": 20,
+              "unit": "mg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/cc-med-betsy-vitamin-d"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "cc-med-betsy-vitamin-d",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "Vitamin D 1000 UNT orally per day"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "316894",
+              "display": "Vitamin D 1000 UNT"
+            }
+          ],
+          "text": "Vitamin D 1000 IU Oral Tablet"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "authoredOn": "2017-12-01",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        },
+        "reasonReference": {
+          "reference": "Condition/cc-cond-betsy-ckd"
+        },
+        "note": [
+          {
+            "text": "When kidneys fail, their ability to activate vitamin D is lost. Without the activated vitamin D to control calcium and phosphorus levels in the blood, parathyroid hormone (PTH) will try to overcompensate and go out of range."
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "text": "By mouth twice daily in the morning and evening.",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2017-01-15",
+                  "end": "2018-01-15"
+                },
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "Oral route"
+            },
+            "doseQuantity": {
+              "value": 1000,
+              "unit": "IU"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/cc-med-betsy-insulin"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "cc-med-betsy-insulin",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "Insulin, NPH/REG 70/30 insulin 45 units twice a day"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "??",
+              "display": "??"
+            }
+          ],
+          "text": "Insulin, NPH/REG 70/30 insulin 45 units twice a day"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "authoredOn": "2017-12-01",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        },
+        "reasonReference": {
+          "reference": "Condition/cc-cond-betsy-ckd"
+        },
+        "dosageInstruction": [
+          {
+            "text": "Twice daily.",
+            "doseQuantity": {
+              "value": 45,
+              "unit": "units"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/cc-med-betsy-aspirin"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "cc-med-betsy-aspirin",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "Aspirin 75 mg daily"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "??",
+              "display": "??"
+            }
+          ],
+          "text": "Aspirin 75 mg daily"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "authoredOn": "2017-12-01",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        },
+        "reasonReference": {
+          "reference": "Condition/cc-cond-betsy-chf"
+        },
+        "dosageInstruction": [
+          {
+            "text": "Once daily.",
+            "doseQuantity": {
+              "value": 75,
+              "unit": "mg"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

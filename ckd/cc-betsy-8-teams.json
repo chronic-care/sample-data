@@ -1,0 +1,206 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CareTeam/cc-team-betsy"
+      },
+      "resource": {
+        "resourceType": "CareTeam",
+        "id": "cc-team-betsy",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CareTeam"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Betsy's primary care team"
+        },
+        "name": "Primary Care Team",
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "participant": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "133932002",
+                  "display": "Caregiver"
+                }
+              ],
+              "text": "Caregiver"
+            },
+            "member": {
+              "reference": "RelatedPerson/cc-pat-betsy-related-daughter",
+              "display": "Daughter"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "224535009",
+                  "display": "Registered nurse"
+                }
+              ],
+              "text": "Registered Nurse"
+            },
+            "member": {
+              "reference": "Practitioner/cc-prac-smith-julie"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "62247001",
+                  "display": "Family medicine specialist"
+                }
+              ],
+              "text": "Family Medicine Physician"
+            },
+            "member": {
+              "reference": "Practitioner/cc-prac-carlson-john"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "11911009",
+                  "display": "Nephrologist"
+                }
+              ],
+              "text": "Nephrologist"
+            },
+            "member": {
+              "reference": "Practitioner/cc-prac-jones-vince"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "159033005",
+                  "display": "Dietician"
+                }
+              ],
+              "text": "Dietician"
+            },
+            "member": {
+              "reference": "Practitioner/cc-prac-gonzalez-maria"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "106328005",
+                  "display": "Social worker"
+                }
+              ],
+              "text": "Renal Social Worker"
+            },
+            "member": {
+              "reference": "Practitioner/cc-prac-johnson-sam"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "159011008",
+                  "display": "Community pharmacist"
+                }
+              ],
+              "text": "Community Pharmacist"
+            },
+            "member": {
+              "reference": "Practitioner/cc-prac-walkowski-ellen"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CareTeam/cc-team-betsy-support"
+      },
+      "resource": {
+        "resourceType": "CareTeam",
+        "id": "cc-team-betsy-support",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CareTeam"
+          ]
+        },
+        "name": "Support Services",
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy"
+        },
+        "participant": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "106328005",
+                  "display": "Social worker"
+                }
+              ],
+              "text": "Renal Social Worker"
+            },
+            "member": {
+              "reference": "Practitioner/cc-prac-johnson-sam"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "133932002",
+                  "display": "Caregiver"
+                }
+              ],
+              "text": "Caregiver"
+            },
+            "member": {
+              "reference": "RelatedPerson/cc-pat-betsy-related-daughter",
+              "display": "Daughter"
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "274272004",
+                  "display": "Catering services"
+                }
+              ],
+              "text": "Catering services"
+            },
+            "member": {
+              "reference": "Organization/cc-org-meals-on-wheels"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

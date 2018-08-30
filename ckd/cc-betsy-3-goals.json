@@ -1,0 +1,269 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/cc-goal-betsy-a1c"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "cc-goal-betsy-a1c",
+        "text": {
+          "status": "generated",
+          "div": "Hemoglobin A1c < 7.0"
+        },
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Goal: Hemoglobin A1c &lt; 7.0</div></div>"
+        },
+        "status": "in-progress",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/goal-priority",
+              "code": "high-priority",
+              "display": "High Priority"
+            }
+          ],
+          "text": "high"
+        },
+        "description": {
+          "text": "Hemoglobin A1c < 7.0"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "startDate": "2016-11-30",
+        "target": {
+          "measure": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "4548-4",
+                "display": "Hemoglobin A1c total in Blood"
+              }
+            ],
+            "text": "Hemoglobin A1c total in Blood"
+          },
+          "detailQuantity": {
+            "value": "7.0",
+            "comparator": "<",
+            "unit": "%",
+            "system": "http://unitsofmeasure.org/",
+            "code": "%"
+          }
+        },
+        "expressedBy": {
+          "reference": "Practitioner/cc-prac-carlson-john"
+        },
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-betsy-diabetes",
+            "display": "Type 2 diabetes mellitus"
+          }
+        ],
+        "note": [
+          {
+            "text": "Regularly monitor A1C levels toward overall goal of 6.0."
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/cc-goal-betsy-bp-systolic"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "cc-goal-betsy-bp-systolic",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Systolic BP below 140"
+        },
+        "status": "in-progress",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/goal-priority",
+              "code": "medium-priority",
+              "display": "Medium Priority"
+            }
+          ],
+          "text": "medium"
+        },
+        "description": {
+          "text": "Systolic blood pressure below 140"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "startDate": "2017-06-30",
+        "target": {
+          "measure": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "8480-6",
+                "display": "Systolic blood pressure"
+              }
+            ],
+            "text": "Systolic blood pressure"
+          },
+          "detailQuantity": {
+            "value": "140",
+            "comparator": "<",
+            "unit": "mmHg",
+            "system": "http://unitsofmeasure.org",
+            "code": "mm[Hg]"
+          }
+        },
+        "expressedBy": {
+          "reference": "Practitioner/cc-prac-carlson-john"
+        },
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-betsy-ckd",
+            "display": "Chronic kidney disease"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/cc-goal-betsy-lab-phos"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "cc-goal-betsy-lab-phos",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Phosphorus between 2.5 and 4.5 mg/dL"
+        },
+        "status": "in-progress",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/goal-priority",
+              "code": "high-priority",
+              "display": "High Priority"
+            }
+          ],
+          "text": "high"
+        },
+        "description": {
+          "text": "Phosphorus between 2.5 and 4.5 mg/dL"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "startDate": "2018-02-20",
+        "target": {
+          "measure": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "2777-1",
+                "display": "Phosphate [Mass/volume] in Serum or Plasma"
+              }
+            ],
+            "text": "Serum phosphorus"
+          },
+          "detailQuantity": {
+            "value": "4.5",
+            "comparator": "<",
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          }
+        },
+        "expressedBy": {
+          "reference": "Practitioner/cc-prac-jones-vince"
+        },
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-betsy-ckd"
+          }
+        ],
+        "note": [
+          {
+            "text": "Normal working kidneys can remove extra phosphorus in your blood. When you have chronic kidney disease (CKD), your kidneys cannot remove phosphorus very well. High phosphorus levels can cause damage to your body. Extra phosphorus causes body changes that pull calcium out of your bones, making them weak. High phosphorus and calcium levels also lead to dangerous calcium deposits in blood vessels, lungs, eyes, and heart. Phosphorus and calcium control are very important for your overall health."
+          },
+          {
+            "text": "Source https://www.kidney.org/atoz/content/phosphorus"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/cc-goal-betsy-exercise"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "cc-goal-betsy-exercise",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Exercise at least 30 minutes per day"
+        },
+        "status": "in-progress",
+        "description": {
+          "text": "Exercise at least 30 minutes per day"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "startDate": "2017-12-07",
+        "target": {
+          "measure": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "226029000",
+                "display": "Exercises"
+              }
+            ],
+            "text": "Exercises"
+          }
+        },
+        "expressedBy": {
+          "reference": "Practitioner/cc-prac-carlson-john"
+        },
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-betsy-ckd",
+            "display": "Chronic kidney disease"
+          },
+          {
+            "reference": "Condition/cc-cond-betsy-diabetes",
+            "display": "Type 2 diabetes mellitus"
+          }
+        ]
+      }
+    }
+  ]
+}
