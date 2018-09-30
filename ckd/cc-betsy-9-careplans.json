@@ -17,24 +17,13 @@
         },
         "text": {
           "status": "generated",
-          "div": "Betsy's CKD care plan (dynamic)"
+          "div": "Betsy's CKD care plan"
         },
         "subject": {
           "reference": "Patient/cc-pat-betsy"
         },
         "status": "active",
         "intent": "plan",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://clinicalcloud.solutions/fhir/CodeSystem/careplan-category",
-                "code": "dynamic"
-              }
-            ],
-            "text": "Dynamic"
-          }
-        ],
         "title": "CKD Care Plan",
         "addresses": [
           {
@@ -50,6 +39,48 @@
         "careTeam": [
           {
             "reference": "CareTeam/cc-team-betsy"
+          }
+        ],
+        "activity": [
+          {
+            "reference": {
+              "reference": "ProcedureRequest/cc-service-betsy-edu-ckd"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ProcedureRequest/cc-service-betsy-edu-diet"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ProcedureRequest/cc-service-betsy-exercise"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ProcedureRequest/cc-service-betsy-steps"
+            }
+          },
+          {
+            "reference": {
+              "reference": "MedicationRequest/cc-med-betsy-furosemide"
+            }
+          },
+          {
+            "reference": {
+              "reference": "MedicationRequest/cc-med-betsy-vitamin-d"
+            }
+          },
+          {
+            "reference": {
+              "reference": "MedicationRequest/cc-med-betsy-insulin"
+            }
+          },
+          {
+            "reference": {
+              "reference": "MedicationRequest/cc-med-betsy-aspirin"
+            }
           }
         ]
       }
@@ -179,6 +210,9 @@
                 ],
                 "text": "Exercise 30 minutes per day"
               },
+              "performer": {
+                "reference": "Patient/cc-pat-betsy"
+              },
               "description": "Walk daily at a comfortable pace for as long as you are able. Stop if you develop shortness of breath, chest pain, or palpatations.",
               "status": "in-progress",
               "scheduledTiming": {
@@ -221,6 +255,9 @@
                   }
                 ],
                 "text": "Steps"
+              },
+              "performer": {
+                "reference": "Patient/cc-pat-betsy"
               },
               "description": "Record your daily total step count before going to bed each evening.",
               "status": "in-progress",
