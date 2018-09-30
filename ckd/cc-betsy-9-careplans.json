@@ -107,17 +107,6 @@
         },
         "status": "active",
         "intent": "plan",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://clinicalcloud.solutions/fhir/CodeSystem/careplan-category",
-                "code": "dynamic"
-              }
-            ],
-            "text": "Dynamic"
-          }
-        ],
         "title": "Personal Care Plan",
         "addresses": [
           {
@@ -133,6 +122,218 @@
         "careTeam": [
           {
             "reference": "CareTeam/cc-team-betsy-support"
+          }
+        ],
+        "activity": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Walk at a comfortable pace"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "procedure",
+                    "display": "Procedure"
+                  }
+                ],
+                "text": "Procedure"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "226029000",
+                    "display": "Exercises"
+                  }
+                ],
+                "text": "Exercise 30 minutes per day"
+              },
+              "performer": {
+                "reference": "Patient/cc-pat-betsy"
+              },
+              "description": "Walk daily at a comfortable pace for as long as you are able. Stop if you develop shortness of breath, chest pain, or palpatations.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2017-11-30",
+                    "end": "2018-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Daily Step Count"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "41950-7",
+                    "display": "Number of steps in 24 hour Measured"
+                  }
+                ],
+                "text": "Steps"
+              },
+              "performer": {
+                "reference": "Patient/cc-pat-betsy"
+              },
+              "description": "Record your daily total step count before going to bed each evening.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2017-11-30",
+                    "end": "2018-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+
+          {
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "29463-7",
+                    "display": "Body weight"
+                  }
+                ]
+              },
+              "performer": {
+                "reference": "Patient/cc-pat-betsy"
+              },
+              "description": "Record your weight each morning before breakfast.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2018-08-30",
+                    "end": "2019-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood pressure systolic and diastolic"
+                  }
+                ]
+              },
+              "performer": {
+                "reference": "Patient/cc-pat-betsy"
+              },
+              "description": "Record your blood pressure twice per day, morning and evening.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2018-08-30",
+                    "end": "2019-12-31"
+                  },
+                  "frequency": 2,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "2339-0",
+                    "display": "Glucose in blood"
+                  }
+                ]
+              },
+              "performer": {
+                "reference": "Patient/cc-pat-betsy"
+              },
+              "description": "Record your blood glucose twice per day, after breakfast and dinner.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2018-08-30",
+                    "end": "2019-12-31"
+                  },
+                  "frequency": 2,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
           }
         ]
       }

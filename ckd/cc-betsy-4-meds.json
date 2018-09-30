@@ -35,7 +35,7 @@
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "???",
+              "code": "197884",
               "display": "Lisinopril 40 MG Oral Tablet"
             }
           ],
@@ -112,7 +112,7 @@
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "???",
+              "code": "198211",
               "display": "Simvastatin 40 MG Oral Tablet"
             }
           ],
@@ -189,7 +189,7 @@
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "???",
+              "code": "310429",
               "display": "Furosemide 20 MG Oral Tablet"
             }
           ],
@@ -288,9 +288,11 @@
             "display": "Dr. John Carlson, MD"
           }
         },
-        "reasonReference": {
-          "reference": "Condition/cc-cond-betsy-ckd"
-        },
+        "reasonReference": [
+          {
+            "reference": "Condition/cc-cond-betsy-ckd"
+          }
+        ],
         "note": [
           {
             "text": "When kidneys fail, their ability to activate vitamin D is lost. Without the activated vitamin D to control calcium and phosphorus levels in the blood, parathyroid hormone (PTH) will try to overcompensate and go out of range."
@@ -343,7 +345,7 @@
         },
         "text": {
           "status": "additional",
-          "div": "Insulin, NPH/REG 70/30 insulin 45 units twice a day"
+          "div": "insulin human, isophane 70 UNT/ML / Regular Insulin, Human 30 UNT/ML Injectable Suspension"
         },
         "status": "active",
         "intent": "order",
@@ -351,11 +353,11 @@
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "??",
-              "display": "??"
+              "code": "311048",
+              "display": "insulin human, isophane 70 UNT/ML / Regular Insulin, Human 30 UNT/ML Injectable Suspension"
             }
           ],
-          "text": "Insulin, NPH/REG 70/30 insulin 45 units twice a day"
+          "text": "insulin human, isophane 70 UNT/ML / Regular Insulin, Human 30 UNT/ML Injectable Suspension"
         },
         "subject": {
           "reference": "Patient/cc-pat-betsy",
@@ -368,9 +370,11 @@
             "display": "Dr. John Carlson, MD"
           }
         },
-        "reasonReference": {
-          "reference": "Condition/cc-cond-betsy-ckd"
-        },
+        "reasonReference": [
+          {
+            "reference": "Condition/cc-cond-betsy-ckd"
+          }
+        ],
         "dosageInstruction": [
           {
             "text": "Twice daily.",
@@ -397,7 +401,7 @@
         },
         "text": {
           "status": "additional",
-          "div": "Aspirin 75 mg daily"
+          "div": "Aspirin 75 MG Oral Tablet"
         },
         "status": "active",
         "intent": "order",
@@ -405,11 +409,11 @@
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "??",
-              "display": "??"
+              "code": "104474",
+              "display": "Aspirin 75 MG Oral Tablet"
             }
           ],
-          "text": "Aspirin 75 mg daily"
+          "text": "Aspirin 75 MG Oral Tablet"
         },
         "subject": {
           "reference": "Patient/cc-pat-betsy",
@@ -422,9 +426,11 @@
             "display": "Dr. John Carlson, MD"
           }
         },
-        "reasonReference": {
-          "reference": "Condition/cc-cond-betsy-chf"
-        },
+        "reasonReference": [
+          {
+            "reference": "Condition/cc-cond-betsy-chf"
+          }
+        ],
         "dosageInstruction": [
           {
             "text": "Once daily.",
