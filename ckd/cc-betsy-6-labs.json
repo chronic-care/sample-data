@@ -5,69 +5,6 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/cc-obs-betsy-lab-egfr"
-      },
-      "resource": {
-        "resourceType": "Observation",
-        "id": "cc-obs-betsy-lab-egfr",
-        "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "eGFR"
-        },
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/observation-category",
-                "code": "laboratory"
-              }
-            ],
-            "text": "Laboratory"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "76633-7",
-              "display": "Glomerular filtration rate/1.73 sq M. predicted by Creatinine-based formula (MDRD) in Blood",
-              "userSelected": true
-            },
-            {
-              "system": "http://loinc.org",
-              "code": "69405-9",
-              "display": "Glomerular filtration rate/1.73 sq M.predicted"
-            }
-          ],
-          "text": "eGFR"
-        },
-        "subject": {
-          "reference": "Patient/cc-pat-betsy"
-        },
-        "effectiveDateTime": "2017-12-06",
-        "performer": [
-          {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
-          }
-        ],
-        "valueQuantity": {
-          "value": 28,
-          "unit": "mL/min/1.73m2",
-          "system": "http://unitsofmeasure.org/",
-          "code": "mL/min/{1.73_m2}"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "PUT",
         "url": "Observation/cc-obs-betsy-lab-uacr"
       },
       "resource": {
@@ -119,63 +56,6 @@
           "unit": "mg/g",
           "system": "http://unitsofmeasure.org/",
           "code": "mg/g{creat}"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "PUT",
-        "url": "Observation/cc-obs-betsy-lab-a1c"
-      },
-      "resource": {
-        "resourceType": "Observation",
-        "id": "cc-obs-betsy-lab-a1c",
-        "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "Hemoglobin A1c"
-        },
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/observation-category",
-                "code": "laboratory"
-              }
-            ],
-            "text": "Laboratory"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "4548-4",
-              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
-            }
-          ],
-          "text": "Hemoglobin A1c"
-        },
-        "subject": {
-          "reference": "Patient/cc-pat-betsy"
-        },
-        "effectiveDateTime": "2017-12-06",
-        "performer": [
-          {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
-          }
-        ],
-        "valueQuantity": {
-          "value": 6.8,
-          "unit": "%",
-          "system": "http://unitsofmeasure.org/",
-          "code": "%"
         }
       }
     },
