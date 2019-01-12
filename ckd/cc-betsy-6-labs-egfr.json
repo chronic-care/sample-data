@@ -35,12 +35,6 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "76633-7",
-              "display": "Glomerular filtration rate/1.73 sq M. predicted by Creatinine-based formula (MDRD) in Blood",
-              "userSelected": true
-            },
-            {
-              "system": "http://loinc.org",
               "code": "69405-9",
               "display": "Glomerular filtration rate/1.73 sq M.predicted"
             }
@@ -96,12 +90,6 @@
         ],
         "code": {
           "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "76633-7",
-              "display": "Glomerular filtration rate/1.73 sq M. predicted by Creatinine-based formula (MDRD) in Blood",
-              "userSelected": true
-            },
             {
               "system": "http://loinc.org",
               "code": "69405-9",
@@ -161,12 +149,6 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "76633-7",
-              "display": "Glomerular filtration rate/1.73 sq M. predicted by Creatinine-based formula (MDRD) in Blood",
-              "userSelected": true
-            },
-            {
-              "system": "http://loinc.org",
               "code": "69405-9",
               "display": "Glomerular filtration rate/1.73 sq M.predicted"
             }
@@ -222,12 +204,6 @@
         ],
         "code": {
           "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "76633-7",
-              "display": "Glomerular filtration rate/1.73 sq M. predicted by Creatinine-based formula (MDRD) in Blood",
-              "userSelected": true
-            },
             {
               "system": "http://loinc.org",
               "code": "69405-9",
@@ -287,12 +263,6 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "76633-7",
-              "display": "Glomerular filtration rate/1.73 sq M. predicted by Creatinine-based formula (MDRD) in Blood",
-              "userSelected": true
-            },
-            {
-              "system": "http://loinc.org",
               "code": "69405-9",
               "display": "Glomerular filtration rate/1.73 sq M.predicted"
             }
@@ -348,12 +318,6 @@
         ],
         "code": {
           "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "76633-7",
-              "display": "Glomerular filtration rate/1.73 sq M. predicted by Creatinine-based formula (MDRD) in Blood",
-              "userSelected": true
-            },
             {
               "system": "http://loinc.org",
               "code": "69405-9",

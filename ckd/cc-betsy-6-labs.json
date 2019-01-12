@@ -44,7 +44,7 @@
         "subject": {
           "reference": "Patient/cc-pat-betsy"
         },
-        "effectiveDateTime": "2017-12-06",
+        "effectiveDateTime": "2018-10-06",
         "performer": [
           {
             "reference": "Practitioner/cc-prac-carlson-john",
@@ -101,7 +101,7 @@
         "subject": {
           "reference": "Patient/cc-pat-betsy"
         },
-        "effectiveDateTime": "2018-02-15",
+        "effectiveDateTime": "2018-10-06",
         "performer": [
           {
             "reference": "Practitioner/cc-prac-carlson-john",
@@ -110,6 +110,420 @@
         ],
         "valueQuantity": {
           "value": 5.1,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org/",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/cc-obs-betsy-lab-ldlc"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cc-obs-betsy-lab-ldlc",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2089-1",
+              "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+            }
+          ]
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 50,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 178,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "text": "50 to 178 mg/dL"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "effectiveDateTime": "2018-10-06",
+        "performer": [
+          {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 105,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org/",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/cc-obs-betsy-lab-hdlc"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cc-obs-betsy-lab-hdlc",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2085-9",
+              "display": "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+            }
+          ]
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 35,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 59,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "text": "35 to 59 mg/dL"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "effectiveDateTime": "2018-10-06",
+        "performer": [
+          {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 43,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org/",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/cc-obs-betsy-lab-triglycerides"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cc-obs-betsy-lab-triglycerides",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "3043-7",
+              "display": "Triglyceride [Mass/volume] in Blood"
+            }
+          ]
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 10,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 250,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "text": "10 to 250 mg/dL"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "effectiveDateTime": "2018-10-06",
+        "performer": [
+          {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 198,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org/",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/cc-obs-betsy-lab-glucose"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cc-obs-betsy-lab-glucose",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2339-0",
+              "display": "Blood glucose"
+            }
+          ]
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 61,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 100,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "text": "61 to 100 mg/dL"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "effectiveDateTime": "2018-10-06",
+        "performer": [
+          {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 115,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org/",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/cc-obs-betsy-lab-glucose-1"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cc-obs-betsy-lab-glucose-1",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2339-0",
+              "display": "Blood glucose"
+            }
+          ]
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 61,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 100,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "text": "61 to 100 mg/dL"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "effectiveDateTime": "2018-05-06",
+        "performer": [
+          {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 95,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org/",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/cc-obs-betsy-lab-glucose-2"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cc-obs-betsy-lab-glucose-2",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2339-0",
+              "display": "Blood glucose"
+            }
+          ]
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 61,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "high": {
+              "value": 100,
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "mg/dL"
+            },
+            "text": "61 to 100 mg/dL"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "effectiveDateTime": "2018-03-10",
+        "performer": [
+          {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 108,
           "unit": "mg/dL",
           "system": "http://unitsofmeasure.org/",
           "code": "mg/dL"

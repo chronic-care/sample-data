@@ -2721,10 +2721,12 @@ AElFTkSuQmCC"
           }
         ]
       },
-      "generalPratitioner": {
-        "reference": "Practitioner/cc-prac-carlson-john",
-        "display": "Dr. John Carlson, MD"
-      }
+      "generalPractitioner": [
+        {
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        }
+      ]
     }
   ]
 }

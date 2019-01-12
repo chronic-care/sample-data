@@ -131,8 +131,8 @@
         "occurrenceTiming": {
           "repeat": {
             "boundsPeriod": {
-              "start": "2017-11-30",
-              "end": "2018-12-31"
+              "start": "2018-11-30",
+              "end": "2019-12-31"
             },
             "frequency": 1,
             "period": 1,
@@ -200,8 +200,8 @@
         "occurrenceTiming": {
           "repeat": {
             "boundsPeriod": {
-              "start": "2017-11-30",
-              "end": "2018-12-31"
+              "start": "2018-11-30",
+              "end": "2019-12-31"
             },
             "frequency": 1,
             "period": 1,

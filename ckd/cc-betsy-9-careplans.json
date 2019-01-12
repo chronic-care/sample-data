@@ -24,16 +24,32 @@
         },
         "status": "active",
         "intent": "plan",
+        "period": {
+          "start": "2018-06-01"
+        },
+        "author": {
+          "reference": "Practitioner/cc-prac-jones-vince",
+          "display": "Dr. Vince Jones, MD"
+        },
         "title": "CKD Care Plan",
+        "description": "Care plan to slow progression of CKD and Type 2 Diabetes.",
         "addresses": [
           {
             "reference": "Condition/cc-cond-betsy-diabetes"
           },
           {
             "reference": "Condition/cc-cond-betsy-ckd"
+          }
+        ],
+        "goal": [
+          {
+            "reference": "Goal/cc-goal-betsy-bp-systolic"
           },
           {
-            "reference": "Condition/cc-cond-betsy-chf"
+            "reference": "Goal/cc-goal-betsy-lab-phos"
+          },
+          {
+            "reference": "Goal/cc-goal-betsy-a1c"
           }
         ],
         "careTeam": [
@@ -64,22 +80,12 @@
           },
           {
             "reference": {
-              "reference": "MedicationRequest/cc-med-betsy-furosemide"
-            }
-          },
-          {
-            "reference": {
               "reference": "MedicationRequest/cc-med-betsy-vitamin-d"
             }
           },
           {
             "reference": {
               "reference": "MedicationRequest/cc-med-betsy-insulin"
-            }
-          },
-          {
-            "reference": {
-              "reference": "MedicationRequest/cc-med-betsy-aspirin"
             }
           }
         ]
@@ -100,17 +106,26 @@
         },
         "text": {
           "status": "generated",
-          "div": "Betsy's personal care plan (dynamic)"
+          "div": "Betsy's personal care plan"
         },
         "subject": {
           "reference": "Patient/cc-pat-betsy"
         },
         "status": "active",
         "intent": "plan",
+        "period": {
+          "start": "2019-01-01",
+          "end": "2019-12-31"
+        },
+        "author": {
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        },
         "title": "Personal Care Plan",
+        "description": "Plan for Betsy's self-care at home.",
         "addresses": [
           {
-            "reference": "Condition/cc-cond-betsy-retinopathy"
+            "reference": "Condition/cc-cond-betsy-diabetes"
           },
           {
             "reference": "Condition/cc-cond-betsy-depression"
@@ -119,105 +134,17 @@
             "reference": "Condition/cc-cond-betsy-transportation"
           }
         ],
+        "goal": [
+          {
+            "reference": "Goal/cc-goal-betsy-exercise"
+          }
+        ],
         "careTeam": [
           {
             "reference": "CareTeam/cc-team-betsy-support"
           }
         ],
         "activity": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
-                "valueString": "Walk at a comfortable pace"
-              }
-            ],
-            "detail": {
-              "category": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/care-plan-activity-category",
-                    "code": "procedure",
-                    "display": "Procedure"
-                  }
-                ],
-                "text": "Procedure"
-              },
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://snomed.info/sct",
-                    "code": "226029000",
-                    "display": "Exercises"
-                  }
-                ],
-                "text": "Exercise 30 minutes per day"
-              },
-              "performer": {
-                "reference": "Patient/cc-pat-betsy"
-              },
-              "description": "Walk daily at a comfortable pace for as long as you are able. Stop if you develop shortness of breath, chest pain, or palpatations.",
-              "status": "in-progress",
-              "scheduledTiming": {
-                "repeat": {
-                  "boundsPeriod": {
-                    "start": "2017-11-30",
-                    "end": "2018-12-31"
-                  },
-                  "frequency": 1,
-                  "period": 1,
-                  "periodUnit": "d"
-                }
-              }
-            }
-          },
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
-                "valueString": "Daily Step Count"
-              }
-            ],
-            "detail": {
-              "category": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/care-plan-activity-category",
-                    "code": "observation",
-                    "display": "Observation"
-                  }
-                ],
-                "text": "Observation"
-              },
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://loinc.org",
-                    "code": "41950-7",
-                    "display": "Number of steps in 24 hour Measured"
-                  }
-                ],
-                "text": "Steps"
-              },
-              "performer": {
-                "reference": "Patient/cc-pat-betsy"
-              },
-              "description": "Record your daily total step count before going to bed each evening.",
-              "status": "in-progress",
-              "scheduledTiming": {
-                "repeat": {
-                  "boundsPeriod": {
-                    "start": "2017-11-30",
-                    "end": "2018-12-31"
-                  },
-                  "frequency": 1,
-                  "period": 1,
-                  "periodUnit": "d"
-                }
-              }
-            }
-          },
-
           {
             "detail": {
               "category": {
@@ -329,146 +256,6 @@
                     "end": "2019-12-31"
                   },
                   "frequency": 2,
-                  "period": 1,
-                  "periodUnit": "d"
-                }
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "request": {
-        "method": "PUT",
-        "url": "CarePlan/cc-careplan-betsy-nutrition"
-      },
-      "resource": {
-        "resourceType": "CarePlan",
-        "id": "cc-careplan-betsy-nutrition",
-        "meta": {
-          "profile": [
-            "http://hl7.org/fhir/StructureDefinition/CarePlan"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "Nutrition Plan Alignment"
-        },
-        "subject": {
-          "reference": "Patient/cc-pat-betsy"
-        },
-        "status": "active",
-        "intent": "plan",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://clinicalcloud.solutions/fhir/CodeSystem/careplan-category",
-                "code": "static"
-              }
-            ],
-            "text": "Static"
-          }
-        ],
-        "title": "Nutrition Plan Alignment",
-        "addresses": [
-          {
-            "reference": "Condition/cc-cond-betsy-transportation"
-          }
-        ],
-        "careTeam": [
-          {
-            "reference": "CareTeam/cc-team-betsy-support"
-          }
-        ],
-        "activity": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
-                "valueString": "Walk at a comfortable pace"
-              }
-            ],
-            "detail": {
-              "category": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/care-plan-activity-category",
-                    "code": "procedure",
-                    "display": "Procedure"
-                  }
-                ],
-                "text": "Procedure"
-              },
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://snomed.info/sct",
-                    "code": "226029000",
-                    "display": "Exercises"
-                  }
-                ],
-                "text": "Exercise 30 minutes per day"
-              },
-              "performer": {
-                "reference": "Patient/cc-pat-betsy"
-              },
-              "description": "Walk daily at a comfortable pace for as long as you are able. Stop if you develop shortness of breath, chest pain, or palpatations.",
-              "status": "in-progress",
-              "scheduledTiming": {
-                "repeat": {
-                  "boundsPeriod": {
-                    "start": "2017-11-30",
-                    "end": "2018-12-31"
-                  },
-                  "frequency": 1,
-                  "period": 1,
-                  "periodUnit": "d"
-                }
-              }
-            }
-          },
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
-                "valueString": "Daily Step Count"
-              }
-            ],
-            "detail": {
-              "category": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/care-plan-activity-category",
-                    "code": "observation",
-                    "display": "Observation"
-                  }
-                ],
-                "text": "Observation"
-              },
-              "code": {
-                "coding": [
-                  {
-                    "system": "http://loinc.org",
-                    "code": "41950-7",
-                    "display": "Number of steps in 24 hour Measured"
-                  }
-                ],
-                "text": "Steps"
-              },
-              "performer": {
-                "reference": "Patient/cc-pat-betsy"
-              },
-              "description": "Record your daily total step count before going to bed each evening.",
-              "status": "in-progress",
-              "scheduledTiming": {
-                "repeat": {
-                  "boundsPeriod": {
-                    "start": "2017-11-30",
-                    "end": "2018-12-31"
-                  },
-                  "frequency": 1,
                   "period": 1,
                   "periodUnit": "d"
                 }

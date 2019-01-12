@@ -215,7 +215,7 @@
         "subject": {
           "reference": "Patient/cc-pat-betsy"
         },
-        "effectiveDateTime": "2018-05-10",
+        "effectiveDateTime": "2018-03-10",
         "performer": [
           {
             "reference": "Practitioner/cc-prac-carlson-john",
@@ -280,7 +280,7 @@
           }
         ],
         "valueQuantity": {
-          "value": 7.2,
+          "value": 8.3,
           "unit": "%",
           "system": "http://unitsofmeasure.org/",
           "code": "%"
@@ -337,7 +337,64 @@
           }
         ],
         "valueQuantity": {
-          "value": 6.8,
+          "value": 9.1,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org/",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/cc-obs-betsy-lab-a1c-6"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cc-obs-betsy-lab-a1c-6",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Hemoglobin A1c"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            }
+          ],
+          "text": "Hemoglobin A1c"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "effectiveDateTime": "2018-12-30",
+        "performer": [
+          {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 8.8,
           "unit": "%",
           "system": "http://unitsofmeasure.org/",
           "code": "%"
