@@ -48,7 +48,8 @@
         },
         "onsetDateTime": "2014-02-14",
         "asserter": {
-          "reference": "Practitioner/cc-prac-carlson-john"
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
         }
       }
     },
@@ -98,7 +99,8 @@
         },
         "onsetDateTime": "2010-03-22",
         "asserter": {
-          "reference": "Practitioner/cc-prac-johnson-sam"
+          "reference": "Practitioner/cc-prac-johnson-sam",
+          "display": "Sam Johnson"
         }
       }
     },
@@ -148,7 +150,8 @@
         },
         "onsetDateTime": "2012-09-15",
         "asserter": {
-          "reference": "Practitioner/cc-prac-johnson-sam"
+          "reference": "Practitioner/cc-prac-johnson-sam",
+          "display": "Sam Johnson"
         }
       }
     },
@@ -198,7 +201,8 @@
         },
         "onsetDateTime": "2012-09-14",
         "asserter": {
-          "reference": "Practitioner/cc-prac-carlson-john"
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
         }
       }
     }

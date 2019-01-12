@@ -32,7 +32,8 @@
         "authoredOn": "2018-02-20",
         "requester": {
           "agent": {
-            "reference": "Practitioner/cc-prac-jones-vince"
+            "reference": "Practitioner/cc-prac-jones-vince",
+            "display": "Dr. Vince Jones, MD"
           }
         },
         "performer": {

@@ -170,7 +170,8 @@
         },
         "onsetDateTime": "2007-11-30",
         "asserter": {
-          "reference": "Practitioner/cc-prac-jones-vince"
+          "reference": "Practitioner/cc-prac-jones-vince",
+          "display": "Dr. Vince Jones, MD"
         }
       }
     },
