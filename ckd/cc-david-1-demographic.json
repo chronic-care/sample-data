@@ -147,6 +147,12 @@
             "country": "USA"
           }
         ],
+        "generalPractitioner": [
+          {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        ],
         "photo": [
           {
             "contentType": "image/jpeg",
@@ -2720,13 +2726,7 @@ Xkk1SQdPXOUaO1oYINN+XF82FmmjwdY7Fji8eu47i+O3E/Bu3/bZgU0a397+AbGDUur2A8AlAAAA
 AElFTkSuQmCC"
           }
         ]
-      },
-      "generalPractitioner": [
-        {
-          "reference": "Practitioner/cc-prac-carlson-john",
-          "display": "Dr. John Carlson, MD"
-        }
-      ]
+      }
     }
   ]
 }

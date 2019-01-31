@@ -22,15 +22,7 @@
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",
         "category": [
-          {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
-                "code": "food"
-              }
-            ],
-            "text": "Food"
-          }
+          "food"
         ],
         "code": {
           "coding": [
