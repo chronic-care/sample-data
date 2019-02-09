@@ -1,0 +1,65 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "AllergyIntolerance/cc-allergy-amy-dairy"
+      },
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "cc-allergy-amy-dairy",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Dairy food intolerance"
+        },
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
+                "code": "food"
+              }
+            ],
+            "text": "Food"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "226760005",
+              "display": "Dairy foods (substance)"
+            }
+          ],
+          "text": "Dairy"
+        },
+        "patient": {
+          "reference": "Patient/cc-pat-amy",
+          "display": "Amy"
+        },
+        "onsetDateTime": "2015",
+        "assertedDate": "2016-01-15",
+        "recorder": {
+          "reference": "Practitioner/cc-prac-carlson-john"
+        },
+        "asserter": {
+          "reference": "Patient/cc-pat-amy"
+        },
+        "note": [
+          {
+            "text": "The severity is moderate becasue of the observed intestinal cramping."
+          }
+        ]
+      }
+    }
+  ]
+}

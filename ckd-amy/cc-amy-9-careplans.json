@@ -1,0 +1,269 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/cc-careplan-amy-ckd"
+      },
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "cc-careplan-amy-ckd",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Amy's CKD care plan"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-amy"
+        },
+        "status": "active",
+        "intent": "plan",
+        "period": {
+          "start": "2018-06-01"
+        },
+        "author": {
+          "reference": "Practitioner/cc-prac-jones-vince",
+          "display": "Dr. Vince Jones, MD"
+        },
+        "title": "CKD Care Plan",
+        "description": "Care plan to slow progression of CKD and Type 2 Diabetes.",
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-amy-diabetes"
+          },
+          {
+            "reference": "Condition/cc-cond-amy-ckd"
+          }
+        ],
+        "goal": [
+          {
+            "reference": "Goal/cc-goal-amy-bp-systolic"
+          },
+          {
+            "reference": "Goal/cc-goal-amy-lab-phos"
+          },
+          {
+            "reference": "Goal/cc-goal-amy-a1c"
+          }
+        ],
+        "careTeam": [
+          {
+            "reference": "CareTeam/cc-team-amy"
+          }
+        ],
+        "activity": [
+          {
+            "reference": {
+              "reference": "ProcedureRequest/cc-service-amy-edu-ckd"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ProcedureRequest/cc-service-amy-edu-diet"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ProcedureRequest/cc-service-amy-exercise"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ProcedureRequest/cc-service-amy-steps"
+            }
+          },
+          {
+            "reference": {
+              "reference": "MedicationRequest/cc-med-amy-vitamin-d"
+            }
+          },
+          {
+            "reference": {
+              "reference": "MedicationRequest/cc-med-amy-insulin"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/cc-careplan-amy-personal"
+      },
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "cc-careplan-amy-personal",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "Amy's personal care plan"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-amy"
+        },
+        "status": "active",
+        "intent": "plan",
+        "period": {
+          "start": "2019-01-01",
+          "end": "2019-12-31"
+        },
+        "author": {
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        },
+        "title": "Personal Care Plan",
+        "description": "Plan for Amy's self-care at home.",
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-amy-diabetes"
+          },
+          {
+            "reference": "Condition/cc-cond-amy-depression"
+          },
+          {
+            "reference": "Condition/cc-cond-amy-transportation"
+          }
+        ],
+        "goal": [
+          {
+            "reference": "Goal/cc-goal-amy-exercise"
+          }
+        ],
+        "careTeam": [
+          {
+            "reference": "CareTeam/cc-team-amy-support"
+          }
+        ],
+        "activity": [
+          {
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "29463-7",
+                    "display": "Body weight"
+                  }
+                ]
+              },
+              "performer": {
+                "reference": "Patient/cc-pat-amy"
+              },
+              "description": "Record your weight each morning before breakfast.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2018-08-30",
+                    "end": "2019-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood pressure systolic and diastolic"
+                  }
+                ]
+              },
+              "performer": {
+                "reference": "Patient/cc-pat-amy"
+              },
+              "description": "Record your blood pressure twice per day, morning and evening.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2018-08-30",
+                    "end": "2019-12-31"
+                  },
+                  "frequency": 2,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "2339-0",
+                    "display": "Glucose in blood"
+                  }
+                ]
+              },
+              "performer": {
+                "reference": "Patient/cc-pat-amy"
+              },
+              "description": "Record your blood glucose twice per day, after breakfast and dinner.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2018-08-30",
+                    "end": "2019-12-31"
+                  },
+                  "frequency": 2,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

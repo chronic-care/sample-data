@@ -1,0 +1,135 @@
+{
+	"resourceType": "Bundle",
+	"type": "transaction",
+	"entry": [{
+		"request": {
+			"method": "PUT",
+			"url": "RelatedPerson/cc-pat-amy-related-daughter"
+		},
+		"resource": {
+			"resourceType": "RelatedPerson",
+			"id": "cc-pat-amy-related-daughter",
+			"meta": {
+				"profile": ["http://hl7.org/fhir/StructureDefinition/RelatedPerson"]
+			},
+			"text": {
+				"status": "generated",
+				"div": "RelatedPerson Daughter"
+			},
+			"patient": {
+				"reference": "Patient/cc-pat-amy",
+				"display": "Amy Jackson"
+			},
+			"relationship": {
+				"coding": [{
+					"system": "http://hl7.org/fhir/v3/RoleCode",
+					"code": "DAU",
+					"display": "natural daughter"
+				}],
+				"text": "Daughter"
+			},
+			"name": [{
+				"use": "usual",
+				"family": "Jackson",
+				"given": ["Debra"]
+			}],
+			"telecom": [{
+				"system": "phone",
+				"value": "555-1212",
+				"use": "mobile"
+			},
+			{
+				"system": "email",
+				"value": "debra-jackson@woohoo.com",
+				"use": "home"
+			}],
+			"gender": "female"
+		}
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "Patient/cc-pat-amy"
+		},
+		"resource": {
+			"resourceType": "Patient",
+			"id": "cc-pat-amy",
+			"meta": {
+				"profile": ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"]
+			},
+			"text": {
+				"status": "generated",
+				"div": "Amy Jackson"
+			},
+			"extension": [{
+				"url": "http://hl7.org/fhir/StructureDefinition/us-core-birth-sex",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://hl7.org/fhir/v3/AdministrativeGender",
+						"code": "F",
+						"display": "Female"
+					}],
+					"text": "Female"
+				}
+			},
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/us-core-race",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://hl7.org/fhir/v3/Race",
+						"code": "2058-6",
+						"display": "African American"
+					}]
+				}
+			},
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/us-core-ethnicity",
+				"valueCodeableConcept": {
+					"coding": [{
+						"system": "http://hl7.org/fhir/v3/Ethnicity",
+						"code": "UNK",
+						"display": "unknown"
+					}]
+				}
+			}],
+			"identifier": [{
+				"system": "http://sample.agency.gov/fhir/NamingSystem/identifier",
+				"value": "ID-100"
+			}],
+			"name": [{
+				"use": "official",
+				"text": "Amy Jackson",
+				"family": "Jackson",
+				"given": ["Amy"]
+			}],
+			"gender": "female",
+			"birthDate": "1966-07-14",
+			"telecom": [{
+				"system": "phone",
+				"value": "555-555-2001",
+				"use": "mobile"
+			},
+			{
+				"system": "email",
+				"value": "amy.jackson@woohoo.com"
+			}],
+			"address": [{
+				"text": "233 Main Street  Raleigh, NC 27609",
+				"use": "home",
+				"line": ["233 Main Street"],
+				"city": "Raleigh",
+				"postalCode": "27609",
+				"state": "NC",
+				"country": "USA"
+			}],
+			"generalPractitioner": [{
+				"reference": "Practitioner/cc-prac-carlson-john",
+				"display": "Dr. John Carlson, MD"
+			}],
+			"photo": [{
+				"contentType": "image/jpeg",
+				"data": ""
+			}]
+		}
+	}]
+}
