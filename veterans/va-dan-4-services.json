@@ -5,55 +5,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/cc-service-betsy-edu-ckd"
+        "url": "ProcedureRequest/va-service-dan-edu-diet"
       },
       "resource": {
         "resourceType": "ProcedureRequest",
-        "id": "cc-service-betsy-edu-ckd",
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Education on CKD management</div>"
-        },
-        "status": "active",
-        "intent": "plan",
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "408982008",
-              "display": "Renal care education (procedure)"
-            }
-          ],
-          "text": "Education on CKD management"
-        },
-        "subject": {
-          "reference": "Patient/cc-pat-betsy"
-        },
-        "authoredOn": "2018-02-20",
-        "requester": {
-          "agent": {
-            "reference": "Practitioner/cc-prac-jones-vince",
-            "display": "Dr. Vince Jones, MD"
-          }
-        },
-        "performer": {
-          "reference": "Practitioner/cc-prac-smith-julie"
-        },
-        "reasonReference": [
-          {
-            "reference": "Condition/cc-cond-betsy-ckd"
-          }
-        ]
-      }
-    },
-    {
-      "request": {
-        "method": "PUT",
-        "url": "ProcedureRequest/cc-service-betsy-edu-diet"
-      },
-      "resource": {
-        "resourceType": "ProcedureRequest",
-        "id": "cc-service-betsy-edu-diet",
+        "id": "va-service-dan-edu-diet",
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diet education</div>"
@@ -71,23 +27,20 @@
           "text": "Diet counseling"
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "requester": {
           "agent": {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         },
         "performer": {
-          "reference": "Practitioner/cc-prac-gonzalez-maria"
+          "reference": "Practitioner/va-prac-visn6-francis"
         },
         "reasonReference": [
           {
-            "reference": "Condition/cc-cond-betsy-diabetes"
-          },
-          {
-            "reference": "Condition/cc-cond-betsy-ckd"
+            "reference": "Condition/va-cond-dan-dm"
           }
         ]
       }
@@ -95,11 +48,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/cc-service-betsy-exercise"
+        "url": "ProcedureRequest/va-service-dan-exercise"
       },
       "resource": {
         "resourceType": "ProcedureRequest",
-        "id": "cc-service-betsy-exercise",
+        "id": "va-service-dan-exercise",
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Excercise</div>"
@@ -109,7 +62,7 @@
             "url": "http://hl7.org/fhir/StructureDefinition/goal-pertainsToGoal",
             "valueReference": [
               {
-                "reference": "Goal/cc-goal-betsy-exercise"
+                "reference": "Goal/va-goal-dan-exercise"
               }
             ]
           }
@@ -127,7 +80,7 @@
           "text": "Exercise 30 minutes per day"
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "occurrenceTiming": {
           "repeat": {
@@ -142,16 +95,16 @@
         },
         "requester": {
           "agent": {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         },
         "performer": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "reasonReference": [
           {
-            "reference": "Condition/cc-cond-betsy-diabetes"
+            "reference": "Condition/va-cond-dan-dm"
           }
         ],
         "note": [
@@ -164,11 +117,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/cc-service-betsy-steps"
+        "url": "ProcedureRequest/va-service-dan-steps"
       },
       "resource": {
         "resourceType": "ProcedureRequest",
-        "id": "cc-service-betsy-steps",
+        "id": "va-service-dan-steps",
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Daily Step Count</div>"
@@ -178,7 +131,7 @@
             "url": "http://hl7.org/fhir/StructureDefinition/goal-pertainsToGoal",
             "valueReference": [
               {
-                "reference": "Goal/cc-goal-betsy-exercise"
+                "reference": "Goal/va-goal-dan-exercise"
               }
             ]
           }
@@ -196,7 +149,7 @@
           "text": "Daily Step Count"
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "occurrenceTiming": {
           "repeat": {
@@ -211,16 +164,16 @@
         },
         "requester": {
           "agent": {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         },
         "performer": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "reasonReference": [
           {
-            "reference": "Condition/cc-cond-betsy-diabetes"
+            "reference": "Condition/va-cond-dan-dm"
           }
         ],
         "note": [
@@ -233,18 +186,18 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/cc-service-betsy-phq4"
+        "url": "ProcedureRequest/va-service-dan-phq9"
       },
       "resource": {
         "resourceType": "ProcedureRequest",
-        "id": "cc-service-betsy-phq4",
+        "id": "va-service-dan-phq9",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/procedurerequest-questionnaireRequest",
             "valueReference": [
               {
-                "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/69724-3",
-                "display": "PHQ-4"
+                "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/44249-1",
+                "display": "PHQ-9"
               }
             ]
           }
@@ -255,14 +208,14 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "171207006",
-              "display": "Depression screening (procedure)"
+              "code": "715252007",
+              "display": "Depression screening using Patient Health Questionnaire Nine Item score (procedure)"
             }
           ],
-          "text": "Depression screening"
+          "text": "Depression screening (PHQ-9)"
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "occurrenceTiming": {
           "repeat": {
@@ -277,16 +230,16 @@
         },
         "requester": {
           "agent": {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         },
         "performer": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "reasonReference": [
           {
-            "reference": "Condition/cc-cond-betsy-depression"
+            "reference": "Condition/va-cond-dan-depresssion"
           }
         ]
       }
@@ -294,11 +247,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/cc-service-betsy-challenges"
+        "url": "ProcedureRequest/va-service-dan-challenges"
       },
       "resource": {
         "resourceType": "ProcedureRequest",
-        "id": "cc-service-betsy-challenges",
+        "id": "va-service-dan-challenges",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/procedurerequest-questionnaireRequest",
@@ -323,12 +276,12 @@
           "text": "Treatment challenges screening"
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "occurrenceTiming": {
           "repeat": {
             "boundsPeriod": {
-              "start": "2019-01-30",
+              "start": "2018-09-30",
               "end": "2019-12-31"
             },
             "frequency": 1,
@@ -338,16 +291,19 @@
         },
         "requester": {
           "agent": {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         },
         "performer": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "reasonReference": [
           {
-            "reference": "Condition/cc-cond-betsy-ckd"
+            "reference": "Condition/va-cond-dan-depression"
+          },
+          {
+            "reference": "Condition/va-cond-dan-ptsd"
           }
         ]
       }
@@ -355,18 +311,18 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/cc-service-betsy-ckd-goals"
+        "url": "ProcedureRequest/va-service-dan-ipss"
       },
       "resource": {
         "resourceType": "ProcedureRequest",
-        "id": "cc-service-betsy-ckd-goals",
+        "id": "va-service-dan-ipss",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/procedurerequest-questionnaireRequest",
             "valueReference": [
               {
-                "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/87533-6",
-                "display": "CKD personal health goals"
+                "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/80976-4",
+                "display": "IPSS"
               }
             ]
           }
@@ -377,14 +333,14 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "445536008",
-              "display": "Assessment using assessment scale (procedure)"
+              "code": "312851005",
+              "display": "Screening for disorder (procedure)"
             }
           ],
-          "text": "CKD goals screening"
+          "text": "Prostate Symptom Screening"
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "occurrenceTiming": {
           "repeat": {
@@ -393,24 +349,19 @@
               "end": "2019-12-31"
             },
             "frequency": 1,
-            "period": 2,
+            "period": 4,
             "periodUnit": "wk"
           }
         },
         "requester": {
           "agent": {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         },
         "performer": {
-          "reference": "Patient/cc-pat-betsy"
-        },
-        "reasonReference": [
-          {
-            "reference": "Condition/cc-cond-betsy-ckd"
-          }
-        ]
+          "reference": "Patient/va-pat-dan"
+        }
       }
     }
   ]

@@ -17,7 +17,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Type 2 diabetes"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Type 2 diabetes</div>"
         },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",
@@ -78,7 +78,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Congestive heart failure"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Congestive heart failure</div>"
         },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",
@@ -129,7 +129,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Chronic kidney disease"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Chronic kidney disease</div>"
         },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",
@@ -190,7 +190,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Hypertension"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hypertension</div>"
         },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",
@@ -251,7 +251,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Diabetic retinopathy"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diabetic retinopathy</div>"
         },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",
@@ -312,7 +312,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Peripheral vascular disease"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Peripheral vascular disease</div>"
         },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",
@@ -373,7 +373,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Dyslipidemia"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dyslipidemia</div>"
         },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",
@@ -424,7 +424,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Anxiety"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Anxiety</div>"
         },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",

@@ -17,7 +17,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Depressed mood"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Depressed mood</div>"
         },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",
@@ -68,7 +68,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Unemployed"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Unemployed</div>"
         },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",
@@ -119,7 +119,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Unable to drive a car"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Unable to drive a car</div>"
         },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",
@@ -170,7 +170,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Sedentary lifestyle"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Sedentary lifestyle</div>"
         },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",

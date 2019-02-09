@@ -1,0 +1,745 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Organization/va-org"
+      },
+      "resource": {
+        "resourceType": "Organization",
+        "id": "va-org",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>U.S. Department of Veterans Affairs (VA)</div>"
+        },
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/organization-type",
+              "code": "prov",
+              "display": "Healthcare Provider"
+            }
+          ],
+          "text": "Healthcare Provider"
+        },
+        "name": "U.S. Department of Veterans Affairs",
+        "alias": [
+          "VA"
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "1-877-222-8387",
+            "use": "work"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Organization/va-org-vha"
+      },
+      "resource": {
+        "resourceType": "Organization",
+        "id": "va-org-vha",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Veterans Health Administration (VHA)</div>"
+        },
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/organization-type",
+              "code": "prov",
+              "display": "Healthcare Provider"
+            }
+          ],
+          "text": "Healthcare Provider"
+        },
+        "name": "Veterans Health Administration",
+        "alias": [
+          "VHA"
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "1-877-222-8387",
+            "use": "work"
+          }
+        ],
+        "partOf": {
+          "reference": "Organization/va-org",
+          "display": "U.S. Department of Veterans Affairs"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Organization/va-org-visn6"
+      },
+      "resource": {
+        "resourceType": "Organization",
+        "id": "va-org-visn6",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>VISN 6: VA Mid-Atlantic Health Care Network</div>"
+        },
+        "active": true,
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/organization-type",
+              "code": "prov",
+              "display": "Healthcare Provider"
+            },
+            {
+              "system": "http://va.gov/fhir/organization-type",
+              "code": "visn",
+              "display": "Veterans Integrated Service Network"
+            }
+          ],
+          "text": "Healthcare Provider"
+        },
+        "name": "VA Mid-Atlantic Health Care Network",
+        "alias": [
+          "VISN 6"
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "919-956-5541",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "919-956-7152",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "type": "both",
+            "line": [
+              "300 West Morgan St., Ste. 700"
+            ],
+            "city": "Durham",
+            "postalCode": "27701",
+            "state": "NC",
+            "country": "USA"
+          }
+        ],
+        "partOf": {
+          "reference": "Organization/va-org-vha",
+          "display": "Veterans Health Administration"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Organization/va-org-visn7"
+      },
+      "resource": {
+        "resourceType": "Organization",
+        "id": "va-org-visn7",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>VISN 7: VA Southeast Network</div>"
+        },
+        "active": true,
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/organization-type",
+              "code": "prov",
+              "display": "Healthcare Provider"
+            },
+            {
+              "system": "http://va.gov/fhir/organization-type",
+              "code": "visn",
+              "display": "Veterans Integrated Service Network"
+            }
+          ],
+          "text": "Healthcare Provider"
+        },
+        "name": "VA Southeast Network",
+        "alias": [
+          "VISN 7"
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "678-924-5700",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "800-224-4087",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "type": "both",
+            "line": [
+              "3700 Crestwood Parkway, Suite 500"
+            ],
+            "city": "Duluth",
+            "postalCode": "30096",
+            "state": "GA",
+            "country": "USA"
+          }
+        ],
+        "partOf": {
+          "reference": "Organization/va-org-vha",
+          "display": "Veterans Health Administration"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Organization/va-org-visn6-vamc1"
+      },
+      "resource": {
+        "resourceType": "Organization",
+        "id": "va-org-visn6-vamc1",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Hampton VA Medical Center</div>"
+        },
+        "active": true,
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/organization-type",
+              "code": "prov",
+              "display": "Healthcare Provider"
+            },
+            {
+              "system": "http://va.gov/fhir/organization-type",
+              "code": "vamc",
+              "display": "VA Medical Center"
+            }
+          ],
+          "text": "Healthcare Provider"
+        },
+        "name": "Hampton VA Medical Center",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "757-722-9961",
+            "use": "work"
+          },
+          {
+            "system": "phone",
+            "value": "866-544-9961",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "type": "both",
+            "line": [
+              "100 Emancipation Drive"
+            ],
+            "city": "Hampton",
+            "postalCode": "23667",
+            "state": "VA",
+            "country": "USA"
+          }
+        ],
+        "partOf": {
+          "reference": "Organization/va-org-visn6",
+          "display": "VA Mid-Atlantic Health Care Network"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Organization/va-org-visn7-vamc1"
+      },
+      "resource": {
+        "resourceType": "Organization",
+        "id": "va-org-visn7-vamc1",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Atlanta VA Medical Center</div>"
+        },
+        "active": true,
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/organization-type",
+              "code": "prov",
+              "display": "Healthcare Provider"
+            },
+            {
+              "system": "http://va.gov/fhir/organization-type",
+              "code": "vamc",
+              "display": "VA Medical Center"
+            }
+          ],
+          "text": "Healthcare Provider"
+        },
+        "name": "Atlanta VA Medical Center",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "404-321-6111",
+            "use": "work",
+            "rank": 1
+          },
+          {
+            "system": "phone",
+            "value": "800-224-4087",
+            "use": "work",
+            "rank": 2
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "type": "both",
+            "line": [
+              "1670 Clairmont Road"
+            ],
+            "city": "Decatur",
+            "postalCode": "30033",
+            "state": "GA",
+            "country": "USA"
+          }
+        ],
+        "partOf": {
+          "reference": "Organization/va-org-visn7",
+          "display": "VA Southeast Network"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Organization/va-org-visn6-cboc1"
+      },
+      "resource": {
+        "resourceType": "Organization",
+        "id": "va-org-visn6-cboc1",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Virginia Beach CBOC</div>"
+        },
+        "active": true,
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/organization-type",
+              "code": "prov",
+              "display": "Healthcare Provider"
+            },
+            {
+              "system": "http://va.gov/fhir/organization-type",
+              "code": "cboc",
+              "display": "Community Based Outpatient Clinic"
+            }
+          ],
+          "text": "Healthcare Provider"
+        },
+        "name": "Virginia Beach CBOC",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "757-722-9961",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "type": "both",
+            "line": [
+              "244 Clearfield Ave"
+            ],
+            "city": "Virginia Beach",
+            "postalCode": "23462",
+            "state": "VA",
+            "country": "USA"
+          }
+        ],
+        "partOf": {
+          "reference": "Organization/va-org-visn6",
+          "display": "VA Mid-Atlantic Health Care Network"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Location/va-org-va-loc-visn6-cboc1"
+      },
+      "resource": {
+        "resourceType": "Location",
+        "id": "va-loc-visn6-cboc1",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Virginia Beach CBOC, Location</div>"
+        },
+        "status": "active",
+        "name": "Virginia Beach CBOC",
+        "mode": "instance",
+        "position": {
+          "longitude": 76.165,
+          "latitude": 36.845833,
+          "altitude": 0
+        },
+        "managingOrganization": {
+          "reference": "Organization/va-org-visn6-cboc1",
+          "display": "Virginia Beach CBOC"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "HealthcareService/va-org-visn6-cboc1-hs1"
+      },
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "va-org-visn6-cboc1-hs1",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Virginia Beach CBOC - Primary Care</div>"
+        },
+        "active": true,
+        "providedBy": {
+          "reference": "Organization/va-org-visn6-cboc1",
+          "display": "Virginia Beach CBOC"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "5351000124100",
+                "display": "Primary care clinic"
+              }
+            ]
+          }
+        ],
+        "name": "Primary Care",
+        "referralMethod": [
+          {
+            "coding": [
+              {
+                "code": "phone",
+                "display": "Phone"
+              }
+            ]
+          }
+        ],
+        "appointmentRequired": false,
+        "availableTime": [
+          {
+            "daysOfWeek": [
+              "mon",
+              "tue",
+              "wed",
+              "thu",
+              "fri"
+            ],
+            "availableStartTime": "08:00:00",
+            "availableEndTime": "04:30:00"
+          }
+        ],
+        "availabilityExceptions": "Excluding Federal Holidays"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "HealthcareService/va-org-visn6-cboc1-hs2"
+      },
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "va-org-visn6-cboc1-hs2",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Virginia Beach CBOC - Mental Health</div>"
+        },
+        "active": true,
+        "providedBy": {
+          "reference": "Organization/va-org-visn6-cboc1",
+          "display": "Virginia Beach CBOC"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "708168004",
+                "display": "Mental health service"
+              }
+            ]
+          }
+        ],
+        "name": "Mental Health",
+        "referralMethod": [
+          {
+            "coding": [
+              {
+                "code": "phone",
+                "display": "Phone"
+              }
+            ]
+          }
+        ],
+        "appointmentRequired": false,
+        "availableTime": [
+          {
+            "daysOfWeek": [
+              "mon",
+              "tue",
+              "wed",
+              "thu",
+              "fri"
+            ],
+            "availableStartTime": "08:00:00",
+            "availableEndTime": "04:30:00"
+          }
+        ],
+        "availabilityExceptions": "Excluding Federal Holidays"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "HealthcareService/va-org-visn6-cboc1-hs3"
+      },
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "va-org-visn6-cboc1-hs3",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Virginia Beach CBOC - Laboratory Services</div>"
+        },
+        "active": true,
+        "providedBy": {
+          "reference": "Organization/va-org-visn6-cboc1",
+          "display": "Virginia Beach CBOC"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "708184003",
+                "display": "Clinical pathology service"
+              }
+            ]
+          }
+        ],
+        "name": "Laboratory Services",
+        "referralMethod": [
+          {
+            "coding": [
+              {
+                "code": "phone",
+                "display": "Phone"
+              }
+            ]
+          }
+        ],
+        "appointmentRequired": false,
+        "availableTime": [
+          {
+            "daysOfWeek": [
+              "mon",
+              "tue",
+              "wed",
+              "thu",
+              "fri"
+            ],
+            "availableStartTime": "08:00:00",
+            "availableEndTime": "04:30:00"
+          }
+        ],
+        "availabilityExceptions": "Excluding Federal Holidays"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "HealthcareService/va-org-visn6-cboc1-hs4"
+      },
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "va-org-visn6-cboc1-hs4",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Virginia Beach CBOC - Pharmacy Services</div>"
+        },
+        "active": true,
+        "providedBy": {
+          "reference": "Organization/va-org-visn6-cboc1",
+          "display": "Virginia Beach CBOC"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "310080006",
+                "display": "Pharmacy service"
+              }
+            ]
+          }
+        ],
+        "name": "Pharmacy Services",
+        "referralMethod": [
+          {
+            "coding": [
+              {
+                "code": "phone",
+                "display": "Phone"
+              }
+            ]
+          }
+        ],
+        "appointmentRequired": false,
+        "availableTime": [
+          {
+            "daysOfWeek": [
+              "mon",
+              "tue",
+              "wed",
+              "thu",
+              "fri"
+            ],
+            "availableStartTime": "08:00:00",
+            "availableEndTime": "04:30:00"
+          }
+        ],
+        "availabilityExceptions": "Excluding Federal Holidays"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "HealthcareService/va-org-visn6-cboc1-hs5"
+      },
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "va-org-visn6-cboc1-hs5",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Virginia Beach CBOC - Social Work Services</div>"
+        },
+        "active": true,
+        "providedBy": {
+          "reference": "Organization/va-org-visn6-cboc1",
+          "display": "Virginia Beach CBOC"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "243224001",
+                "display": "Social therapy"
+              }
+            ]
+          }
+        ],
+        "name": "Social Work Services",
+        "referralMethod": [
+          {
+            "coding": [
+              {
+                "code": "phone",
+                "display": "Phone"
+              }
+            ]
+          }
+        ],
+        "appointmentRequired": false,
+        "availableTime": [
+          {
+            "daysOfWeek": [
+              "mon",
+              "tue",
+              "wed",
+              "thu",
+              "fri"
+            ],
+            "availableStartTime": "08:00:00",
+            "availableEndTime": "04:30:00"
+          }
+        ],
+        "availabilityExceptions": "Excluding Federal Holidays"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "HealthcareService/va-org-visn6-cboc1-hs6"
+      },
+      "resource": {
+        "resourceType": "HealthcareService",
+        "id": "va-org-visn6-cboc1-hs6",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Virginia Beach CBOC - Tele-retinal Imaging</div>"
+        },
+        "active": true,
+        "providedBy": {
+          "reference": "Organization/va-org-visn6-cboc1",
+          "display": "Virginia Beach CBOC"
+        },
+        "specialty": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "390735007",
+                "display": "Retinal screening"
+              }
+            ]
+          }
+        ],
+        "name": "Tele-retinal Imaging",
+        "referralMethod": [
+          {
+            "coding": [
+              {
+                "code": "phone",
+                "display": "Phone"
+              }
+            ]
+          }
+        ],
+        "appointmentRequired": false,
+        "availableTime": [
+          {
+            "daysOfWeek": [
+              "mon",
+              "tue",
+              "wed",
+              "thu",
+              "fri"
+            ],
+            "availableStartTime": "08:00:00",
+            "availableEndTime": "04:30:00"
+          }
+        ],
+        "availabilityExceptions": "Excluding Federal Holidays"
+      }
+    }
+  ]
+}

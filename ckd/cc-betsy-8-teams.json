@@ -17,7 +17,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Betsy's primary care team"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Betsy's primary care team</div>"
         },
         "name": "Primary Care Team",
         "subject": {

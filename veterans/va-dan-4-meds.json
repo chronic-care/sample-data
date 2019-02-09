@@ -1,0 +1,230 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/va-med-dan-lisinopril"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "va-med-dan-lisinopril",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>MedicationRequest: Lisinopril 10 MG Oral Tablet</div></div>"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "316151",
+              "display": "Lisinopril 10 MG Oral Tablet"
+            }
+          ],
+          "text": "Lisinopril 10 MG Oral Tablet"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan",
+          "display": "Dan"
+        },
+        "authoredOn": "2018-12-01",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "Take Lisinopril 10mg tablets twice a day for high blood pressure, one with the breakfast and the second with the dinner.",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2018-12-01",
+                  "end": "2019-06-20"
+                },
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "Oral route"
+            },
+            "doseQuantity": {
+              "value": 10,
+              "unit": "mg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/va-med-dan-metformin"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "va-med-dan-metformin",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>MedicationRequest: Metformin hydrochloride 500 MG Oral Tablet</div></div>"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "860974",
+              "display": "Metformin hydrochloride 500 MG Oral Tablet"
+            }
+          ],
+          "text": "Metformin 500 MG Oral Tablet"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan",
+          "display": "Dan"
+        },
+        "authoredOn": "2018-12-01",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        },
+        "dosageInstruction": [
+          {
+            "text": "Take metformin 500mg tablets twice a day to control high blood sugar, one with breakfast and the second with dinner. Metformin works by helping to restore your body's proper response to the insulin you naturally produce. It also decreases the amount of sugar that your liver makes and that your stomach/intestines absorb.",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2018-12-01",
+                  "end": "2019-04-30"
+                },
+                "frequency": 2,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "Oral route"
+            },
+            "doseQuantity": {
+              "value": 500,
+              "unit": "mg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/va-med-dan-prozac"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "va-med-dan-prozac",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Prozac 20mg orally per day</div></div>"
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "310385",
+              "display": "Fluoxetine 20 MG Oral Capsule [Prozac]"
+            }
+          ],
+          "text": "Prozac 10 MG Oral Capsule"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan",
+          "display": "Dan"
+        },
+        "authoredOn": "2019-01-11",
+        "requester": {
+          "agent": {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        },
+        "note": [
+          {
+            "text": "It is important to continue taking this medication as prescribed even if you feel well. Do not stop taking this medication without first consulting your doctor. Some conditions may become worse when the drug is abruptly stopped. Your dose may need to be gradually decreased."
+          },
+          {
+            "text": "This medication may improve your mood, sleep, appetite, and energy level and may help restore your interest in daily living. It may decrease fear, anxiety, unwanted thoughts, and the number of panic attacks. It may also reduce the urge to perform repeated tasks (compulsions such as hand-washing, counting, and checking) that interfere with daily living."
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "text": "Take this medication by mouth once daily in the morning. Fluoxetine (Prozac) is used to treat depression, panic attacks, obsessive compulsive disorder, and post traumatic stress disorder (PTSD). ",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2019-01-11",
+                  "end": "2019-06-30"
+                },
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "Oral route"
+            },
+            "doseQuantity": {
+              "value": 10,
+              "unit": "mg"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

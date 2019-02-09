@@ -5,15 +5,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Goal/cc-goal-betsy-a1c"
+        "url": "Goal/va-goal-dan-1"
       },
       "resource": {
         "resourceType": "Goal",
-        "id": "cc-goal-betsy-a1c",
-        "text": {
-          "status": "generated",
-          "div": "Stabilize Hemoglobin A1c"
-        },
+        "id": "va-goal-dan-1",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/Goal"
@@ -21,15 +17,52 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Goal: Hemoglobin A1c &lt; 7.0</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Life goals</div></div>"
         },
         "status": "in-progress",
         "priority": {
           "coding": [
             {
               "system": "http://hl7.org/fhir/goal-priority",
-              "code": "high-priority",
-              "display": "High Priority"
+              "code": "high",
+              "display": "high"
+            }
+          ],
+          "text": "high"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan",
+          "display": "Dan"
+        },
+        "expressedBy": {
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        },
+        "description": {
+          "text": "Dan lives for his grandchildren. He is committed to staying healthy enough to see his youngest graduate from college."
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/va-goal-dan-a1c"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "va-goal-dan-a1c",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "status": "in-progress",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/goal-priority",
+              "code": "high",
+              "display": "high"
             }
           ],
           "text": "high"
@@ -38,9 +71,10 @@
           "text": "Stabilize Hemoglobin A1c"
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan",
+          "display": "Dan"
         },
-        "startDate": "2016-11-30",
+        "startDate": "2018-11-30",
         "target": {
           "measure": {
             "coding": [
@@ -61,12 +95,12 @@
           }
         },
         "expressedBy": {
-          "reference": "Practitioner/cc-prac-carlson-john",
-          "display": "Dr. John Carlson, MD"
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
         },
         "addresses": [
           {
-            "reference": "Condition/cc-cond-betsy-diabetes",
+            "reference": "Condition/va-cond-dan-dm",
             "display": "Type 2 diabetes mellitus"
           }
         ],
@@ -80,11 +114,83 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Goal/cc-goal-betsy-bp-systolic"
+        "url": "Goal/va-goal-dan-glucose"
       },
       "resource": {
         "resourceType": "Goal",
-        "id": "cc-goal-betsy-bp-systolic",
+        "id": "va-goal-dan-glucose",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Goal: Fasting blood glucose level &lt; 108 mg/dL</div></div>"
+        },
+        "status": "in-progress",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/goal-priority",
+              "code": "high",
+              "display": "high"
+            }
+          ],
+          "text": "high"
+        },
+        "description": {
+          "text": "Fasting blood glucose level < 108 mg/dL"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan",
+          "display": "Dan"
+        },
+        "startDate": "2016-11-30",
+        "target": {
+          "measure": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose in blood"
+              }
+            ],
+            "text": "Glucose in blood"
+          },
+          "detailQuantity": {
+            "value": "108",
+            "comparator": "<",
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org/",
+            "code": "mg/dL"
+          }
+        },
+        "expressedBy": {
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        },
+        "addresses": [
+          {
+            "reference": "Condition/va-cond-dan-dm",
+            "display": "Type 2 diabetes mellitus"
+          }
+        ],
+        "note": [
+          {
+            "text": "Regularly monitor fasting blood glucose levels toward overall goal of 108."
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/va-goal-dan-bp-systolic"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "va-goal-dan-bp-systolic",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/Goal"
@@ -109,7 +215,7 @@
           "text": "Systolic blood pressure"
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "startDate": "2017-06-30",
         "target": {
@@ -132,13 +238,12 @@
           }
         },
         "expressedBy": {
-          "reference": "Practitioner/cc-prac-carlson-john",
-          "display": "Dr. John Carlson, MD"
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
         },
         "addresses": [
           {
-            "reference": "Condition/cc-cond-betsy-ckd",
-            "display": "Chronic kidney disease"
+            "reference": "Condition/va-cond-dan-hypertension"
           }
         ]
       }
@@ -146,11 +251,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Goal/cc-goal-betsy-bp-diastolic"
+        "url": "Goal/va-goal-dan-bp-diastolic"
       },
       "resource": {
         "resourceType": "Goal",
-        "id": "cc-goal-betsy-bp-diastolic",
+        "id": "va-goal-dan-bp-diastolic",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/Goal"
@@ -165,7 +270,7 @@
           "text": "Diastolic blood pressure"
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "startDate": "2019-01-12",
         "target": {
@@ -188,13 +293,12 @@
           }
         },
         "expressedBy": {
-          "reference": "Practitioner/cc-prac-carlson-john",
-          "display": "Dr. John Carlson, MD"
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
         },
         "addresses": [
           {
-            "reference": "Condition/cc-cond-betsy-ckd",
-            "display": "Chronic kidney disease"
+            "reference": "Condition/va-cond-dan-hypertension"
           }
         ]
       }
@@ -202,91 +306,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Goal/cc-goal-betsy-lab-phos"
+        "url": "Goal/va-goal-dan-exercise"
       },
       "resource": {
         "resourceType": "Goal",
-        "id": "cc-goal-betsy-lab-phos",
-        "meta": {
-          "profile": [
-            "http://hl7.org/fhir/StructureDefinition/Goal"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Phosphorus between 2.5 and 4.5 mg/dL</div>"
-        },
-        "status": "in-progress",
-        "priority": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/goal-priority",
-              "code": "high-priority",
-              "display": "High Priority"
-            }
-          ],
-          "text": "high"
-        },
-        "description": {
-          "text": "Phosphorus in blood"
-        },
-        "subject": {
-          "reference": "Patient/cc-pat-betsy"
-        },
-        "startDate": "2018-02-20",
-        "target": {
-          "measure": {
-            "coding": [
-              {
-                "system": "http://loinc.org",
-                "code": "2777-1",
-                "display": "Phosphate [Mass/volume] in Serum or Plasma"
-              }
-            ],
-            "text": "Serum phosphorus"
-          },
-          "detailRange": {
-            "low": {
-              "value": "2.5",
-              "unit": "mg/dL",
-              "system": "http://unitsofmeasure.org",
-              "code": "mg/dL"
-            },
-            "high": {
-              "value": "4.5",
-              "unit": "mg/dL",
-              "system": "http://unitsofmeasure.org",
-              "code": "mg/dL"
-            }
-          }
-        },
-        "expressedBy": {
-          "reference": "Practitioner/cc-prac-jones-vince",
-          "display": "Dr. Vince Jones, MD"
-        },
-        "addresses": [
-          {
-            "reference": "Condition/cc-cond-betsy-ckd"
-          }
-        ],
-        "note": [
-          {
-            "text": "Normal working kidneys can remove extra phosphorus in your blood. When you have chronic kidney disease (CKD), your kidneys cannot remove phosphorus very well. High phosphorus levels can cause damage to your body. Extra phosphorus causes body changes that pull calcium out of your bones, making them weak. High phosphorus and calcium levels also lead to dangerous calcium deposits in blood vessels, lungs, eyes, and heart. Phosphorus and calcium control are very important for your overall health."
-          },
-          {
-            "text": "Source https://www.kidney.org/atoz/content/phosphorus"
-          }
-        ]
-      }
-    },
-    {
-      "request": {
-        "method": "PUT",
-        "url": "Goal/cc-goal-betsy-exercise"
-      },
-      "resource": {
-        "resourceType": "Goal",
-        "id": "cc-goal-betsy-exercise",
+        "id": "va-goal-dan-exercise",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/Goal"
@@ -301,7 +325,7 @@
           "text": "Exercise at least 30 minutes per day"
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "startDate": "2017-12-07",
         "target": {
@@ -317,17 +341,18 @@
           }
         },
         "expressedBy": {
-          "reference": "Practitioner/cc-prac-carlson-john",
-          "display": "Dr. John Carlson, MD"
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
         },
         "addresses": [
           {
-            "reference": "Condition/cc-cond-betsy-ckd",
-            "display": "Chronic kidney disease"
+            "reference": "Condition/va-cond-dan-hypertension"
           },
           {
-            "reference": "Condition/cc-cond-betsy-diabetes",
-            "display": "Type 2 diabetes mellitus"
+            "reference": "Condition/va-cond-dan-dm"
+          },
+          {
+            "reference": "Condition/va-cond-dan-depression"
           }
         ]
       }

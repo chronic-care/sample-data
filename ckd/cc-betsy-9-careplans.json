@@ -17,7 +17,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Betsy's CKD care plan"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Betsy's CKD care plan</div>"
         },
         "subject": {
           "reference": "Patient/cc-pat-betsy"
@@ -27,10 +27,12 @@
         "period": {
           "start": "2018-06-01"
         },
-        "author": {
-          "reference": "Practitioner/cc-prac-jones-vince",
-          "display": "Dr. Vince Jones, MD"
-        },
+        "author": [
+          {
+            "reference": "Practitioner/cc-prac-jones-vince",
+            "display": "Dr. Vince Jones, MD"
+          }
+        ],
         "title": "CKD Care Plan",
         "description": "Care plan to slow progression of CKD and Type 2 Diabetes.",
         "addresses": [
@@ -106,7 +108,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Betsy's personal care plan"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Betsy's personal care plan</div>"
         },
         "subject": {
           "reference": "Patient/cc-pat-betsy"
@@ -117,10 +119,12 @@
           "start": "2019-01-01",
           "end": "2019-12-31"
         },
-        "author": {
-          "reference": "Practitioner/cc-prac-carlson-john",
-          "display": "Dr. John Carlson, MD"
-        },
+        "author": [
+          {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        ],
         "title": "Personal Care Plan",
         "description": "Plan for Betsy's self-care at home.",
         "addresses": [
@@ -166,9 +170,11 @@
                   }
                 ]
               },
-              "performer": {
-                "reference": "Patient/cc-pat-betsy"
-              },
+              "performer": [
+                {
+                  "reference": "Patient/cc-pat-betsy"
+                }
+              ],
               "description": "Record your weight each morning before breakfast.",
               "status": "in-progress",
               "scheduledTiming": {
@@ -205,9 +211,11 @@
                   }
                 ]
               },
-              "performer": {
-                "reference": "Patient/cc-pat-betsy"
-              },
+              "performer": [
+                {
+                  "reference": "Patient/cc-pat-betsy"
+                }
+              ],
               "description": "Record your blood pressure twice per day, morning and evening.",
               "status": "in-progress",
               "scheduledTiming": {
@@ -244,9 +252,11 @@
                   }
                 ]
               },
-              "performer": {
-                "reference": "Patient/cc-pat-betsy"
-              },
+              "performer": [
+                {
+                  "reference": "Patient/cc-pat-betsy"
+                }
+              ],
               "description": "Record your blood glucose twice per day, after breakfast and dinner.",
               "status": "in-progress",
               "scheduledTiming": {

@@ -1,0 +1,128 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CareTeam/va-team-visn6-cboc1-mcc"
+      },
+      "resource": {
+        "resourceType": "CareTeam",
+        "id": "va-team-visn6-cboc1-mcc",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CareTeam"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Virginia Beach CBOC, Maternity Care Team</div></div>"
+        },
+        "participant": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "446050000",
+                  "display": "Primary care physician"
+                }
+              ],
+              "text": "Primary Care Physician"
+            },
+            "member": {
+              "reference": "Practitioner/va-prac-visn6-francis",
+              "display": "Dr. Francis"
+            }
+          },
+          {
+            "role": {
+              "text": "Maternity Care Coordinator (MCC)"
+            },
+            "member": {
+              "reference": "Practitioner/va-prac-visn6-vera",
+              "display": "Vera, RN"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CareTeam/va-team-visn6-cboc1-mental-health"
+      },
+      "resource": {
+        "resourceType": "CareTeam",
+        "id": "va-team-visn6-cboc1-mental-health",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CareTeam"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Virginia Beach CBOC, Mental Health Care Team</div></div>"
+        },
+        "name": "Mental Health Care Team",
+        "participant": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "224588003",
+                  "display": "Psychotherapist"
+                }
+              ],
+              "text": "Psychotherapist"
+            },
+            "member": {
+              "reference": "Practitioner/va-prac-visn6-beach",
+              "display": "Dr. Beach, PsyD"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CareTeam/va-team-visn6-vamc1-pc"
+      },
+      "resource": {
+        "resourceType": "CareTeam",
+        "id": "va-team-visn6-vamc1-pc",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CareTeam"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Hampton, VA, VAMC, Primary Care PACT</div></div>"
+        },
+        "name": "Primary Care PACT",
+        "participant": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "446050000",
+                  "display": "Primary care physician"
+                }
+              ],
+              "text": "Primary Care Physician"
+            },
+            "member": {
+              "reference": "Practitioner/va-prac-visn6-francis",
+              "display": "Dr. Francis"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

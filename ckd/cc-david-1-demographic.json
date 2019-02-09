@@ -17,7 +17,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "RelatedPerson Wife"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">RelatedPerson Wife</div>"
         },
         "patient": {
           "reference": "Patient/cc-pat-david",
@@ -72,7 +72,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "David Sullivan"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">David Sullivan</div>"
         },
         "extension": [
           {
@@ -145,6 +145,12 @@
             "postalCode": "62707",
             "state": "IL",
             "country": "USA"
+          }
+        ],
+        "generalPractitioner": [
+          {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
           }
         ],
         "photo": [
@@ -2720,13 +2726,7 @@ Xkk1SQdPXOUaO1oYINN+XF82FmmjwdY7Fji8eu47i+O3E/Bu3/bZgU0a397+AbGDUur2A8AlAAAA
 AElFTkSuQmCC"
           }
         ]
-      },
-      "generalPractitioner": [
-        {
-          "reference": "Practitioner/cc-prac-carlson-john",
-          "display": "Dr. John Carlson, MD"
-        }
-      ]
+      }
     }
   ]
 }

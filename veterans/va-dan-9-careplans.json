@@ -1,0 +1,257 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CareTeam/va-careteam-dan"
+      },
+      "resource": {
+        "resourceType": "CareTeam",
+        "id": "va-careteam-dan",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CareTeam"
+          ]
+        },
+        "name": "Dan's care team",
+        "subject": {
+          "reference": "Patient/va-pat-dan"
+        },
+        "participant": [
+          {
+            "member": {
+              "reference": "CareTeam/va-team-visn6-vamc1-pc"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/va-plan-dan-pc"
+      },
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "va-plan-dan-pc",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan",
+          "display": "Dan"
+        },
+        "status": "active",
+        "intent": "plan",
+        "title": "Primary Care",
+        "goal": [
+          {
+            "reference": "Goal/va-goal-dan-a1c",
+            "display": "Hemoglobin A1c"
+          },
+          {
+            "reference": "Goal/va-goal-dan-glucose",
+            "display": "Fasting blood glucose level"
+          }
+        ],
+        "addresses": [
+          {
+            "reference": "Condition/va-cond-dan-dm",
+            "display": "Type 2 diabetes mellitus"
+          },
+          {
+            "reference": "Condition/va-cond-dan-concern-glucose",
+            "display": "Inability to maintain effective blood glucose control"
+          },
+          {
+            "reference": "Condition/va-cond-dan-concern-foot",
+            "display": "Peripheral vascular and neuropathy risks leading to heightened foot complication risks"
+          }
+        ],
+        "careTeam": [
+          {
+            "reference": "CareTeam/va-team-visn6-vamc1-pc"
+          }
+        ],
+        "activity": [
+          {
+            "reference": {
+              "reference": "MedicationRequest/va-med-dan-metformin",
+              "display": "Metformin hydrochloride 500 MG Oral Tablet"
+            }
+          },
+          {
+            "reference": {
+              "reference": "MedicationRequest/va-med-dan-lisinopril",
+              "display": "Lisinopril 10 MG Oral Tablet"
+            }
+          },
+          {
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood pressure systolic and diastolic"
+                  }
+                ],
+                "text": "Blood Pressure"
+              },
+              "description": "Measure your blood pressure every morning with your arm relaxed at your side or on a table.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2016-11-30",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "14760-3",
+                    "display": "Glucose [Moles/​volume] in Capillary blood --2 hours post meal"
+                  }
+                ],
+                "text": "Blood sugar level"
+              },
+              "description": "Check your blood sugar level 2 hours after each meal.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2016-11-30",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 3,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Walk at a comfortable pace"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "procedure",
+                    "display": "Procedure"
+                  }
+                ],
+                "text": "Procedure"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "226029000",
+                    "display": "Exercises"
+                  }
+                ],
+                "text": "Exercise 30 minutes per day"
+              },
+              "description": "Walk daily at a comfortable pace for as long as you are able. Stop if you develop shortness of breath, chest pain, or palpatations.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2016-11-30",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+                "valueString": "Daily Step Count"
+              }
+            ],
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "41950-7",
+                    "display": "Number of steps in 24 hour Measured"
+                  }
+                ],
+                "text": "Number of steps in 24 hours"
+              },
+              "description": "Record your daily total step count before going to bed each evening.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2016-11-30",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

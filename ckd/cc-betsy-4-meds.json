@@ -12,12 +12,12 @@
         "id": "cc-med-betsy-lisinopril",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+            "http://hl7.org/fhir/3.0/us/core/StructureDefinition/us-core-medicationrequest"
           ]
         },
         "text": {
           "status": "additional",
-          "div": "Lisinopril 40 MG Oral Tablet"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Lisinopril 40 MG Oral Tablet</div>"
         },
         "extension": [
           {
@@ -99,12 +99,12 @@
         "id": "cc-med-betsy-simvastatin",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+            "http://hl7.org/fhir/3.0/us/core/StructureDefinition/us-core-medicationrequest"
           ]
         },
         "text": {
           "status": "additional",
-          "div": "Simvastatin 40 MG Oral Tablet"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Simvastatin 40 MG Oral Tablet</div>"
         },
         "status": "active",
         "intent": "order",
@@ -176,12 +176,12 @@
         "id": "cc-med-betsy-furosemide",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+            "http://hl7.org/fhir/3.0/us/core/StructureDefinition/us-core-medicationrequest"
           ]
         },
         "text": {
           "status": "additional",
-          "div": "Furosemide 20 MG Oral Tablet"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Furosemide 20 MG Oral Tablet</div>"
         },
         "status": "active",
         "intent": "order",
@@ -258,12 +258,12 @@
         "id": "cc-med-betsy-vitamin-d",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+            "http://hl7.org/fhir/3.0/us/core/StructureDefinition/us-core-medicationrequest"
           ]
         },
         "text": {
           "status": "additional",
-          "div": "Vitamin D 1000 UNT orally per day"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Vitamin D 1000 UNT orally per day</div>"
         },
         "status": "active",
         "intent": "order",
@@ -340,12 +340,12 @@
         "id": "cc-med-betsy-insulin",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+            "http://hl7.org/fhir/3.0/us/core/StructureDefinition/us-core-medicationrequest"
           ]
         },
         "text": {
           "status": "additional",
-          "div": "insulin human, isophane 70 UNT/ML / Regular Insulin, Human 30 UNT/ML Injectable Suspension"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Insulin human, isophane 70 UNT/ML / Regular Insulin, Human 30 UNT/ML Injectable Suspension</div>"
         },
         "status": "active",
         "intent": "order",
@@ -396,12 +396,12 @@
         "id": "cc-med-betsy-aspirin",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+            "http://hl7.org/fhir/3.0/us/core/StructureDefinition/us-core-medicationrequest"
           ]
         },
         "text": {
           "status": "additional",
-          "div": "Aspirin 75 MG Oral Tablet"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Aspirin 75 MG Oral Tablet</div>"
         },
         "status": "active",
         "intent": "order",

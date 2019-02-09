@@ -17,7 +17,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Body weight"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Body weight</div>"
         },
         "status": "final",
         "category": [
@@ -61,6 +61,118 @@
     {
       "request": {
         "method": "PUT",
+        "url": "Observation/cc-obs-betsy-weight-1"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cc-obs-betsy-weight-1",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Body weight</div>"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "vital-signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "effectiveDateTime": "2018-10-15",
+        "performer": [
+          {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 173,
+          "unit": "lb",
+          "system": "http://unitsofmeasure.org/",
+          "code": "[lb_av]"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/cc-obs-betsy-weight-2"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cc-obs-betsy-weight-2",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Body weight</div>"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "vital-signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-betsy"
+        },
+        "effectiveDateTime": "2019-01-03",
+        "performer": [
+          {
+            "reference": "Practitioner/cc-prac-carlson-john",
+            "display": "Dr. John Carlson, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 170,
+          "unit": "lb",
+          "system": "http://unitsofmeasure.org/",
+          "code": "[lb_av]"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
         "url": "Observation/cc-obs-betsy-height"
       },
       "resource": {
@@ -73,7 +185,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Body height"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Body height</div>"
         },
         "status": "final",
         "category": [
@@ -129,7 +241,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Body mass index (BMI)"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Body mass index (BMI)</div>"
         },
         "status": "final",
         "category": [

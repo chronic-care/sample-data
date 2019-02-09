@@ -17,7 +17,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "UACR"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">UACR</div>"
         },
         "status": "final",
         "category": [
@@ -74,7 +74,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "Phosphorus"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Phosphorus</div>"
         },
         "status": "final",
         "category": [

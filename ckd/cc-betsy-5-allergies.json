@@ -17,20 +17,12 @@
         },
         "text": {
           "status": "generated",
-          "div": "Dairy food intolerance"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dairy food intolerance</div>"
         },
         "clinicalStatus": "active",
         "verificationStatus": "confirmed",
         "category": [
-          {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
-                "code": "food"
-              }
-            ],
-            "text": "Food"
-          }
+          "food"
         ],
         "code": {
           "coding": [

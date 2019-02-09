@@ -1,0 +1,40 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Encounter/cc-encounter-betsy-1"
+      },
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "cc-encounter-betsy-1",
+        "status": "finished",
+        "class": {
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185349003",
+                "display": "Encounter for check up (procedure)"
+              }
+            ],
+            "text": "Encounter for check up (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/cc-pat-betsy",
+          "display": "Betsy Johnson"
+        },
+        "period": {
+          "start": "2019-01-11T22:19:37-04:00",
+          "end": "2019-01-11T22:34:37-04:00"
+        }
+      }
+    }
+  ]
+}

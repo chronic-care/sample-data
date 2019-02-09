@@ -5,11 +5,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/cc-obs-betsy-bp-1"
+        "url": "Observation/cc-obs-dan-bp-1"
       },
       "resource": {
         "resourceType": "Observation",
-        "id": "cc-obs-betsy-bp-1",
+        "id": "cc-obs-dan-bp-1",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/Observation"
@@ -41,13 +41,13 @@
           ]
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "effectiveDateTime": "2018-05-15",
         "performer": [
           {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         ],
         "bodySite": {
@@ -100,11 +100,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/cc-obs-betsy-bp-2"
+        "url": "Observation/cc-obs-dan-bp-2"
       },
       "resource": {
         "resourceType": "Observation",
-        "id": "cc-obs-betsy-bp-2",
+        "id": "cc-obs-dan-bp-2",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/Observation"
@@ -136,13 +136,13 @@
           ]
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "effectiveDateTime": "2018-06-22",
         "performer": [
           {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         ],
         "bodySite": {
@@ -195,11 +195,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/cc-obs-betsy-bp-3"
+        "url": "Observation/cc-obs-dan-bp-3"
       },
       "resource": {
         "resourceType": "Observation",
-        "id": "cc-obs-betsy-bp-3",
+        "id": "cc-obs-dan-bp-3",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/Observation"
@@ -231,13 +231,13 @@
           ]
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "effectiveDateTime": "2018-07-11",
         "performer": [
           {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         ],
         "bodySite": {
@@ -290,11 +290,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/cc-obs-betsy-bp-4"
+        "url": "Observation/cc-obs-dan-bp-4"
       },
       "resource": {
         "resourceType": "Observation",
-        "id": "cc-obs-betsy-bp-4",
+        "id": "cc-obs-dan-bp-4",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/Observation"
@@ -326,13 +326,13 @@
           ]
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "effectiveDateTime": "2018-09-11",
         "performer": [
           {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         ],
         "bodySite": {
@@ -385,11 +385,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/cc-obs-betsy-bp-5"
+        "url": "Observation/cc-obs-dan-bp-5"
       },
       "resource": {
         "resourceType": "Observation",
-        "id": "cc-obs-betsy-bp-5",
+        "id": "cc-obs-dan-bp-5",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/Observation"
@@ -421,13 +421,13 @@
           ]
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "effectiveDateTime": "2018-09-25",
         "performer": [
           {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         ],
         "bodySite": {
@@ -480,11 +480,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/cc-obs-betsy-bp"
+        "url": "Observation/cc-obs-dan-bp"
       },
       "resource": {
         "resourceType": "Observation",
-        "id": "cc-obs-betsy-bp",
+        "id": "cc-obs-dan-bp",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/Observation"
@@ -516,13 +516,13 @@
           ]
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "effectiveDateTime": "2018-10-06",
         "performer": [
           {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         ],
         "bodySite": {
@@ -575,11 +575,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/cc-obs-betsy-bp-6"
+        "url": "Observation/cc-obs-dan-bp-6"
       },
       "resource": {
         "resourceType": "Observation",
-        "id": "cc-obs-betsy-bp-6",
+        "id": "cc-obs-dan-bp-6",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/Observation"
@@ -611,13 +611,13 @@
           ]
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "effectiveDateTime": "2018-12-30",
         "performer": [
           {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         ],
         "bodySite": {

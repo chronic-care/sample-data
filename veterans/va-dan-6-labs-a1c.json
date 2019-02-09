@@ -5,11 +5,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/cc-obs-betsy-lab-egfr-1"
+        "url": "Observation/va-obs-dan-lab-a1c-1"
       },
       "resource": {
         "resourceType": "Observation",
-        "id": "cc-obs-betsy-lab-egfr-1",
+        "id": "va-obs-dan-lab-a1c-1",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
@@ -17,7 +17,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">eGFR</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hemoglobin A1c</div>"
         },
         "status": "final",
         "category": [
@@ -35,38 +35,38 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "69405-9",
-              "display": "Glomerular filtration rate/1.73 sq M.predicted"
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
             }
           ],
-          "text": "eGFR"
+          "text": "Hemoglobin A1c"
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "effectiveDateTime": "2017-07-16",
         "performer": [
           {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         ],
         "valueQuantity": {
-          "value": 42,
-          "unit": "mL/min/1.73m2",
+          "value": 7.1,
+          "unit": "%",
           "system": "http://unitsofmeasure.org/",
-          "code": "mL/min/{1.73_m2}"
+          "code": "%"
         }
       }
     },
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/cc-obs-betsy-lab-egfr-2"
+        "url": "Observation/va-obs-dan-lab-a1c-2"
       },
       "resource": {
         "resourceType": "Observation",
-        "id": "cc-obs-betsy-lab-egfr-2",
+        "id": "va-obs-dan-lab-a1c-2",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
@@ -74,7 +74,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">eGFR</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hemoglobin A1c</div>"
         },
         "status": "final",
         "category": [
@@ -92,38 +92,95 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "69405-9",
-              "display": "Glomerular filtration rate/1.73 sq M.predicted"
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
             }
           ],
-          "text": "eGFR"
+          "text": "Hemoglobin A1c"
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
+        },
+        "effectiveDateTime": "2017-09-06",
+        "performer": [
+          {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 7.5,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org/",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-dan-lab-a1c-3"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-dan-lab-a1c-3",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hemoglobin A1c</div>"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            }
+          ],
+          "text": "Hemoglobin A1c"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan"
         },
         "effectiveDateTime": "2017-12-06",
         "performer": [
           {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         ],
         "valueQuantity": {
-          "value": 38,
-          "unit": "mL/min/1.73m2",
+          "value": 7.8,
+          "unit": "%",
           "system": "http://unitsofmeasure.org/",
-          "code": "mL/min/{1.73_m2}"
+          "code": "%"
         }
       }
     },
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/cc-obs-betsy-lab-egfr-3"
+        "url": "Observation/va-obs-dan-lab-a1c-4"
       },
       "resource": {
         "resourceType": "Observation",
-        "id": "cc-obs-betsy-lab-egfr-3",
+        "id": "va-obs-dan-lab-a1c-4",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
@@ -131,7 +188,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">eGFR</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hemoglobin A1c</div>"
         },
         "status": "final",
         "category": [
@@ -149,38 +206,38 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "69405-9",
-              "display": "Glomerular filtration rate/1.73 sq M.predicted"
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
             }
           ],
-          "text": "eGFR"
+          "text": "Hemoglobin A1c"
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2018-05-20",
+        "effectiveDateTime": "2018-03-10",
         "performer": [
           {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         ],
         "valueQuantity": {
-          "value": 35,
-          "unit": "mL/min/1.73m2",
+          "value": 7.3,
+          "unit": "%",
           "system": "http://unitsofmeasure.org/",
-          "code": "mL/min/{1.73_m2}"
+          "code": "%"
         }
       }
     },
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/cc-obs-betsy-lab-egfr-4"
+        "url": "Observation/va-obs-dan-lab-a1c-5"
       },
       "resource": {
         "resourceType": "Observation",
-        "id": "cc-obs-betsy-lab-egfr-4",
+        "id": "va-obs-dan-lab-a1c-5",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
@@ -188,7 +245,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">eGFR</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hemoglobin A1c</div>"
         },
         "status": "final",
         "category": [
@@ -206,38 +263,38 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "69405-9",
-              "display": "Glomerular filtration rate/1.73 sq M.predicted"
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
             }
           ],
-          "text": "eGFR"
+          "text": "Hemoglobin A1c"
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2018-05-20",
+        "effectiveDateTime": "2018-05-09",
         "performer": [
           {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         ],
         "valueQuantity": {
-          "value": 35,
-          "unit": "mL/min/1.73m2",
+          "value": 8.3,
+          "unit": "%",
           "system": "http://unitsofmeasure.org/",
-          "code": "mL/min/{1.73_m2}"
+          "code": "%"
         }
       }
     },
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/cc-obs-betsy-lab-egfr-5"
+        "url": "Observation/va-obs-dan-lab-a1c"
       },
       "resource": {
         "resourceType": "Observation",
-        "id": "cc-obs-betsy-lab-egfr-5",
+        "id": "va-obs-dan-lab-a1c",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
@@ -245,7 +302,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">eGFR</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hemoglobin A1c</div>"
         },
         "status": "final",
         "category": [
@@ -263,84 +320,84 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "69405-9",
-              "display": "Glomerular filtration rate/1.73 sq M.predicted"
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
             }
           ],
-          "text": "eGFR"
+          "text": "Hemoglobin A1c"
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
-        },
-        "effectiveDateTime": "2018-05-20",
-        "performer": [
-          {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
-          }
-        ],
-        "valueQuantity": {
-          "value": 33,
-          "unit": "mL/min/1.73m2",
-          "system": "http://unitsofmeasure.org/",
-          "code": "mL/min/{1.73_m2}"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "PUT",
-        "url": "Observation/cc-obs-betsy-lab-egfr"
-      },
-      "resource": {
-        "resourceType": "Observation",
-        "id": "cc-obs-betsy-lab-egfr",
-        "meta": {
-          "profile": [
-            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">eGFR</div>"
-        },
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/observation-category",
-                "code": "laboratory"
-              }
-            ],
-            "text": "Laboratory"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "69405-9",
-              "display": "Glomerular filtration rate/1.73 sq M.predicted"
-            }
-          ],
-          "text": "eGFR"
-        },
-        "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "effectiveDateTime": "2018-10-06",
         "performer": [
           {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         ],
         "valueQuantity": {
-          "value": 28,
-          "unit": "mL/min/1.73m2",
+          "value": 9.1,
+          "unit": "%",
           "system": "http://unitsofmeasure.org/",
-          "code": "mL/min/{1.73_m2}"
+          "code": "%"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-dan-lab-a1c-6"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-dan-lab-a1c-6",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hemoglobin A1c</div>"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4548-4",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+            }
+          ],
+          "text": "Hemoglobin A1c"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan"
+        },
+        "effectiveDateTime": "2018-12-30",
+        "performer": [
+          {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 8.8,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org/",
+          "code": "%"
         }
       }
     }
