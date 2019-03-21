@@ -25,8 +25,9 @@
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
-                "code": "problem"
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
               }
             ],
             "text": "Problem"
@@ -86,8 +87,9 @@
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
-                "code": "problem"
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
               }
             ],
             "text": "Problem"
@@ -137,8 +139,9 @@
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
-                "code": "problem"
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
               }
             ],
             "text": "Problem"
@@ -198,8 +201,9 @@
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
-                "code": "problem"
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
               }
             ],
             "text": "Problem"
@@ -220,7 +224,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "38341003",
-              "display": "Hypertension (disorder)"
+              "display": "HTN - Hypertension"
             }
           ],
           "text": "Hypertension"
@@ -259,8 +263,9 @@
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
-                "code": "problem"
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
               }
             ],
             "text": "Problem"
@@ -320,8 +325,9 @@
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
-                "code": "problem"
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
               }
             ],
             "text": "Problem"
@@ -381,8 +387,9 @@
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
-                "code": "problem"
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
               }
             ],
             "text": "Problem"
@@ -432,8 +439,9 @@
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
-                "code": "problem"
+                "system": "http://hl7.org/fhir/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
               }
             ],
             "text": "Problem"
@@ -443,7 +451,7 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "370992007",
+              "code": "48694002",
               "display": "Anxiety (finding)"
             }
           ],

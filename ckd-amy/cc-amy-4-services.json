@@ -5,50 +5,6 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/cc-service-amy-edu-ckd"
-      },
-      "resource": {
-        "resourceType": "ProcedureRequest",
-        "id": "cc-service-amy-edu-ckd",
-        "text": {
-          "status": "generated",
-          "div": "Education on CKD management"
-        },
-        "status": "active",
-        "intent": "plan",
-        "code": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "408982008",
-              "display": "Renal care education (procedure)"
-            }
-          ],
-          "text": "Education on CKD management"
-        },
-        "subject": {
-          "reference": "Patient/cc-pat-amy"
-        },
-        "authoredOn": "2018-02-20",
-        "requester": {
-          "agent": {
-            "reference": "Practitioner/cc-prac-jones-vince",
-            "display": "Dr. Vince Jones, MD"
-          }
-        },
-        "performer": {
-          "reference": "Practitioner/cc-prac-smith-julie"
-        },
-        "reasonReference": [
-          {
-            "reference": "Condition/cc-cond-amy-ckd"
-          }
-        ]
-      }
-    },
-    {
-      "request": {
-        "method": "PUT",
         "url": "ProcedureRequest/cc-service-amy-edu-diet"
       },
       "resource": {

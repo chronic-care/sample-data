@@ -107,11 +107,9 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/goal-pertainsToGoal",
-            "valueReference": [
-              {
-                "reference": "Goal/cc-goal-betsy-exercise"
-              }
-            ]
+            "valueReference": {
+              "reference": "Goal/cc-goal-betsy-exercise"
+            }
           }
         ],
         "status": "active",
@@ -176,11 +174,9 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/goal-pertainsToGoal",
-            "valueReference": [
-              {
-                "reference": "Goal/cc-goal-betsy-exercise"
-              }
-            ]
+            "valueReference": {
+              "reference": "Goal/cc-goal-betsy-exercise"
+            }
           }
         ],
         "status": "active",
@@ -241,12 +237,10 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/procedurerequest-questionnaireRequest",
-            "valueReference": [
-              {
-                "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/69724-3",
-                "display": "PHQ-4"
-              }
-            ]
+            "valueReference": {
+              "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/69724-3",
+              "display": "PHQ-4"
+            }
           }
         ],
         "status": "active",
@@ -302,12 +296,10 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/procedurerequest-questionnaireRequest",
-            "valueReference": [
-              {
-                "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/87534-4",
-                "display": "Challenges for treatment plan maintenance"
-              }
-            ]
+            "valueReference": {
+              "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/87534-4",
+              "display": "Challenges for treatment plan maintenance"
+            }
           }
         ],
         "status": "active",
@@ -363,12 +355,10 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/procedurerequest-questionnaireRequest",
-            "valueReference": [
-              {
+            "valueReference": {
                 "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/87533-6",
                 "display": "CKD personal health goals"
-              }
-            ]
+            }
           }
         ],
         "status": "active",

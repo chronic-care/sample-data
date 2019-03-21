@@ -10,10 +10,6 @@
       "resource": {
         "resourceType": "Goal",
         "id": "cc-goal-betsy-a1c",
-        "text": {
-          "status": "generated",
-          "div": "Stabilize Hemoglobin A1c"
-        },
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/Goal"
@@ -21,7 +17,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Goal: Hemoglobin A1c &lt; 7.0</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Stabilize Hemoglobin A1c</div>"
         },
         "status": "in-progress",
         "priority": {
@@ -47,13 +43,13 @@
               {
                 "system": "http://loinc.org",
                 "code": "4548-4",
-                "display": "Hemoglobin A1c total in Blood"
+                "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
               }
             ],
             "text": "Hemoglobin A1c total in Blood"
           },
           "detailQuantity": {
-            "value": "7.0",
+            "value": 7.0,
             "comparator": "<",
             "unit": "%",
             "system": "http://unitsofmeasure.org/",
@@ -124,7 +120,7 @@
             "text": "Systolic blood pressure"
           },
           "detailQuantity": {
-            "value": "140",
+            "value": 140,
             "comparator": "<",
             "unit": "mmHg",
             "system": "http://unitsofmeasure.org",
@@ -180,7 +176,7 @@
             "text": "Diastolic blood pressure"
           },
           "detailQuantity": {
-            "value": "80",
+            "value": 80,
             "comparator": "<",
             "unit": "mmHg",
             "system": "http://unitsofmeasure.org",
@@ -247,13 +243,13 @@
           },
           "detailRange": {
             "low": {
-              "value": "2.5",
+              "value": 2.5,
               "unit": "mg/dL",
               "system": "http://unitsofmeasure.org",
               "code": "mg/dL"
             },
             "high": {
-              "value": "4.5",
+              "value": 4.5,
               "unit": "mg/dL",
               "system": "http://unitsofmeasure.org",
               "code": "mg/dL"

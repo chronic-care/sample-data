@@ -19,6 +19,11 @@
           "status": "generated",
           "div": "Amy's CKD care plan"
         },
+        "definition": [
+          {
+            "reference": "PlanDefinition/e65237"
+          }
+        ],
         "subject": {
           "reference": "Patient/cc-pat-amy"
         },
@@ -58,11 +63,6 @@
           }
         ],
         "activity": [
-          {
-            "reference": {
-              "reference": "ProcedureRequest/cc-service-amy-edu-ckd"
-            }
-          },
           {
             "reference": {
               "reference": "ProcedureRequest/cc-service-amy-edu-diet"

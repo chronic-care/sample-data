@@ -5,11 +5,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/cc-obs-betsy-weight"
+        "url": "Observation/va-obs-dan-weight"
       },
       "resource": {
         "resourceType": "Observation",
-        "id": "cc-obs-betsy-weight",
+        "id": "va-obs-dan-weight",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/vitalsigns"
@@ -41,17 +41,17 @@
           ]
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2017-11-30",
+        "effectiveDateTime": "2018-03-30",
         "performer": [
           {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         ],
         "valueQuantity": {
-          "value": 167,
+          "value": 188,
           "unit": "lb",
           "system": "http://unitsofmeasure.org",
           "code": "[lb_av]"
@@ -61,11 +61,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/cc-obs-betsy-weight-1"
+        "url": "Observation/va-obs-dan-weight-1"
       },
       "resource": {
         "resourceType": "Observation",
-        "id": "cc-obs-betsy-weight-1",
+        "id": "va-obs-dan-weight-1",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/vitalsigns"
@@ -97,17 +97,17 @@
           ]
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "effectiveDateTime": "2018-10-15",
         "performer": [
           {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         ],
         "valueQuantity": {
-          "value": 173,
+          "value": 179,
           "unit": "lb",
           "system": "http://unitsofmeasure.org",
           "code": "[lb_av]"
@@ -117,11 +117,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/cc-obs-betsy-weight-2"
+        "url": "Observation/va-obs-dan-weight-2"
       },
       "resource": {
         "resourceType": "Observation",
-        "id": "cc-obs-betsy-weight-2",
+        "id": "va-obs-dan-weight-2",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/vitalsigns"
@@ -153,17 +153,17 @@
           ]
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
         "effectiveDateTime": "2019-01-03",
         "performer": [
           {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         ],
         "valueQuantity": {
-          "value": 170,
+          "value": 182,
           "unit": "lb",
           "system": "http://unitsofmeasure.org",
           "code": "[lb_av]"
@@ -173,11 +173,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Observation/cc-obs-betsy-height"
+        "url": "Observation/va-obs-dan-height"
       },
       "resource": {
         "resourceType": "Observation",
-        "id": "cc-obs-betsy-height",
+        "id": "va-obs-dan-height",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/vitalsigns"
@@ -209,77 +209,20 @@
           ]
         },
         "subject": {
-          "reference": "Patient/cc-pat-betsy"
+          "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2017-11-30",
+        "effectiveDateTime": "2018-03-30",
         "performer": [
           {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
           }
         ],
         "valueQuantity": {
-          "value": 64,
+          "value": 71,
           "unit": "in",
           "system": "http://unitsofmeasure.org",
           "code": "[in_i]"
-        }
-      }
-    },
-    {
-      "request": {
-        "method": "PUT",
-        "url": "Observation/cc-obs-betsy-bmi"
-      },
-      "resource": {
-        "resourceType": "Observation",
-        "id": "cc-obs-betsy-bmi",
-        "meta": {
-          "profile": [
-            "http://hl7.org/fhir/StructureDefinition/vitalsigns"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Body mass index (BMI)</div>"
-        },
-        "status": "final",
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/observation-category",
-                "code": "vital-signs"
-              }
-            ],
-            "text": "Vital Signs"
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "39156-5",
-              "display": "Body mass index (BMI) [Ratio]"
-            }
-          ],
-          "text": "Body mass index (BMI)"
-        },
-        "subject": {
-          "reference": "Patient/cc-pat-betsy"
-        },
-        "effectiveDateTime": "2017-11-30",
-        "performer": [
-          {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
-          }
-        ],
-        "valueQuantity": {
-          "value": 28.7,
-          "unit": "kg/m2",
-          "system": "http://unitsofmeasure.org",
-          "code": "kg/m2"
         }
       }
     }

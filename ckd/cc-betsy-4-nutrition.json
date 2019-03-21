@@ -12,7 +12,7 @@
         "id": "cc-betsy-diet-ckd",
         "text": {
           "status": "generated",
-          "div": "Renal Diet"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Renal Diet</div>"
         },
         "extension": [
           {

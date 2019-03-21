@@ -14,7 +14,7 @@
           "status": "generated",
           "div": "<div xmlns='http://www.w3.org/1999/xhtml'>U.S. Department of Veterans Affairs (VA)</div>"
         },
-        "type": {
+        "type": [{
           "coding": [
             {
               "system": "http://hl7.org/fhir/organization-type",
@@ -23,7 +23,7 @@
             }
           ],
           "text": "Healthcare Provider"
-        },
+        }],
         "name": "U.S. Department of Veterans Affairs",
         "alias": [
           "VA"
@@ -49,7 +49,7 @@
           "status": "generated",
           "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Veterans Health Administration (VHA)</div>"
         },
-        "type": {
+        "type": [{
           "coding": [
             {
               "system": "http://hl7.org/fhir/organization-type",
@@ -58,7 +58,7 @@
             }
           ],
           "text": "Healthcare Provider"
-        },
+        }],
         "name": "Veterans Health Administration",
         "alias": [
           "VHA"
@@ -89,7 +89,7 @@
           "div": "<div xmlns='http://www.w3.org/1999/xhtml'>VISN 6: VA Mid-Atlantic Health Care Network</div>"
         },
         "active": true,
-        "type": {
+        "type": [{
           "coding": [
             {
               "system": "http://hl7.org/fhir/organization-type",
@@ -103,7 +103,7 @@
             }
           ],
           "text": "Healthcare Provider"
-        },
+        }],
         "name": "VA Mid-Atlantic Health Care Network",
         "alias": [
           "VISN 6"
@@ -152,7 +152,7 @@
           "div": "<div xmlns='http://www.w3.org/1999/xhtml'>VISN 7: VA Southeast Network</div>"
         },
         "active": true,
-        "type": {
+        "type": [{
           "coding": [
             {
               "system": "http://hl7.org/fhir/organization-type",
@@ -166,7 +166,7 @@
             }
           ],
           "text": "Healthcare Provider"
-        },
+        }],
         "name": "VA Southeast Network",
         "alias": [
           "VISN 7"
@@ -215,7 +215,7 @@
           "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Hampton VA Medical Center</div>"
         },
         "active": true,
-        "type": {
+        "type": [{
           "coding": [
             {
               "system": "http://hl7.org/fhir/organization-type",
@@ -229,7 +229,7 @@
             }
           ],
           "text": "Healthcare Provider"
-        },
+        }],
         "name": "Hampton VA Medical Center",
         "telecom": [
           {
@@ -275,7 +275,7 @@
           "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Atlanta VA Medical Center</div>"
         },
         "active": true,
-        "type": {
+        "type": [{
           "coding": [
             {
               "system": "http://hl7.org/fhir/organization-type",
@@ -289,7 +289,7 @@
             }
           ],
           "text": "Healthcare Provider"
-        },
+        }],
         "name": "Atlanta VA Medical Center",
         "telecom": [
           {
@@ -337,7 +337,7 @@
           "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Virginia Beach CBOC</div>"
         },
         "active": true,
-        "type": {
+        "type": [{
           "coding": [
             {
               "system": "http://hl7.org/fhir/organization-type",
@@ -351,7 +351,7 @@
             }
           ],
           "text": "Healthcare Provider"
-        },
+        }],
         "name": "Virginia Beach CBOC",
         "telecom": [
           {

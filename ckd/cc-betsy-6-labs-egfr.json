@@ -36,7 +36,7 @@
             {
               "system": "http://loinc.org",
               "code": "69405-9",
-              "display": "Glomerular filtration rate/1.73 sq M.predicted"
+              "display": "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood"
             }
           ],
           "text": "eGFR"
@@ -93,7 +93,7 @@
             {
               "system": "http://loinc.org",
               "code": "69405-9",
-              "display": "Glomerular filtration rate/1.73 sq M.predicted"
+              "display": "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood"
             }
           ],
           "text": "eGFR"
@@ -150,7 +150,7 @@
             {
               "system": "http://loinc.org",
               "code": "69405-9",
-              "display": "Glomerular filtration rate/1.73 sq M.predicted"
+              "display": "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood"
             }
           ],
           "text": "eGFR"
@@ -207,7 +207,7 @@
             {
               "system": "http://loinc.org",
               "code": "69405-9",
-              "display": "Glomerular filtration rate/1.73 sq M.predicted"
+              "display": "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood"
             }
           ],
           "text": "eGFR"
@@ -264,7 +264,7 @@
             {
               "system": "http://loinc.org",
               "code": "69405-9",
-              "display": "Glomerular filtration rate/1.73 sq M.predicted"
+              "display": "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood"
             }
           ],
           "text": "eGFR"
@@ -321,7 +321,7 @@
             {
               "system": "http://loinc.org",
               "code": "69405-9",
-              "display": "Glomerular filtration rate/1.73 sq M.predicted"
+              "display": "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum, Plasma or Blood"
             }
           ],
           "text": "eGFR"

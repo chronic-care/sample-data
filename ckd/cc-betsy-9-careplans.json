@@ -248,7 +248,7 @@
                   {
                     "system": "http://loinc.org",
                     "code": "2339-0",
-                    "display": "Glucose in blood"
+                    "display": "Glucose [Mass/volume] in Blood"
                   }
                 ]
               },

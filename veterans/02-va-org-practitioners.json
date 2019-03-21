@@ -76,13 +76,7 @@
             "value": "dr.beach@woohoo.com"
           }
         ],
-        "gender": "female",
-        "photo": [
-          {
-            "contentType": "image/jpeg",
-            "data": ""
-          }
-        ]
+        "gender": "female"
       }
     },
     {

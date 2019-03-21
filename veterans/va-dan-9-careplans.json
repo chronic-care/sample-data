@@ -144,7 +144,7 @@
                   {
                     "system": "http://loinc.org",
                     "code": "14760-3",
-                    "display": "Glucose [Moles/​volume] in Capillary blood --2 hours post meal"
+                    "display": "Glucose [Moles/volume] in Capillary blood --2 hours post meal"
                   }
                 ],
                 "text": "Blood sugar level"

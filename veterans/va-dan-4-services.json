@@ -29,6 +29,10 @@
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
+        "occurrencePeriod": {
+          "start": "2018-09-30",
+          "end": "2018-12-31"
+        },
         "requester": {
           "agent": {
             "reference": "Practitioner/va-prac-visn6-francis",
@@ -60,11 +64,9 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/goal-pertainsToGoal",
-            "valueReference": [
-              {
-                "reference": "Goal/va-goal-dan-exercise"
-              }
-            ]
+            "valueReference": {
+              "reference": "Goal/va-goal-dan-exercise"
+            }
           }
         ],
         "status": "active",
@@ -129,11 +131,9 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/goal-pertainsToGoal",
-            "valueReference": [
-              {
-                "reference": "Goal/va-goal-dan-exercise"
-              }
-            ]
+            "valueReference": {
+              "reference": "Goal/va-goal-dan-exercise"
+            }
           }
         ],
         "status": "active",
@@ -194,12 +194,10 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/procedurerequest-questionnaireRequest",
-            "valueReference": [
-              {
-                "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/44249-1",
-                "display": "PHQ-9"
-              }
-            ]
+            "valueReference": {
+              "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/44249-1",
+              "display": "PHQ-9"
+            }
           }
         ],
         "status": "active",
@@ -247,20 +245,18 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/va-service-dan-challenges"
+        "url": "ProcedureRequest/va-service-dan-function"
       },
       "resource": {
         "resourceType": "ProcedureRequest",
-        "id": "va-service-dan-challenges",
+        "id": "va-service-dan-function",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/procedurerequest-questionnaireRequest",
-            "valueReference": [
-              {
-                "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/87534-4",
-                "display": "Challenges for treatment plan maintenance"
-              }
-            ]
+            "valueReference": {
+              "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/62199-5",
+              "display": "PROMIS short form - physical function 10a"
+            }
           }
         ],
         "status": "active",
@@ -273,7 +269,7 @@
               "display": "Assessment using assessment scale (procedure)"
             }
           ],
-          "text": "Treatment challenges screening"
+          "text": "Physical function assessment"
         },
         "subject": {
           "reference": "Patient/va-pat-dan"
@@ -285,7 +281,7 @@
               "end": "2019-12-31"
             },
             "frequency": 1,
-            "period": 2,
+            "period": 4,
             "periodUnit": "wk"
           }
         },
@@ -299,9 +295,6 @@
           "reference": "Patient/va-pat-dan"
         },
         "reasonReference": [
-          {
-            "reference": "Condition/va-cond-dan-depression"
-          },
           {
             "reference": "Condition/va-cond-dan-ptsd"
           }
@@ -319,12 +312,10 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/procedurerequest-questionnaireRequest",
-            "valueReference": [
-              {
-                "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/80976-4",
-                "display": "IPSS"
-              }
-            ]
+            "valueReference": {
+              "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/80976-4",
+              "display": "IPSS"
+            }
           }
         ],
         "status": "active",

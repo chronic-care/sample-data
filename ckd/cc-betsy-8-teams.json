@@ -122,7 +122,7 @@
                 {
                   "system": "http://snomed.info/sct",
                   "code": "159011008",
-                  "display": "Community pharmacist"
+                  "display": "Retail pharmacist"
                 }
               ],
               "text": "Community Pharmacist"
@@ -190,7 +190,7 @@
                 {
                   "system": "http://snomed.info/sct",
                   "code": "274272004",
-                  "display": "Catering services"
+                  "display": "Catering services occupation"
                 }
               ],
               "text": "Catering services"

@@ -296,7 +296,7 @@
             {
               "system": "http://loinc.org",
               "code": "2339-0",
-              "display": "Blood glucose"
+              "display": "Glucose [Mass/volume] in Blood"
             }
           ]
         },
@@ -365,7 +365,7 @@
             {
               "system": "http://loinc.org",
               "code": "2339-0",
-              "display": "Blood glucose"
+              "display": "Glucose [Mass/volume] in Blood"
             }
           ]
         },
@@ -434,7 +434,7 @@
             {
               "system": "http://loinc.org",
               "code": "2339-0",
-              "display": "Blood glucose"
+              "display": "Glucose [Mass/volume] in Blood"
             }
           ]
         },

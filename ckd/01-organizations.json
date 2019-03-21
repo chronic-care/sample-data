@@ -12,7 +12,7 @@
         "id": "cc-org-meals-on-wheels",
         "text": {
           "status": "generated",
-          "div": "Meals on Wheels organization"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Meals on Wheels organization</div>"
         },
         "name": "Meals on Wheels",
         "telecom": [
