@@ -4,7 +4,8 @@ Sample 🔥FHIR CarePlan and related resources for chronic care scenarios.
 
 Because FHIR is still evolving there may be different versions of the resources:
 
-- the `master` branch contains **STU-3** (v`3.0.1`) resources
+- the `master` branch contains **R4** (v`4.0.0`) resources
+- the `stu-3` branch contains **STU-3** (v`3.0.1`) resources
 - the `develop` branch contains (nothing at this time)
 
 
