@@ -21,12 +21,10 @@
         },
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/goal-pertainsToGoal",
-            "valueReference": [
-              {
-                "reference": "Goal/cc-goal-betsy-a1c"
-              }
-            ]
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
+            "valueReference": {
+              "reference": "Goal/cc-goal-betsy-a1c"
+            }
           }
         ],
         "status": "active",
@@ -47,10 +45,8 @@
         },
         "authoredOn": "2017-08-01",
         "requester": {
-          "agent": {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
-          }
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
         },
         "reasonReference": [
           {
@@ -81,10 +77,23 @@
               ],
               "text": "Oral route"
             },
-            "doseQuantity": {
-              "value": 40,
-              "unit": "mg"
-            }
+            "doseAndRate": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                      "code": "ordered",
+                      "display": "Ordered"
+                    }
+                  ]
+                },
+                "doseQuantity": {
+                  "value": 40,
+                  "unit": "mg"
+                }
+              }
+            ]
           }
         ]
       }
@@ -124,10 +133,8 @@
         },
         "authoredOn": "2017-08-01",
         "requester": {
-          "agent": {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
-          }
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
         },
         "reasonReference": [
           {
@@ -158,10 +165,23 @@
               ],
               "text": "Oral route"
             },
-            "doseQuantity": {
-              "value": 40,
-              "unit": "mg"
-            }
+            "doseAndRate": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                      "code": "ordered",
+                      "display": "Ordered"
+                    }
+                  ]
+                },
+                "doseQuantity": {
+                  "value": 40,
+                  "unit": "mg"
+                }
+              }
+            ]
           }
         ]
       }
@@ -201,10 +221,8 @@
         },
         "authoredOn": "2017-08-01",
         "requester": {
-          "agent": {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
-          }
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
         },
         "reasonReference": [
           {
@@ -240,10 +258,23 @@
               ],
               "text": "Oral route"
             },
-            "doseQuantity": {
-              "value": 20,
-              "unit": "mg"
-            }
+            "doseAndRate": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                      "code": "ordered",
+                      "display": "Ordered"
+                    }
+                  ]
+                },
+                "doseQuantity": {
+                  "value": 20,
+                  "unit": "mg"
+                }
+              }
+            ]
           }
         ]
       }
@@ -283,10 +314,8 @@
         },
         "authoredOn": "2017-12-01",
         "requester": {
-          "agent": {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
-          }
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
         },
         "reasonReference": [
           {
@@ -322,10 +351,23 @@
               ],
               "text": "Oral route"
             },
-            "doseQuantity": {
-              "value": 1000,
-              "unit": "IU"
-            }
+            "doseAndRate": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                      "code": "ordered",
+                      "display": "Ordered"
+                    }
+                  ]
+                },
+                "doseQuantity": {
+                  "value": 1000,
+                  "unit": "IU"
+                }
+              }
+            ]
           }
         ]
       }
@@ -354,10 +396,10 @@
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
               "code": "311048",
-              "display": "insulin human, isophane 70 UNT/ML / Regular Insulin, Human 30 UNT/ML Injectable Suspension"
+              "display": "Insulin, human Mixed 70/30 100 UNT/ML Injectable Suspension"
             }
           ],
-          "text": "insulin human, isophane 70 UNT/ML / Regular Insulin, Human 30 UNT/ML Injectable Suspension"
+          "text": "Insulin, human Mixed 70/30 100 UNT/ML Injectable Suspension"
         },
         "subject": {
           "reference": "Patient/cc-pat-betsy",
@@ -365,10 +407,8 @@
         },
         "authoredOn": "2017-12-01",
         "requester": {
-          "agent": {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
-          }
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
         },
         "reasonReference": [
           {
@@ -378,10 +418,23 @@
         "dosageInstruction": [
           {
             "text": "Twice daily.",
-            "doseQuantity": {
-              "value": 45,
-              "unit": "units"
-            }
+            "doseAndRate": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                      "code": "ordered",
+                      "display": "Ordered"
+                    }
+                  ]
+                },
+                "doseQuantity": {
+                  "value": 45,
+                  "unit": "units"
+                }
+              }
+            ]
           }
         ]
       }
@@ -421,10 +474,8 @@
         },
         "authoredOn": "2017-12-01",
         "requester": {
-          "agent": {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
-          }
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
         },
         "reasonReference": [
           {
@@ -434,10 +485,23 @@
         "dosageInstruction": [
           {
             "text": "Once daily.",
-            "doseQuantity": {
-              "value": 75,
-              "unit": "mg"
-            }
+            "doseAndRate": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                      "code": "ordered",
+                      "display": "Ordered"
+                    }
+                  ]
+                },
+                "doseQuantity": {
+                  "value": 75,
+                  "unit": "mg"
+                }
+              }
+            ]
           }
         ]
       }

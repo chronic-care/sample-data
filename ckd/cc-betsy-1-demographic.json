@@ -23,16 +23,16 @@
           "reference": "Patient/cc-pat-betsy",
           "display": "Betsy Johnson"
         },
-        "relationship": {
+        "relationship": [{
           "coding": [
             {
-              "system": "http://hl7.org/fhir/v3/RoleCode",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
               "code": "DAU",
               "display": "natural daughter"
             }
           ],
           "text": "Daughter"
-        },
+        }],
         "name": [
           {
             "use": "usual",

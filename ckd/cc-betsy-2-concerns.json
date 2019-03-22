@@ -19,8 +19,22 @@
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Depressed mood</div>"
         },
-        "clinicalStatus": "active",
-        "verificationStatus": "confirmed",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
         "category": [
           {
             "coding": [
@@ -70,8 +84,22 @@
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Unemployed</div>"
         },
-        "clinicalStatus": "active",
-        "verificationStatus": "confirmed",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
         "category": [
           {
             "coding": [
@@ -121,8 +149,22 @@
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Unable to drive a car</div>"
         },
-        "clinicalStatus": "active",
-        "verificationStatus": "confirmed",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
         "category": [
           {
             "coding": [
@@ -172,8 +214,22 @@
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Sedentary lifestyle</div>"
         },
-        "clinicalStatus": "active",
-        "verificationStatus": "confirmed",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
         "category": [
           {
             "coding": [

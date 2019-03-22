@@ -5,10 +5,10 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/va-service-dan-edu-diet"
+        "url": "ServiceRequest/va-service-dan-edu-diet"
       },
       "resource": {
-        "resourceType": "ProcedureRequest",
+        "resourceType": "ServiceRequest",
         "id": "va-service-dan-edu-diet",
         "text": {
           "status": "generated",
@@ -34,14 +34,14 @@
           "end": "2018-12-31"
         },
         "requester": {
-          "agent": {
-            "reference": "Practitioner/va-prac-visn6-francis",
-            "display": "Dr. Francis, MD"
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/va-prac-visn6-francis"
           }
-        },
-        "performer": {
-          "reference": "Practitioner/va-prac-visn6-francis"
-        },
+        ],
         "reasonReference": [
           {
             "reference": "Condition/va-cond-dan-dm"
@@ -52,10 +52,10 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/va-service-dan-exercise"
+        "url": "ServiceRequest/va-service-dan-exercise"
       },
       "resource": {
-        "resourceType": "ProcedureRequest",
+        "resourceType": "ServiceRequest",
         "id": "va-service-dan-exercise",
         "text": {
           "status": "generated",
@@ -63,7 +63,7 @@
         },
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/goal-pertainsToGoal",
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
             "valueReference": {
               "reference": "Goal/va-goal-dan-exercise"
             }
@@ -96,14 +96,14 @@
           }
         },
         "requester": {
-          "agent": {
-            "reference": "Practitioner/va-prac-visn6-francis",
-            "display": "Dr. Francis, MD"
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        },
+        "performer": [
+          {
+            "reference": "Patient/va-pat-dan"
           }
-        },
-        "performer": {
-          "reference": "Patient/va-pat-dan"
-        },
+        ],
         "reasonReference": [
           {
             "reference": "Condition/va-cond-dan-dm"
@@ -119,10 +119,10 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/va-service-dan-steps"
+        "url": "ServiceRequest/va-service-dan-steps"
       },
       "resource": {
-        "resourceType": "ProcedureRequest",
+        "resourceType": "ServiceRequest",
         "id": "va-service-dan-steps",
         "text": {
           "status": "generated",
@@ -130,7 +130,7 @@
         },
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/goal-pertainsToGoal",
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
             "valueReference": {
               "reference": "Goal/va-goal-dan-exercise"
             }
@@ -163,14 +163,14 @@
           }
         },
         "requester": {
-          "agent": {
-            "reference": "Practitioner/va-prac-visn6-francis",
-            "display": "Dr. Francis, MD"
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        },
+        "performer": [
+          {
+            "reference": "Patient/va-pat-dan"
           }
-        },
-        "performer": {
-          "reference": "Patient/va-pat-dan"
-        },
+        ],
         "reasonReference": [
           {
             "reference": "Condition/va-cond-dan-dm"
@@ -186,14 +186,14 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/va-service-dan-phq9"
+        "url": "ServiceRequest/va-service-dan-phq9"
       },
       "resource": {
-        "resourceType": "ProcedureRequest",
+        "resourceType": "ServiceRequest",
         "id": "va-service-dan-phq9",
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/procedurerequest-questionnaireRequest",
+            "url": "http://hl7.org/fhir/StructureDefinition/servicerequest-questionnaireRequest",
             "valueReference": {
               "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/44249-1",
               "display": "PHQ-9"
@@ -227,14 +227,14 @@
           }
         },
         "requester": {
-          "agent": {
-            "reference": "Practitioner/va-prac-visn6-francis",
-            "display": "Dr. Francis, MD"
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        },
+        "performer": [
+          {
+            "reference": "Patient/va-pat-dan"
           }
-        },
-        "performer": {
-          "reference": "Patient/va-pat-dan"
-        },
+        ],
         "reasonReference": [
           {
             "reference": "Condition/va-cond-dan-depresssion"
@@ -245,14 +245,14 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/va-service-dan-function"
+        "url": "ServiceRequest/va-service-dan-function"
       },
       "resource": {
-        "resourceType": "ProcedureRequest",
+        "resourceType": "ServiceRequest",
         "id": "va-service-dan-function",
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/procedurerequest-questionnaireRequest",
+            "url": "http://hl7.org/fhir/StructureDefinition/servicerequest-questionnaireRequest",
             "valueReference": {
               "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/62199-5",
               "display": "PROMIS short form - physical function 10a"
@@ -286,14 +286,14 @@
           }
         },
         "requester": {
-          "agent": {
-            "reference": "Practitioner/va-prac-visn6-francis",
-            "display": "Dr. Francis, MD"
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        },
+        "performer": [
+          {
+            "reference": "Patient/va-pat-dan"
           }
-        },
-        "performer": {
-          "reference": "Patient/va-pat-dan"
-        },
+        ],
         "reasonReference": [
           {
             "reference": "Condition/va-cond-dan-ptsd"
@@ -304,14 +304,14 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/va-service-dan-ipss"
+        "url": "ServiceRequest/va-service-dan-ipss"
       },
       "resource": {
-        "resourceType": "ProcedureRequest",
+        "resourceType": "ServiceRequest",
         "id": "va-service-dan-ipss",
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/procedurerequest-questionnaireRequest",
+            "url": "http://hl7.org/fhir/StructureDefinition/servicerequest-questionnaireRequest",
             "valueReference": {
               "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/80976-4",
               "display": "IPSS"
@@ -345,14 +345,14 @@
           }
         },
         "requester": {
-          "agent": {
-            "reference": "Practitioner/va-prac-visn6-francis",
-            "display": "Dr. Francis, MD"
-          }
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
         },
-        "performer": {
-          "reference": "Patient/va-pat-dan"
-        }
+        "performer": [
+          {
+            "reference": "Patient/va-pat-dan"
+          }
+        ]
       }
     }
   ]

@@ -92,16 +92,7 @@
           },
           {
             "detail": {
-              "category": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/care-plan-activity-category",
-                    "code": "observation",
-                    "display": "Observation"
-                  }
-                ],
-                "text": "Observation"
-              },
+              "kind": "ServiceRequest",
               "code": {
                 "coding": [
                   {
@@ -129,16 +120,7 @@
           },
           {
             "detail": {
-              "category": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/care-plan-activity-category",
-                    "code": "observation",
-                    "display": "Observation"
-                  }
-                ],
-                "text": "Observation"
-              },
+              "kind": "ServiceRequest",
               "code": {
                 "coding": [
                   {
@@ -172,16 +154,7 @@
               }
             ],
             "detail": {
-              "category": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/care-plan-activity-category",
-                    "code": "procedure",
-                    "display": "Procedure"
-                  }
-                ],
-                "text": "Procedure"
-              },
+              "kind": "ServiceRequest",
               "code": {
                 "coding": [
                   {
@@ -215,16 +188,7 @@
               }
             ],
             "detail": {
-              "category": {
-                "coding": [
-                  {
-                    "system": "http://hl7.org/fhir/care-plan-activity-category",
-                    "code": "observation",
-                    "display": "Observation"
-                  }
-                ],
-                "text": "Observation"
-              },
+              "kind": "ServiceRequest",
               "code": {
                 "coding": [
                   {

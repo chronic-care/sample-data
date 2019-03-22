@@ -5,10 +5,10 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/cc-service-betsy-edu-ckd"
+        "url": "ServiceRequest/cc-service-betsy-edu-ckd"
       },
       "resource": {
-        "resourceType": "ProcedureRequest",
+        "resourceType": "ServiceRequest",
         "id": "cc-service-betsy-edu-ckd",
         "text": {
           "status": "generated",
@@ -31,14 +31,14 @@
         },
         "authoredOn": "2018-02-20",
         "requester": {
-          "agent": {
-            "reference": "Practitioner/cc-prac-jones-vince",
-            "display": "Dr. Vince Jones, MD"
+          "reference": "Practitioner/cc-prac-jones-vince",
+          "display": "Dr. Vince Jones, MD"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/cc-prac-smith-julie"
           }
-        },
-        "performer": {
-          "reference": "Practitioner/cc-prac-smith-julie"
-        },
+        ],
         "reasonReference": [
           {
             "reference": "Condition/cc-cond-betsy-ckd"
@@ -49,10 +49,10 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/cc-service-betsy-edu-diet"
+        "url": "ServiceRequest/cc-service-betsy-edu-diet"
       },
       "resource": {
-        "resourceType": "ProcedureRequest",
+        "resourceType": "ServiceRequest",
         "id": "cc-service-betsy-edu-diet",
         "text": {
           "status": "generated",
@@ -74,14 +74,14 @@
           "reference": "Patient/cc-pat-betsy"
         },
         "requester": {
-          "agent": {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        },
+        "performer": [
+          {
+            "reference": "Practitioner/cc-prac-gonzalez-maria"
           }
-        },
-        "performer": {
-          "reference": "Practitioner/cc-prac-gonzalez-maria"
-        },
+        ],
         "reasonReference": [
           {
             "reference": "Condition/cc-cond-betsy-diabetes"
@@ -95,10 +95,10 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/cc-service-betsy-exercise"
+        "url": "ServiceRequest/cc-service-betsy-exercise"
       },
       "resource": {
-        "resourceType": "ProcedureRequest",
+        "resourceType": "ServiceRequest",
         "id": "cc-service-betsy-exercise",
         "text": {
           "status": "generated",
@@ -106,7 +106,7 @@
         },
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/goal-pertainsToGoal",
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
             "valueReference": {
               "reference": "Goal/cc-goal-betsy-exercise"
             }
@@ -139,14 +139,14 @@
           }
         },
         "requester": {
-          "agent": {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        },
+        "performer": [
+          {
+            "reference": "Patient/cc-pat-betsy"
           }
-        },
-        "performer": {
-          "reference": "Patient/cc-pat-betsy"
-        },
+        ],
         "reasonReference": [
           {
             "reference": "Condition/cc-cond-betsy-diabetes"
@@ -162,10 +162,10 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/cc-service-betsy-steps"
+        "url": "ServiceRequest/cc-service-betsy-steps"
       },
       "resource": {
-        "resourceType": "ProcedureRequest",
+        "resourceType": "ServiceRequest",
         "id": "cc-service-betsy-steps",
         "text": {
           "status": "generated",
@@ -173,7 +173,7 @@
         },
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/goal-pertainsToGoal",
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
             "valueReference": {
               "reference": "Goal/cc-goal-betsy-exercise"
             }
@@ -206,14 +206,14 @@
           }
         },
         "requester": {
-          "agent": {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        },
+        "performer": [
+          {
+            "reference": "Patient/cc-pat-betsy"
           }
-        },
-        "performer": {
-          "reference": "Patient/cc-pat-betsy"
-        },
+        ],
         "reasonReference": [
           {
             "reference": "Condition/cc-cond-betsy-diabetes"
@@ -229,14 +229,14 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/cc-service-betsy-phq4"
+        "url": "ServiceRequest/cc-service-betsy-phq4"
       },
       "resource": {
-        "resourceType": "ProcedureRequest",
+        "resourceType": "ServiceRequest",
         "id": "cc-service-betsy-phq4",
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/procedurerequest-questionnaireRequest",
+            "url": "http://hl7.org/fhir/StructureDefinition/servicerequest-questionnaireRequest",
             "valueReference": {
               "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/69724-3",
               "display": "PHQ-4"
@@ -270,14 +270,14 @@
           }
         },
         "requester": {
-          "agent": {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        },
+        "performer": [
+          {
+            "reference": "Patient/cc-pat-betsy"
           }
-        },
-        "performer": {
-          "reference": "Patient/cc-pat-betsy"
-        },
+        ],
         "reasonReference": [
           {
             "reference": "Condition/cc-cond-betsy-depression"
@@ -288,14 +288,14 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/cc-service-betsy-challenges"
+        "url": "ServiceRequest/cc-service-betsy-challenges"
       },
       "resource": {
-        "resourceType": "ProcedureRequest",
+        "resourceType": "ServiceRequest",
         "id": "cc-service-betsy-challenges",
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/procedurerequest-questionnaireRequest",
+            "url": "http://hl7.org/fhir/StructureDefinition/servicerequest-questionnaireRequest",
             "valueReference": {
               "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/87534-4",
               "display": "Challenges for treatment plan maintenance"
@@ -329,14 +329,14 @@
           }
         },
         "requester": {
-          "agent": {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        },
+        "performer": [
+          {
+            "reference": "Patient/cc-pat-betsy"
           }
-        },
-        "performer": {
-          "reference": "Patient/cc-pat-betsy"
-        },
+        ],
         "reasonReference": [
           {
             "reference": "Condition/cc-cond-betsy-ckd"
@@ -347,17 +347,17 @@
     {
       "request": {
         "method": "PUT",
-        "url": "ProcedureRequest/cc-service-betsy-ckd-goals"
+        "url": "ServiceRequest/cc-service-betsy-ckd-goals"
       },
       "resource": {
-        "resourceType": "ProcedureRequest",
+        "resourceType": "ServiceRequest",
         "id": "cc-service-betsy-ckd-goals",
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/procedurerequest-questionnaireRequest",
+            "url": "http://hl7.org/fhir/StructureDefinition/servicerequest-questionnaireRequest",
             "valueReference": {
-                "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/87533-6",
-                "display": "CKD personal health goals"
+              "reference": "http://clinicalcloud.solutions/fhir/Questionnaire/87533-6",
+              "display": "CKD personal health goals"
             }
           }
         ],
@@ -388,14 +388,14 @@
           }
         },
         "requester": {
-          "agent": {
-            "reference": "Practitioner/cc-prac-carlson-john",
-            "display": "Dr. John Carlson, MD"
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        },
+        "performer": [
+          {
+            "reference": "Patient/cc-pat-betsy"
           }
-        },
-        "performer": {
-          "reference": "Patient/cc-pat-betsy"
-        },
+        ],
         "reasonReference": [
           {
             "reference": "Condition/cc-cond-betsy-ckd"

@@ -21,25 +21,29 @@
         },
         "participant": [
           {
-            "role": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "446050000",
-                  "display": "Primary care physician"
-                }
-              ],
-              "text": "Primary Care Physician"
-            },
+            "role": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "446050000",
+                    "display": "Primary care physician"
+                  }
+                ],
+                "text": "Primary Care Physician"
+              }
+            ],
             "member": {
               "reference": "Practitioner/va-prac-visn6-francis",
               "display": "Dr. Francis"
             }
           },
           {
-            "role": {
-              "text": "Maternity Care Coordinator (MCC)"
-            },
+            "role": [
+              {
+                "text": "Maternity Care Coordinator (MCC)"
+              }
+            ],
             "member": {
               "reference": "Practitioner/va-prac-visn6-vera",
               "display": "Vera, RN"
@@ -68,16 +72,18 @@
         "name": "Mental Health Care Team",
         "participant": [
           {
-            "role": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "224588003",
-                  "display": "Psychotherapist"
-                }
-              ],
-              "text": "Psychotherapist"
-            },
+            "role": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "224588003",
+                    "display": "Psychotherapist"
+                  }
+                ],
+                "text": "Psychotherapist"
+              }
+            ],
             "member": {
               "reference": "Practitioner/va-prac-visn6-beach",
               "display": "Dr. Beach, PsyD"
@@ -106,16 +112,18 @@
         "name": "Primary Care PACT",
         "participant": [
           {
-            "role": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "446050000",
-                  "display": "Primary care physician"
-                }
-              ],
-              "text": "Primary Care Physician"
-            },
+            "role": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "446050000",
+                    "display": "Primary care physician"
+                  }
+                ],
+                "text": "Primary Care Physician"
+              }
+            ],
             "member": {
               "reference": "Practitioner/va-prac-visn6-francis",
               "display": "Dr. Francis"

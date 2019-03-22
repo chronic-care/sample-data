@@ -19,8 +19,24 @@
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dairy food intolerance</div>"
         },
-        "clinicalStatus": "active",
-        "verificationStatus": "confirmed",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
         "category": [
           "food"
         ],
@@ -39,7 +55,7 @@
           "display": "Betsy"
         },
         "onsetDateTime": "2015",
-        "assertedDate": "2016-01-15",
+        "recordedDate": "2016-01-15",
         "recorder": {
           "reference": "Practitioner/cc-prac-carlson-john"
         },

@@ -28,19 +28,20 @@
             }
           },
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/goal-pertainsToGoal",
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
             "valueReference": {
                 "reference": "Goal/cc-goal-betsy-a1c"
             }
           },
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/goal-pertainsToGoal",
+            "url": "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal",
             "valueReference": {
                 "reference": "Goal/cc-goal-betsy-lab-phos"
             }
           }
         ],
-        "status": "planned",
+        "status": "active",
+        "intent": "plan",
         "patient": {
           "reference": "Patient/cc-pat-betsy"
         },

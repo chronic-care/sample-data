@@ -24,7 +24,7 @@
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/observation-category",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "code": "vital-signs"
               }
             ],
@@ -80,7 +80,7 @@
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/observation-category",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "code": "vital-signs"
               }
             ],
@@ -136,7 +136,7 @@
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/observation-category",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "code": "vital-signs"
               }
             ],
@@ -192,7 +192,7 @@
           {
             "coding": [
               {
-                "system": "http://hl7.org/fhir/observation-category",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
                 "code": "vital-signs"
               }
             ],

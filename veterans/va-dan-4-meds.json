@@ -37,10 +37,8 @@
         },
         "authoredOn": "2018-12-01",
         "requester": {
-          "agent": {
-            "reference": "Practitioner/va-prac-visn6-francis",
-            "display": "Dr. Francis, MD"
-          }
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
         },
         "dosageInstruction": [
           {
@@ -66,10 +64,23 @@
               ],
               "text": "Oral route"
             },
-            "doseQuantity": {
-              "value": 10,
-              "unit": "mg"
-            }
+            "doseAndRate": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                      "code": "ordered",
+                      "display": "Ordered"
+                    }
+                  ]
+                },
+                "doseQuantity": {
+                  "value": 10,
+                  "unit": "mg"
+                }
+              }
+            ]
           }
         ]
       }
@@ -109,10 +120,8 @@
         },
         "authoredOn": "2018-12-01",
         "requester": {
-          "agent": {
-            "reference": "Practitioner/va-prac-visn6-francis",
-            "display": "Dr. Francis, MD"
-          }
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
         },
         "dosageInstruction": [
           {
@@ -138,10 +147,23 @@
               ],
               "text": "Oral route"
             },
-            "doseQuantity": {
-              "value": 500,
-              "unit": "mg"
-            }
+            "doseAndRate": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                      "code": "ordered",
+                      "display": "Ordered"
+                    }
+                  ]
+                },
+                "doseQuantity": {
+                  "value": 500,
+                  "unit": "mg"
+                }
+              }
+            ]
           }
         ]
       }
@@ -181,10 +203,8 @@
         },
         "authoredOn": "2019-01-11",
         "requester": {
-          "agent": {
-            "reference": "Practitioner/va-prac-visn6-francis",
-            "display": "Dr. Francis, MD"
-          }
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
         },
         "note": [
           {
@@ -196,7 +216,7 @@
         ],
         "dosageInstruction": [
           {
-            "text": "Take this medication by mouth once daily in the morning. Fluoxetine (Prozac) is used to treat depression, panic attacks, obsessive compulsive disorder, and post traumatic stress disorder (PTSD). ",
+            "text": "Take this medication by mouth once daily in the morning. Fluoxetine (Prozac) is used to treat depression, panic attacks, obsessive compulsive disorder, and post traumatic stress disorder (PTSD).",
             "timing": {
               "repeat": {
                 "boundsPeriod": {
@@ -218,10 +238,23 @@
               ],
               "text": "Oral route"
             },
-            "doseQuantity": {
-              "value": 10,
-              "unit": "mg"
-            }
+            "doseAndRate": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                      "code": "ordered",
+                      "display": "Ordered"
+                    }
+                  ]
+                },
+                "doseQuantity": {
+                  "value": 10,
+                  "unit": "mg"
+                }
+              }
+            ]
           }
         ]
       }

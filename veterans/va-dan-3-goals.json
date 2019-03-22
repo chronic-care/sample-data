@@ -19,16 +19,26 @@
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Life goals</div></div>"
         },
-        "status": "in-progress",
+        "achievementStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress",
+              "display": "In Progress"
+            }
+          ],
+          "text": "In Progress"
+        },
+        "lifecycleStatus": "active",
         "priority": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/goal-priority",
+              "system": "http://terminology.hl7.org/CodeSystem/goal-priority",
               "code": "high-priority",
               "display": "High Priority"
             }
           ],
-          "text": "high"
+          "text": "High"
         },
         "subject": {
           "reference": "Patient/va-pat-dan",
@@ -56,16 +66,26 @@
             "http://hl7.org/fhir/StructureDefinition/Goal"
           ]
         },
-        "status": "in-progress",
+        "achievementStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress",
+              "display": "In Progress"
+            }
+          ],
+          "text": "In Progress"
+        },
+        "lifecycleStatus": "active",
         "priority": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/goal-priority",
+              "system": "http://terminology.hl7.org/CodeSystem/goal-priority",
               "code": "high-priority",
               "display": "High Priority"
             }
           ],
-          "text": "high"
+          "text": "High"
         },
         "description": {
           "text": "Stabilize Hemoglobin A1c"
@@ -75,25 +95,27 @@
           "display": "Dan"
         },
         "startDate": "2018-11-30",
-        "target": {
-          "measure": {
-            "coding": [
-              {
-                "system": "http://loinc.org",
-                "code": "4548-4",
-                "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
-              }
-            ],
-            "text": "Hemoglobin A1c total in Blood"
-          },
-          "detailQuantity": {
-            "value": 7.0,
-            "comparator": "<",
-            "unit": "%",
-            "system": "http://unitsofmeasure.org/",
-            "code": "%"
+        "target": [
+          {
+            "measure": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "4548-4",
+                  "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+                }
+              ],
+              "text": "Hemoglobin A1c total in Blood"
+            },
+            "detailQuantity": {
+              "value": 7,
+              "comparator": "<",
+              "unit": "%",
+              "system": "http://unitsofmeasure.org/",
+              "code": "%"
+            }
           }
-        },
+        ],
         "expressedBy": {
           "reference": "Practitioner/va-prac-visn6-francis",
           "display": "Dr. Francis, MD"
@@ -128,16 +150,26 @@
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Goal: Fasting blood glucose level &lt; 108 mg/dL</div></div>"
         },
-        "status": "in-progress",
+        "achievementStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress",
+              "display": "In Progress"
+            }
+          ],
+          "text": "In Progress"
+        },
+        "lifecycleStatus": "active",
         "priority": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/goal-priority",
+              "system": "http://terminology.hl7.org/CodeSystem/goal-priority",
               "code": "high-priority",
               "display": "High Priority"
             }
           ],
-          "text": "high"
+          "text": "High"
         },
         "description": {
           "text": "Fasting blood glucose level < 108 mg/dL"
@@ -147,25 +179,27 @@
           "display": "Dan"
         },
         "startDate": "2016-11-30",
-        "target": {
-          "measure": {
-            "coding": [
-              {
-                "system": "http://loinc.org",
-                "code": "2339-0",
-                "display": "Glucose [Mass/volume] in Blood"
-              }
-            ],
-            "text": "Glucose in blood"
-          },
-          "detailQuantity": {
-            "value": 108,
-            "comparator": "<",
-            "unit": "mg/dL",
-            "system": "http://unitsofmeasure.org/",
-            "code": "mg/dL"
+        "target": [
+          {
+            "measure": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "2339-0",
+                  "display": "Glucose [Mass/volume] in Blood"
+                }
+              ],
+              "text": "Glucose in blood"
+            },
+            "detailQuantity": {
+              "value": 108,
+              "comparator": "<",
+              "unit": "mg/dL",
+              "system": "http://unitsofmeasure.org/",
+              "code": "mg/dL"
+            }
           }
-        },
+        ],
         "expressedBy": {
           "reference": "Practitioner/va-prac-visn6-francis",
           "display": "Dr. Francis, MD"
@@ -200,16 +234,26 @@
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Systolic BP below 140</div>"
         },
-        "status": "in-progress",
+        "achievementStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress",
+              "display": "In Progress"
+            }
+          ],
+          "text": "In Progress"
+        },
+        "lifecycleStatus": "active",
         "priority": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/goal-priority",
+              "system": "http://terminology.hl7.org/CodeSystem/goal-priority",
               "code": "medium-priority",
               "display": "Medium Priority"
             }
           ],
-          "text": "medium"
+          "text": "Medium"
         },
         "description": {
           "text": "Systolic blood pressure"
@@ -218,25 +262,27 @@
           "reference": "Patient/va-pat-dan"
         },
         "startDate": "2017-06-30",
-        "target": {
-          "measure": {
-            "coding": [
-              {
-                "system": "http://loinc.org",
-                "code": "8480-6",
-                "display": "Systolic blood pressure"
-              }
-            ],
-            "text": "Systolic blood pressure"
-          },
-          "detailQuantity": {
-            "value": 140,
-            "comparator": "<",
-            "unit": "mmHg",
-            "system": "http://unitsofmeasure.org",
-            "code": "mm[Hg]"
+        "target": [
+          {
+            "measure": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "detailQuantity": {
+              "value": 140,
+              "comparator": "<",
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
           }
-        },
+        ],
         "expressedBy": {
           "reference": "Practitioner/va-prac-visn6-francis",
           "display": "Dr. Francis, MD"
@@ -265,7 +311,17 @@
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diastolic BP below 80</div>"
         },
-        "status": "in-progress",
+        "achievementStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress",
+              "display": "In Progress"
+            }
+          ],
+          "text": "In Progress"
+        },
+        "lifecycleStatus": "active",
         "description": {
           "text": "Diastolic blood pressure"
         },
@@ -273,25 +329,27 @@
           "reference": "Patient/va-pat-dan"
         },
         "startDate": "2019-01-12",
-        "target": {
-          "measure": {
-            "coding": [
-              {
-                "system": "http://loinc.org",
-                "code": "8462-4",
-                "display": "Diastolic blood pressure"
-              }
-            ],
-            "text": "Diastolic blood pressure"
-          },
-          "detailQuantity": {
-            "value": 80,
-            "comparator": "<",
-            "unit": "mmHg",
-            "system": "http://unitsofmeasure.org",
-            "code": "mm[Hg]"
+        "target": [
+          {
+            "measure": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "detailQuantity": {
+              "value": 80,
+              "comparator": "<",
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
           }
-        },
+        ],
         "expressedBy": {
           "reference": "Practitioner/va-prac-visn6-francis",
           "display": "Dr. Francis, MD"
@@ -320,7 +378,17 @@
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Exercise at least 30 minutes per day</div>"
         },
-        "status": "in-progress",
+        "achievementStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress",
+              "display": "In Progress"
+            }
+          ],
+          "text": "In Progress"
+        },
+        "lifecycleStatus": "active",
         "description": {
           "text": "Exercise at least 30 minutes per day"
         },
@@ -328,18 +396,20 @@
           "reference": "Patient/va-pat-dan"
         },
         "startDate": "2017-12-07",
-        "target": {
-          "measure": {
-            "coding": [
-              {
-                "system": "http://snomed.info/sct",
-                "code": "226029000",
-                "display": "Exercises"
-              }
-            ],
-            "text": "Exercises"
+        "target": [
+          {
+            "measure": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "226029000",
+                  "display": "Exercises"
+                }
+              ],
+              "text": "Exercises"
+            }
           }
-        },
+        ],
         "expressedBy": {
           "reference": "Practitioner/va-prac-visn6-francis",
           "display": "Dr. Francis, MD"
