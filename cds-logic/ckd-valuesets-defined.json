@@ -1,0 +1,72 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "ValueSet/ckd-valueset-ckd"
+      },
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "ckd-valueset-ckd",
+        "status": "active",
+        "compose": {
+          "include": [
+            {
+              "system": "http://snomed.info/sct",
+              "concept": [
+                {
+                  "code": "709044004"
+                }
+              ]
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "filter": [
+                {
+                  "property": "concept",
+                  "op": "is-a",
+                  "value": "709044004"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "ValueSet/ckd-valueset-diabetes"
+      },
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "ckd-valueset-diabetes",
+        "status": "active",
+        "compose": {
+          "include": [
+            {
+              "system": "http://snomed.info/sct",
+              "concept": [
+                {
+                  "code": "73211009"
+                }
+              ]
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "filter": [
+                {
+                  "property": "concept",
+                  "op": "is-a",
+                  "value": "73211009"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
