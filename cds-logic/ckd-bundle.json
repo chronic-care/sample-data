@@ -11,9 +11,9 @@
         "resourceType": "PlanDefinition",
         "id": "ckd-management",
         "status": "draft",
-        "library": {
-          "reference": "Library/CKDRiskLogic"
-        },
+        "library": [
+          "Library/CKDRiskLogic"
+        ],
         "title": "Chronic Kidney Disease (CKD) guidelines",
         "description": "Chronic Kidney Disease (CKD) guidelines",
         "type": {
@@ -27,22 +27,24 @@
         },
         "action": [
           {
-            "triggerDefinition": [
+            "trigger": [
               {
                 "type": "named-event",
-                "eventName": "patient-view"
+                "name": "patient-view"
               }
             ],
             "condition": [
               {
                 "kind": "applicability",
-                "language": "text/cql",
-                "expression": "Has CKD or Diabetes"
+                "expression": {
+                  "language": "text/cql",
+                  "expression":"Has CKD or Diabetes"
+                }
               }
             ],
             "action": [
               {
-                "label": "Order Lab Panel",
+                "prefix": "Order Lab Panel",
                 "title": "Order Renal Lab Panel",
                 "description": "Order full renal lab panel, eGFR or UCAR indicates risk.",
                 "documentation": [
@@ -55,25 +57,37 @@
                 "condition": [
                   {
                     "kind": "applicability",
-                    "language": "text/cql",
-                    "expression": "Needs eGFR Lab"
+                    "expression": {
+                      "language": "text/cql",
+                      "expression":"Needs eGFR Lab"
+                    }
                   }
                 ],
                 "type": {
-                  "system": "http://hl7.org/fhir/action-type",
-                  "code": "create"
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/action-type",
+                      "code": "create"
+                    }
+                  ]
                 },
-                "definition": {
-                  "reference": "ActivityDefinition/ckd-renal-lab-order"
-                },
+                "definitionUri": 
+                  "ActivityDefinition/ckd-renal-lab-order"
+                ,
                 "dynamicValue": [
                   {
                     "path": "action.description",
-                    "expression": "NeedsGFRDetail"
+                    "expression": {
+                      "expression": "NeedsGFRDetail",
+                      "language" : "text/cql"
+                    }
                   },
                   {
                     "path": "activity.extension",
-                    "expression": "NeedsGFRSeverity"
+                    "expression": {
+                      "expression": "NeedsGFRSeverity",
+                      "language" : "text/cql"
+                    }
                   }
                 ]
               },
@@ -89,18 +103,26 @@
                 "condition": [
                   {
                     "kind": "applicability",
-                    "language": "text/cql",
-                    "expression": "Has Abnormal eGFR"
+                    "expression": {
+                      "expression": "Has Abnormal eGFR",
+                      "language": "text/cql"
+                    }
                   }
                 ],
                 "dynamicValue": [
                   {
                     "path": "action.description",
-                    "expression": "2-YearRiskDetail"
+                    "expression": {
+                      "expression":"2-YearRiskDetail",
+                      "language": "text/cql"
+                    }
                   },
                   {
                     "path": "activity.extension",
-                    "expression": "2-YearRiskSeverity"
+                    "expression": {
+                      "expression": "2-YearRiskSeverity",
+                      "language": "text/cql"
+                    }
                   }
                 ]
               },
@@ -116,18 +138,26 @@
                 "condition": [
                   {
                     "kind": "applicability",
-                    "language": "text/cql",
-                    "expression": "Has Abnormal eGFR"
+                    "expression": {
+                      "language": "text/cql",
+                      "expression":"Has Abnormal eGFR"
+                    }
                   }
                 ],
                 "dynamicValue": [
                   {
                     "path": "action.description",
-                    "expression": "5-YearRiskDetail"
+                    "expression": {
+                      "language": "text/cql",
+                      "expression":"5-YearRiskDetail"
+                    }
                   },
                   {
                     "path": "activity.extension",
-                    "expression": "5-YearRiskSeverity"
+                    "expression": {
+                      "expression":"5-YearRiskSeverity",
+                      "language": "text/cql"
+                    }
                   }
                 ]
               },
@@ -143,25 +173,35 @@
                 "condition": [
                   {
                     "kind": "applicability",
-                    "language": "text/cql",
-                    "expression": "Recommend Nephrology Referral"
+                    "expression": {
+                      "expression": "Recommend Nephrology Referral",
+                      "language": "text/cql"
+                    }
                   }
                 ],
                 "type": {
-                  "system": "http://hl7.org/fhir/action-type",
-                  "code": "create"
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/action-type",
+                      "code": "create"
+                    }
+                  ]
                 },
-                "definition": {
-                  "reference": "ActivityDefinition/ckd-referral-nephrology"
-                },
+                "definitionUri": "ActivityDefinition/ckd-referral-nephrology",
                 "dynamicValue": [
                   {
                     "path": "action.description",
-                    "expression": "NephrologyReferralDetail"
+                    "expression":  {
+                      "expression":"NephrologyReferralDetail",
+                      "language": "text/cql"
+                    }
                   },
                   {
                     "path": "activity.extension",
-                    "expression": "NephrologyReferralSeverity"
+                    "expression":  {
+                      "expression":"NephrologyReferralSeverity",
+                      "language": "text/cql"
+                    }
                   }
                 ]
               }
@@ -180,9 +220,9 @@
         "id": "ckd-renal-lab-order",
         "status": "draft",
         "description": "Create ServiceRequest to order Renal lab panel",
-        "library": {
-          "reference": "Library/CKDRiskLogic"
-        },
+        "library": [
+          "Library/CKDRiskLogic"
+        ],
         "kind": "ServiceRequest",
         "code": {
           "coding": [
@@ -201,7 +241,10 @@
         "dynamicValue": [
           {
             "path": "reasonReference",
-            "expression": "CKD or Diabetes Dx"
+            "expression": {
+              "expression" : "CKD or Diabetes Dx", 
+              "language" : "text/cql"
+            }
           }
         ]
       }
@@ -216,9 +259,7 @@
         "id": "ckd-referral-nephrology",
         "status": "draft",
         "description": "Create ServiceRequest to order Referral for nephrology.",
-        "library": {
-          "reference": "Library/CKDRiskLogic"
-        },
+        "library": [ "Library/CKDRiskLogic"],
         "kind": "ServiceRequest",
         "code": {
           "coding": [
@@ -237,7 +278,10 @@
         "dynamicValue": [
           {
             "path": "reasonReference",
-            "expression": "Chronic Kidney Disease Dx"
+            "expression": {
+              "expression" :  "Chronic Kidney Disease Dx",
+              "language" : "text/cql"
+            }
           }
         ]
       }
