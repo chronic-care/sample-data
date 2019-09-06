@@ -400,7 +400,7 @@
       },
       "resource": {
         "resourceType": "Location",
-        "id": "va-loc-visn6-cboc1",
+        "id": "va-org-va-loc-visn6-cboc1",
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Virginia Beach CBOC, Location</div>"
