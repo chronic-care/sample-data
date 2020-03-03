@@ -1,0 +1,84 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Procedure/va-proc-mae-pt"
+      },
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "va-proc-mae-pt",
+        "subject": {
+          "reference": "Patient/cc-pat-mae",
+          "display": "Mae"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "444831000124102",
+              "display": "Referral for physical therapy (procedure)"
+            }
+          ],
+          "text": "Referral for physical therapy (procedure)"
+        },
+        "performedDateTime": "2019-12-02T16:00:00.000Z"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Procedure/va-proc-mae-massage-1"
+      },
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "va-proc-mae-massage-1",
+        "subject": {
+          "reference": "Patient/cc-pat-mae",
+          "display": "Mae"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "387854002",
+              "display": "Massage physiotherapy (regime/therapy)"
+            }
+          ],
+          "text": "Massage physiotherapy (regime/therapy)"
+        },
+        "performedDateTime": "2020-02-15T16:00:00.000Z"
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Procedure/va-proc-mae-massage-2"
+      },
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "va-proc-mae-massage-2",
+        "subject": {
+          "reference": "Patient/cc-pat-mae",
+          "display": "Mae"
+        },
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "387854002",
+              "display": "Massage physiotherapy (regime/therapy)"
+            }
+          ],
+          "text": "Massage physiotherapy (regime/therapy)"
+        },
+        "performedDateTime": "2020-01-19T16:30:00.000Z"
+      }
+    }
+  ]
+}

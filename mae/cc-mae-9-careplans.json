@@ -1,0 +1,237 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/cc-careplan-mae-ckd"
+      },
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "cc-careplan-mae-ckd",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mae's CKD care plan</div>"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-mae"
+        },
+        "status": "active",
+        "intent": "plan",
+        "period": {
+          "start": "2018-06-01"
+        },
+        "author": {
+          "reference": "Practitioner/cc-prac-jones-vince",
+          "display": "Dr. Vince Jones, MD"
+        },
+        "title": "CKD Care Plan",
+        "description": "Care plan to slow progression of CKD and Type 2 Diabetes.",
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-mae-ckd"
+          }
+        ],
+        "goal": [
+          {
+            "reference": "Goal/cc-goal-mae-bp-systolic"
+          },
+          {
+            "reference": "Goal/cc-goal-mae-lab-phos"
+          },
+          {
+            "reference": "Goal/cc-goal-mae-a1c"
+          }
+        ],
+        "careTeam": [
+          {
+            "reference": "CareTeam/cc-team-mae"
+          }
+        ],
+        "activity": [
+          {
+            "reference": {
+              "reference": "ServiceRequest/cc-service-mae-edu-ckd"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ServiceRequest/cc-service-mae-edu-diet"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ServiceRequest/cc-service-mae-exercise"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ServiceRequest/cc-service-mae-steps"
+            }
+          },
+          {
+            "reference": {
+              "reference": "MedicationRequest/cc-med-mae-vitamin-d"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/cc-careplan-mae-personal"
+      },
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "cc-careplan-mae-personal",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mae's personal care plan</div>"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-mae"
+        },
+        "status": "active",
+        "intent": "plan",
+        "period": {
+          "start": "2019-01-01",
+          "end": "2019-12-31"
+        },
+        "author": {
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        },
+        "title": "Personal Care Plan",
+        "description": "Plan for Mae's self-care at home.",
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-mae-anxiety"
+          },
+          {
+            "reference": "Condition/cc-cond-mae-transportation"
+          }
+        ],
+        "goal": [
+          {
+            "reference": "Goal/cc-goal-mae-exercise"
+          }
+        ],
+        "careTeam": [
+          {
+            "reference": "CareTeam/cc-team-mae-support"
+          }
+        ],
+        "activity": [
+          {
+            "detail": {
+              "kind": "ServiceRequest",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "29463-7",
+                    "display": "Body weight"
+                  }
+                ]
+              },
+              "performer": [
+                {
+                  "reference": "Patient/cc-pat-mae"
+                }
+              ],
+              "description": "Record your weight each morning before breakfast.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2018-08-30",
+                    "end": "2019-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "detail": {
+              "kind": "ServiceRequest",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood pressure systolic and diastolic"
+                  }
+                ]
+              },
+              "performer": [
+                {
+                  "reference": "Patient/cc-pat-mae"
+                }
+              ],
+              "description": "Record your blood pressure twice per day, morning and evening.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2018-08-30",
+                    "end": "2019-12-31"
+                  },
+                  "frequency": 2,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "detail": {
+              "kind": "ServiceRequest",
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "2339-0",
+                    "display": "Glucose [Mass/volume] in Blood"
+                  }
+                ]
+              },
+              "performer": [
+                {
+                  "reference": "Patient/cc-pat-mae"
+                }
+              ],
+              "description": "Record your blood glucose twice per day, after breakfast and dinner.",
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2018-08-30",
+                    "end": "2019-12-31"
+                  },
+                  "frequency": 2,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

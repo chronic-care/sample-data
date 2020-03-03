@@ -1,0 +1,43 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Organization/cc-org-meals-on-wheels"
+      },
+      "resource": {
+        "resourceType": "Organization",
+        "id": "cc-org-meals-on-wheels",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Meals on Wheels organization</div>"
+        },
+        "name": "Meals on Wheels",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(+1) 800-555-1212"
+          },
+          {
+            "system": "fax",
+            "value": "(+1) 888-555-1212"
+          },
+          {
+            "system": "email",
+            "value": "meals-on-wheels@woohoo.com"
+          }
+        ],
+        "address": [
+          {
+            "city": "Ann Arbor",
+            "state": "MI",
+            "postalCode": "48104",
+            "country": "USA"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,392 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/cc-goal-mae-a1c"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "cc-goal-mae-a1c",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Stabilize Hemoglobin A1c</div>"
+        },
+        "achievementStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress",
+              "display": "In Progress"
+            }
+          ],
+          "text": "In Progress"
+        },
+        "lifecycleStatus": "active",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-priority",
+              "code": "high-priority",
+              "display": "High Priority"
+            }
+          ],
+          "text": "high"
+        },
+        "description": {
+          "text": "Stabilize Hemoglobin A1c"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-mae"
+        },
+        "startDate": "2016-11-30",
+        "target": [
+          {
+            "measure": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "4548-4",
+                  "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+                }
+              ],
+              "text": "Hemoglobin A1c total in Blood"
+            },
+            "detailQuantity": {
+              "value": 7,
+              "comparator": "<",
+              "unit": "%",
+              "system": "http://unitsofmeasure.org/",
+              "code": "%"
+            }
+          }
+        ],
+        "expressedBy": {
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        },
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-mae-diabetes",
+            "display": "Type 2 diabetes mellitus"
+          }
+        ],
+        "note": [
+          {
+            "text": "Regularly monitor A1C levels toward overall goal of 6.0."
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/cc-goal-mae-bp-systolic"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "cc-goal-mae-bp-systolic",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Systolic BP below 140</div>"
+        },
+        "achievementStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress",
+              "display": "In Progress"
+            }
+          ],
+          "text": "In Progress"
+        },
+        "lifecycleStatus": "active",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-priority",
+              "code": "medium-priority",
+              "display": "Medium Priority"
+            }
+          ],
+          "text": "medium"
+        },
+        "description": {
+          "text": "Systolic blood pressure"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-mae"
+        },
+        "startDate": "2017-06-30",
+        "target": [
+          {
+            "measure": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "detailQuantity": {
+              "value": 140,
+              "comparator": "<",
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ],
+        "expressedBy": {
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        },
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-mae-ckd",
+            "display": "Chronic kidney disease"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/cc-goal-mae-bp-diastolic"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "cc-goal-mae-bp-diastolic",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diastolic BP below 80</div>"
+        },
+        "achievementStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress",
+              "display": "In Progress"
+            }
+          ],
+          "text": "In Progress"
+        },
+        "lifecycleStatus": "active",
+        "description": {
+          "text": "Diastolic blood pressure"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-mae"
+        },
+        "startDate": "2019-01-12",
+        "target": [
+          {
+            "measure": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "detailQuantity": {
+              "value": 80,
+              "comparator": "<",
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ],
+        "expressedBy": {
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        },
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-mae-ckd",
+            "display": "Chronic kidney disease"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/cc-goal-mae-lab-phos"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "cc-goal-mae-lab-phos",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Phosphorus between 2.5 and 4.5 mg/dL</div>"
+        },
+        "achievementStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress",
+              "display": "In Progress"
+            }
+          ],
+          "text": "In Progress"
+        },
+        "lifecycleStatus": "active",
+        "priority": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-priority",
+              "code": "high-priority",
+              "display": "High Priority"
+            }
+          ],
+          "text": "high"
+        },
+        "description": {
+          "text": "Phosphorus in blood"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-mae"
+        },
+        "startDate": "2018-02-20",
+        "target": [
+          {
+            "measure": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "2777-1",
+                  "display": "Phosphate [Mass/volume] in Serum or Plasma"
+                }
+              ],
+              "text": "Serum phosphorus"
+            },
+            "detailRange": {
+              "low": {
+                "value": 2.5,
+                "unit": "mg/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "mg/dL"
+              },
+              "high": {
+                "value": 4.5,
+                "unit": "mg/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "mg/dL"
+              }
+            }
+          }
+        ],
+        "expressedBy": {
+          "reference": "Practitioner/cc-prac-jones-vince",
+          "display": "Dr. Vince Jones, MD"
+        },
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-mae-ckd"
+          }
+        ],
+        "note": [
+          {
+            "text": "Normal working kidneys can remove extra phosphorus in your blood. When you have chronic kidney disease (CKD), your kidneys cannot remove phosphorus very well. High phosphorus levels can cause damage to your body. Extra phosphorus causes body changes that pull calcium out of your bones, making them weak. High phosphorus and calcium levels also lead to dangerous calcium deposits in blood vessels, lungs, eyes, and heart. Phosphorus and calcium control are very important for your overall health."
+          },
+          {
+            "text": "Source https://www.kidney.org/atoz/content/phosphorus"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/cc-goal-mae-exercise"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "cc-goal-mae-exercise",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Exercise at least 30 minutes per day</div>"
+        },
+        "achievementStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress",
+              "display": "In Progress"
+            }
+          ],
+          "text": "In Progress"
+        },
+        "lifecycleStatus": "active",
+        "description": {
+          "text": "Exercise at least 30 minutes per day"
+        },
+        "subject": {
+          "reference": "Patient/cc-pat-mae"
+        },
+        "startDate": "2017-12-07",
+        "target": [
+          {
+            "measure": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "226029000",
+                  "display": "Exercises"
+                }
+              ],
+              "text": "Exercises"
+            }
+          }
+        ],
+        "expressedBy": {
+          "reference": "Practitioner/cc-prac-carlson-john",
+          "display": "Dr. John Carlson, MD"
+        },
+        "addresses": [
+          {
+            "reference": "Condition/cc-cond-mae-ckd",
+            "display": "Chronic kidney disease"
+          },
+          {
+            "reference": "Condition/cc-cond-mae-diabetes",
+            "display": "Type 2 diabetes mellitus"
+          }
+        ]
+      }
+    }
+  ]
+}
