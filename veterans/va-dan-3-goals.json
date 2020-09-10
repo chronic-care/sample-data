@@ -5,11 +5,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Goal/va-goal-dan-1"
+        "url": "Goal/va-goal-dan-social"
       },
       "resource": {
         "resourceType": "Goal",
-        "id": "va-goal-dan-1",
+        "id": "va-goal-dan-social",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/Goal"
@@ -17,7 +17,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Life goals</div></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Reduce social isolation</div></div>"
         },
         "achievementStatus": {
           "coding": [
@@ -30,26 +30,17 @@
           "text": "In Progress"
         },
         "lifecycleStatus": "active",
-        "priority": {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/goal-priority",
-              "code": "high-priority",
-              "display": "High Priority"
-            }
-          ],
-          "text": "High"
-        },
         "subject": {
           "reference": "Patient/va-pat-dan",
           "display": "Dan"
         },
         "expressedBy": {
-          "reference": "Practitioner/va-prac-visn6-francis",
-          "display": "Dr. Francis, MD"
+          "reference": "Patient/va-pat-dan",
+          "display": "Dan"
         },
+        "startDate": "2020-05-20",
         "description": {
-          "text": "Dan lives for his grandchildren. He is committed to staying healthy enough to see his youngest graduate from college."
+          "text": "Reduce social isolation during Covid-19, plan weekly Zoom with my grandkids."
         }
       }
     },
@@ -94,7 +85,7 @@
           "reference": "Patient/va-pat-dan",
           "display": "Dan"
         },
-        "startDate": "2018-11-30",
+        "startDate": "2019-11-30",
         "target": [
           {
             "measure": {
@@ -178,7 +169,7 @@
           "reference": "Patient/va-pat-dan",
           "display": "Dan"
         },
-        "startDate": "2016-11-30",
+        "startDate": "2019-11-30",
         "target": [
           {
             "measure": {
@@ -220,11 +211,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "Goal/va-goal-dan-bp-systolic"
+        "url": "Goal/va-goal-dan-bp"
       },
       "resource": {
         "resourceType": "Goal",
-        "id": "va-goal-dan-bp-systolic",
+        "id": "va-goal-dan-bp",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/Goal"
@@ -232,7 +223,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Systolic BP below 140</div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">BP below 140/90</div>"
         },
         "achievementStatus": {
           "coding": [
@@ -256,12 +247,12 @@
           "text": "Medium"
         },
         "description": {
-          "text": "Systolic blood pressure"
+          "text": "Blood pressure managed to target"
         },
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "startDate": "2017-06-30",
+        "startDate": "2020-06-30",
         "target": [
           {
             "measure": {
@@ -280,56 +271,9 @@
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
-            }
-          }
-        ],
-        "expressedBy": {
-          "reference": "Practitioner/va-prac-visn6-francis",
-          "display": "Dr. Francis, MD"
-        },
-        "addresses": [
-          {
-            "reference": "Condition/va-cond-dan-hypertension"
-          }
-        ]
-      }
-    },
-    {
-      "request": {
-        "method": "PUT",
-        "url": "Goal/va-goal-dan-bp-diastolic"
-      },
-      "resource": {
-        "resourceType": "Goal",
-        "id": "va-goal-dan-bp-diastolic",
-        "meta": {
-          "profile": [
-            "http://hl7.org/fhir/StructureDefinition/Goal"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diastolic BP below 80</div>"
-        },
-        "achievementStatus": {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
-              "code": "in-progress",
-              "display": "In Progress"
-            }
-          ],
-          "text": "In Progress"
-        },
-        "lifecycleStatus": "active",
-        "description": {
-          "text": "Diastolic blood pressure"
-        },
-        "subject": {
-          "reference": "Patient/va-pat-dan"
-        },
-        "startDate": "2019-01-12",
-        "target": [
+            },
+            "dueDate": "2020-11-01"
+          },
           {
             "measure": {
               "coding": [
@@ -395,7 +339,7 @@
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "startDate": "2017-12-07",
+        "startDate": "2020-09-07",
         "target": [
           {
             "measure": {

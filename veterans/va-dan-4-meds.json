@@ -19,13 +19,13 @@
           "status": "additional",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>MedicationRequest: Lisinopril 10 MG Oral Tablet</div></div>"
         },
-        "status": "active",
+        "status": "completed",
         "intent": "order",
         "medicationCodeableConcept": {
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "316151",
+              "code": "314076",
               "display": "Lisinopril 10 MG Oral Tablet"
             }
           ],
@@ -118,7 +118,7 @@
           "reference": "Patient/va-pat-dan",
           "display": "Dan"
         },
-        "authoredOn": "2018-12-01",
+        "authoredOn": "2019-12-01",
         "requester": {
           "reference": "Practitioner/va-prac-visn6-francis",
           "display": "Dr. Francis, MD"
@@ -129,8 +129,8 @@
             "timing": {
               "repeat": {
                 "boundsPeriod": {
-                  "start": "2018-12-01",
-                  "end": "2019-04-30"
+                  "start": "2019-12-01",
+                  "end": "2020-11-30"
                 },
                 "frequency": 2,
                 "period": 1,
@@ -201,7 +201,7 @@
           "reference": "Patient/va-pat-dan",
           "display": "Dan"
         },
-        "authoredOn": "2019-01-11",
+        "authoredOn": "2020-06-11",
         "requester": {
           "reference": "Practitioner/va-prac-visn6-francis",
           "display": "Dr. Francis, MD"
@@ -220,8 +220,8 @@
             "timing": {
               "repeat": {
                 "boundsPeriod": {
-                  "start": "2019-01-11",
-                  "end": "2019-06-30"
+                  "start": "2020-06-11",
+                  "end": "2020-12-31"
                 },
                 "frequency": 1,
                 "period": 1,

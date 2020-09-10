@@ -108,8 +108,8 @@
               "scheduledTiming": {
                 "repeat": {
                   "boundsPeriod": {
-                    "start": "2016-11-30",
-                    "end": "2017-12-31"
+                    "start": "2020-07-30",
+                    "end": "2020-12-31"
                   },
                   "frequency": 1,
                   "period": 1,
@@ -136,8 +136,8 @@
               "scheduledTiming": {
                 "repeat": {
                   "boundsPeriod": {
-                    "start": "2016-11-30",
-                    "end": "2017-12-31"
+                    "start": "2020-07-30",
+                    "end": "2020-12-31"
                   },
                   "frequency": 3,
                   "period": 1,
@@ -170,8 +170,8 @@
               "scheduledTiming": {
                 "repeat": {
                   "boundsPeriod": {
-                    "start": "2016-11-30",
-                    "end": "2017-12-31"
+                    "start": "2020-07-30",
+                    "end": "2020-12-31"
                   },
                   "frequency": 1,
                   "period": 1,
@@ -204,8 +204,8 @@
               "scheduledTiming": {
                 "repeat": {
                   "boundsPeriod": {
-                    "start": "2016-11-30",
-                    "end": "2017-12-31"
+                    "start": "2020-07-30",
+                    "end": "2020-12-31"
                   },
                   "frequency": 1,
                   "period": 1,

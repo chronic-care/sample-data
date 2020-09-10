@@ -44,7 +44,7 @@
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2018-10-06",
+        "effectiveDateTime": "2019-10-06",
         "performer": [
           {
             "reference": "Practitioner/va-prac-visn6-francis",
@@ -113,7 +113,7 @@
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2018-10-06",
+        "effectiveDateTime": "2019-10-06",
         "performer": [
           {
             "reference": "Practitioner/va-prac-visn6-francis",
@@ -182,7 +182,7 @@
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2018-10-06",
+        "effectiveDateTime": "2019-10-06",
         "performer": [
           {
             "reference": "Practitioner/va-prac-visn6-francis",
@@ -251,7 +251,7 @@
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2018-10-06",
+        "effectiveDateTime": "2019-10-06",
         "performer": [
           {
             "reference": "Practitioner/va-prac-visn6-francis",
@@ -320,7 +320,7 @@
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2018-10-06",
+        "effectiveDateTime": "2019-10-06",
         "performer": [
           {
             "reference": "Practitioner/va-prac-visn6-francis",
@@ -389,7 +389,7 @@
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2018-05-06",
+        "effectiveDateTime": "2020-05-06",
         "performer": [
           {
             "reference": "Practitioner/va-prac-visn6-francis",
@@ -458,7 +458,7 @@
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2018-03-10",
+        "effectiveDateTime": "2020-09-05",
         "performer": [
           {
             "reference": "Practitioner/va-prac-visn6-francis",

@@ -39,7 +39,7 @@
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2020-04-18",
+        "effectiveDateTime": "2020-08-10",
         "performer": [
           {
             "reference": "Practitioner/va-prac-visn6-francis",
@@ -95,7 +95,7 @@
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2020-04-18",
+        "effectiveDateTime": "2020-08-10",
         "performer": [
           {
             "reference": "Practitioner/va-prac-visn6-francis",
@@ -147,7 +147,7 @@
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2020-04-19",
+        "effectiveDateTime": "2020-08-19",
         "performer": [
           {
             "reference": "Practitioner/va-prac-visn6-francis",
@@ -162,6 +162,162 @@
               "display": "Detected"
             }
           ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-dan-lab-bilirubin"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-dan-lab-lab-bilirubin",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1975-2",
+              "display": "Bilirubin.total [Mass/volume] in Serum or Plasma"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan"
+        },
+        "effectiveDateTime": "2020-08-19",
+        "performer": [
+          {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 12.5,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org/",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-dan-lab-neutrophil"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-dan-lab-lab-neutrophil",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "751-8",
+              "display": "Neutrophils [#/volume] in Blood by Automated count"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan"
+        },
+        "effectiveDateTime": "2020-08-19",
+        "performer": [
+          {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 6.5,
+          "unit": "10^9/mL",
+          "system": "http://unitsofmeasure.org/",
+          "code": "10^9/mL"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-dan-lab-lymphocytes"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-dan-lab-lab-lymphocytes",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "731-0",
+              "display": "Lymphocytes [#/volume] in Blood by Automated count"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan"
+        },
+        "effectiveDateTime": "2020-08-19",
+        "performer": [
+          {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 0.9,
+          "unit": "10^9/mL",
+          "system": "http://unitsofmeasure.org/",
+          "code": "10^9/mL"
         }
       }
     },
@@ -194,7 +350,7 @@
           "reference": "Patient/va-pat-dan",
           "display": "Dan"
         },
-        "authoredOn": "2020-04-22",
+        "authoredOn": "2020-08-22",
         "requester": {
           "reference": "Practitioner/va-prac-visn6-francis",
           "display": "Dr. Francis, MD"
@@ -205,8 +361,8 @@
             "timing": {
               "repeat": {
                 "boundsPeriod": {
-                  "start": "2020-04-22",
-                  "end": "2020-04-30"
+                  "start": "2020-08-22",
+                  "end": "2020-08-30"
                 },
                 "frequency": 2,
                 "period": 1,
@@ -267,7 +423,7 @@
           ],
           "text": "Oxygen administration by nasal cannula (procedure)"
         },
-        "performedDateTime": "2020-04-21T16:00:00.000Z"
+        "performedDateTime": "2020-08-21T16:00:00.000Z"
       }
     }
   ]

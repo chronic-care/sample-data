@@ -36,7 +36,7 @@
             {
               "system": "http://loinc.org",
               "code": "85354-9",
-              "display": "Blood pressure panel with all children optional"
+              "display": "Blood pressure systolic and diastolic"
             }
           ]
         },
@@ -131,14 +131,14 @@
             {
               "system": "http://loinc.org",
               "code": "85354-9",
-              "display": "Blood pressure panel with all children optional"
+              "display": "Blood pressure systolic and diastolic"
             }
           ]
         },
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2018-06-22",
+        "effectiveDateTime": "2018-09-22",
         "performer": [
           {
             "reference": "Practitioner/va-prac-visn6-francis",
@@ -183,7 +183,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 93,
+              "value": 77,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
@@ -226,14 +226,14 @@
             {
               "system": "http://loinc.org",
               "code": "85354-9",
-              "display": "Blood pressure panel with all children optional"
+              "display": "Blood pressure systolic and diastolic"
             }
           ]
         },
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2018-07-11",
+        "effectiveDateTime": "2019-04-15",
         "performer": [
           {
             "reference": "Practitioner/va-prac-visn6-francis",
@@ -321,14 +321,14 @@
             {
               "system": "http://loinc.org",
               "code": "85354-9",
-              "display": "Blood pressure panel with all children optional"
+              "display": "Blood pressure systolic and diastolic"
             }
           ]
         },
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2018-09-11",
+        "effectiveDateTime": "2019-09-11",
         "performer": [
           {
             "reference": "Practitioner/va-prac-visn6-francis",
@@ -356,7 +356,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 160,
+              "value": 141,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
@@ -373,7 +373,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 92,
+              "value": 76,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
@@ -416,14 +416,14 @@
             {
               "system": "http://loinc.org",
               "code": "85354-9",
-              "display": "Blood pressure panel with all children optional"
+              "display": "Blood pressure systolic and diastolic"
             }
           ]
         },
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2018-09-25",
+        "effectiveDateTime": "2020-03-25",
         "performer": [
           {
             "reference": "Practitioner/va-prac-visn6-francis",
@@ -451,7 +451,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 151,
+              "value": 135,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
@@ -468,7 +468,7 @@
               ]
             },
             "valueQuantity": {
-              "value": 88,
+              "value": 79,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
@@ -511,14 +511,14 @@
             {
               "system": "http://loinc.org",
               "code": "85354-9",
-              "display": "Blood pressure panel with all children optional"
+              "display": "Blood pressure systolic and diastolic"
             }
           ]
         },
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2018-10-06",
+        "effectiveDateTime": "2020-08-15",
         "performer": [
           {
             "reference": "Practitioner/va-prac-visn6-francis",
@@ -606,14 +606,14 @@
             {
               "system": "http://loinc.org",
               "code": "85354-9",
-              "display": "Blood pressure panel with all children optional"
+              "display": "Blood pressure systolic and diastolic"
             }
           ]
         },
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2018-12-30",
+        "effectiveDateTime": "2020-09-03",
         "performer": [
           {
             "reference": "Practitioner/va-prac-visn6-francis",

@@ -155,7 +155,7 @@
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2019-01-03",
+        "effectiveDateTime": "2020-08-03",
         "performer": [
           {
             "reference": "Practitioner/va-prac-visn6-francis",
@@ -211,7 +211,7 @@
         "subject": {
           "reference": "Patient/va-pat-dan"
         },
-        "effectiveDateTime": "2018-03-30",
+        "effectiveDateTime": "2020-08-03",
         "performer": [
           {
             "reference": "Practitioner/va-prac-visn6-francis",

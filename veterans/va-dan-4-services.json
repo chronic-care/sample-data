@@ -30,8 +30,8 @@
           "reference": "Patient/va-pat-dan"
         },
         "occurrencePeriod": {
-          "start": "2018-09-30",
-          "end": "2018-12-31"
+          "start": "2020-09-30",
+          "end": "2020-12-31"
         },
         "requester": {
           "reference": "Practitioner/va-prac-visn6-francis",
@@ -87,8 +87,8 @@
         "occurrenceTiming": {
           "repeat": {
             "boundsPeriod": {
-              "start": "2018-11-30",
-              "end": "2019-12-31"
+              "start": "2020-04-30",
+              "end": "2020-12-31"
             },
             "frequency": 1,
             "period": 1,
@@ -154,8 +154,8 @@
         "occurrenceTiming": {
           "repeat": {
             "boundsPeriod": {
-              "start": "2018-11-30",
-              "end": "2019-12-31"
+              "start": "2020-04-30",
+              "end": "2020-12-31"
             },
             "frequency": 1,
             "period": 1,
@@ -218,8 +218,8 @@
         "occurrenceTiming": {
           "repeat": {
             "boundsPeriod": {
-              "start": "2018-11-30",
-              "end": "2019-12-31"
+              "start": "2020-08-01",
+              "end": "2020-12-31"
             },
             "frequency": 1,
             "period": 2,
@@ -277,8 +277,8 @@
         "occurrenceTiming": {
           "repeat": {
             "boundsPeriod": {
-              "start": "2018-09-30",
-              "end": "2019-12-31"
+              "start": "2020-08-01",
+              "end": "2020-12-31"
             },
             "frequency": 1,
             "period": 4,
@@ -336,8 +336,8 @@
         "occurrenceTiming": {
           "repeat": {
             "boundsPeriod": {
-              "start": "2019-01-30",
-              "end": "2019-12-31"
+              "start": "2020-02-01",
+              "end": "2020-04-30"
             },
             "frequency": 1,
             "period": 4,

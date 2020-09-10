@@ -57,7 +57,7 @@
           "reference": "Patient/va-pat-dan",
           "display": "Dan"
         },
-        "onsetDateTime": "2018-03-19"
+        "onsetDateTime": "2020-06-19"
       }
     },
     {
@@ -115,7 +115,7 @@
           "reference": "Patient/va-pat-dan",
           "display": "Dan"
         },
-        "onsetDateTime": "2018-11-17"
+        "onsetDateTime": "2020-07-17"
       }
     },
     {
@@ -191,7 +191,7 @@
           "reference": "Patient/va-pat-dan",
           "display": "Dan"
         },
-        "onsetDateTime": "1998-06-15"
+        "onsetDateTime": "2018-06-15"
       }
     },
     {
@@ -333,17 +333,17 @@
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "38341003",
-              "display": "Hypertension"
+              "code": "59621000",
+              "display": "Essential hypertension (disorder)"
             }
           ],
-          "text": "Hypertension"
+          "text": "Essential hypertension (disorder)"
         },
         "subject": {
           "reference": "Patient/va-pat-dan",
           "display": "Dan"
         },
-        "onsetDateTime": "2013-04-30"
+        "onsetDateTime": "2017-04-30"
       }
     },
     {
