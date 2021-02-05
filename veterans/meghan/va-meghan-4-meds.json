@@ -1,0 +1,90 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/va-med-meghan-clonazepam"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "va-med-meghan-clonazepam",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/3.0/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197527",
+              "display": "Clonazepam 0.5 MG Oral Tablet"
+            }
+          ],
+          "text": "Clonazepam 0.5 MG Oral Tablet"
+        },
+        "authoredOn": "2019-11-07T16:02:00.000Z",
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "requester": {
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/va-cond-meghan-ptsd"
+          }
+        ],
+        "dosageInstruction": [
+          {
+            "text": "Take one tablet three times per day for seizures.",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2019-11-07",
+                  "end": "2020-06-30"
+                },
+                "frequency": 3,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "Oral route"
+            },
+            "doseAndRate": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                      "code": "ordered",
+                      "display": "Ordered"
+                    }
+                  ]
+                },
+                "doseQuantity": {
+                  "value": 0.5,
+                  "unit": "mg"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

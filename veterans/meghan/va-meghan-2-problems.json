@@ -1,0 +1,370 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/va-cond-meghan-back-pain"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "va-cond-meghan-back-pain",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Low back pain</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ],
+          "text": "Active"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ],
+          "text": "Confirmed"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ],
+            "text": "Problem"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "278860009",
+              "display": "Chronic low back pain (finding)"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M54.5",
+              "display": "Low back pain"
+            }
+          ],
+          "text": "Chronic low back pain"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "onsetDateTime": "2012-08-02",
+        "asserter": {
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/va-cond-meghan-ptsd"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "va-cond-meghan-ptsd",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">PTSD</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ],
+          "text": "Active"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ],
+          "text": "Confirmed"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ],
+            "text": "Problem"
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "24484000",
+              "display": "Severe"
+            }
+          ],
+          "text": "Severe"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "47505003",
+              "display": "Posttraumatic stress disorder"
+            }
+          ],
+          "text": "PTSD - Posttraumatic stress disorder"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "onsetDateTime": "2014-12-01",
+        "recordedDate": "2015-06-30",
+        "asserter": {
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/va-cond-meghan-tbi"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "va-cond-meghan-tbi",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Traumatic Brain Injury (TBI)</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ],
+            "text": "Problem"
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "371923003",
+              "display": "Mild to moderate"
+            }
+          ],
+          "text": "Mild to moderate"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "127295002",
+              "display": "Traumatic brain injury"
+            }
+          ],
+          "text": "Traumatic Brain Injury (TBI)"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "onsetDateTime": "2012-08-02",
+        "asserter": {
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/va-cond-meghan-seizure"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "va-cond-meghan-seizure",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Partial seizure (disorder)</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ],
+            "text": "Problem"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "29753000",
+              "display": "Partial seizure (disorder)"
+            }
+          ],
+          "text": "Partial seizure (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "onsetDateTime": "2015-06-02",
+        "asserter": {
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/va-cond-meghan-depression"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "va-cond-meghan-depression",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Recurrent major depressive episodes, mild (disorder)</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ],
+            "text": "Problem"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "191610000",
+              "display": "Recurrent major depressive episodes, mild (disorder)y"
+            }
+          ],
+          "text": "Recurrent major depressive episodes, mild (disorder)"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "onsetDateTime": "2018-06-02",
+        "asserter": {
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/va-goal-meghan-sleep"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "va-goal-meghan-sleep",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "achievementStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress",
+              "display": "In Progress"
+            }
+          ],
+          "text": "In Progress"
+        },
+        "lifecycleStatus": "active",
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "expressedBy": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "description": {
+          "text": "Improve sleep quality."
+        },
+        "startDate": "2020-06-10",
+        "target": [
+          {
+            "measure": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "93831-6",
+                  "display": "Deep sleep duration"
+                }
+              ],
+              "text": "Deep sleep duration"
+            },
+            "detailQuantity": {
+              "value": 7,
+              "comparator": ">",
+              "unit": "hours",
+              "system": "http://unitsofmeasure.org",
+              "code": "hours"
+            },
+            "dueDate": "2020-10-31"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/va-goal-meghan-walking"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "va-goal-meghan-walking",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "achievementStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress",
+              "display": "In Progress"
+            }
+          ],
+          "text": "In Progress"
+        },
+        "lifecycleStatus": "active",
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "expressedBy": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "description": {
+          "text": "Start walking outdoors with the overall goal of being able to hike in nature again."
+        },
+        "startDate": "2020-06-10",
+        "target": [
+          {
+            "dueDate": "2020-10-31"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/va-goal-meghan-opioids"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "va-goal-meghan-opioids",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "achievementStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress",
+              "display": "In Progress"
+            }
+          ],
+          "text": "In Progress"
+        },
+        "lifecycleStatus": "active",
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "expressedBy": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "description": {
+          "text": "Learn ways to control pain without opioids."
+        },
+        "startDate": "2020-06-10",
+        "target": [
+          {
+            "dueDate": "2020-08-01"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/va-goal-meghan-weight"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "va-goal-meghan-weight",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "achievementStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress",
+              "display": "In Progress"
+            }
+          ],
+          "text": "In Progress"
+        },
+        "lifecycleStatus": "active",
+        "description": {
+          "text": "Lose 20 pounds"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan",
+          "display": "Meghan"
+        },
+        "startDate": "2020-04-07",
+        "target": [
+          {
+            "measure": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "29463-7",
+                  "display": "Body weight"
+                }
+              ]
+            },
+            "detailQuantity": {
+              "value": 125,
+              "comparator": "<",
+              "unit": "lb",
+              "system": "http://unitsofmeasure.org",
+              "code": "[lb_av]"
+            },
+            "dueDate": "2020-10-01"
+          }
+        ],
+        "expressedBy": {
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        },
+        "addresses": [
+          {
+            "reference": "Condition/va-cond-meghan-weight"
+          }
+        ],
+        "note": [
+          {
+            "text": "Recommend guidance from a dietician for Keto diet plan."
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Goal/va-goal-meghan-exercise"
+      },
+      "resource": {
+        "resourceType": "Goal",
+        "id": "va-goal-meghan-exercise",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Goal"
+          ]
+        },
+        "achievementStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+              "code": "in-progress",
+              "display": "In Progress"
+            }
+          ],
+          "text": "In Progress"
+        },
+        "lifecycleStatus": "active",
+        "description": {
+          "text": "Exercise at least 30 minutes per day"
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan"
+        },
+        "startDate": "2020-04-07",
+        "target": [
+          {
+            "measure": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "55411-3",
+                  "display": "Exercise duration"
+                }
+              ],
+              "text": "Exercise duration"
+            }
+          }
+        ],
+        "expressedBy": {
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        },
+        "addresses": [
+          {
+            "reference": "Condition/va-cond-meghan-weight"
+          },
+          {
+            "reference": "Condition/vva-cond-meghan-ptsd"
+          }
+        ]
+      }
+    }
+  ]
+}

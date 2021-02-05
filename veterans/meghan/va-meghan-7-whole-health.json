@@ -1,0 +1,285 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-meghan-phi-map"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-meghan-phi-map",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.va.gov/CodeSystem/observation-category",
+                "code": "whole-health",
+                "display": "Whole Health"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://terminology.va.gov/CodeSystem/personal-health-inventory",
+              "code" : "mission",
+              "display" : "Mission, Aspiration, Purpose (MAP)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan"
+        },
+        "issued": "2020-05-20T16:30:00.000Z",
+        "performer": [
+          {
+            "reference": "Patient/va-pat-meghan",
+            "display": "Meghan Anderson"
+          }
+        ],
+        "valueString" : "I want to be a career person and I want to accomplish things and feel like I’m contributing to society, my community, and my family."
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-meghan-phi-well-being"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-meghan-phi-well-being",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.va.gov/CodeSystem/observation-category",
+                "code": "whole-health",
+                "display": "Whole Health"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://terminology.va.gov/CodeSystem/personal-health-inventory",
+              "code" : "well-being",
+              "display" : "Well-Being"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan"
+        },
+        "issued": "2020-05-27T15:59:19.2255Z",
+        "performer": [
+          {
+            "reference": "Patient/va-pat-meghan",
+            "display": "Meghan Anderson"
+          }
+        ],
+        "component": [
+          {
+            "valueInteger" : 2,
+            "code" : {
+              "coding" : [
+                {
+                  "display" : "Physical Well-Being",
+                    "system": "http://terminology.va.gov/CodeSystem/personal-health-inventory",
+                  "code" : "physical-well-being"
+                }
+              ]
+            }
+          },
+          {
+            "valueInteger" : 1,
+            "code" : {
+              "coding" : [
+                {
+                  "display" : "Mental\/Emotional Well-Being",
+                    "system": "http://terminology.va.gov/CodeSystem/personal-health-inventory",
+                  "code" : "mental-well-being"
+                }
+              ]
+            }
+          },
+          {
+            "valueInteger" : 3,
+            "code" : {
+              "coding" : [
+                {
+                  "system": "http://terminology.va.gov/CodeSystem/personal-health-inventory",
+                  "code" : "life-well-being",
+                  "display" : "Life: How is it to live your day-to-day life?"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-meghan-phi-moving-the-body"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-meghan-phi-moving-the-body",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.va.gov/CodeSystem/observation-category",
+                "code": "whole-health",
+                "display": "Whole Health"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://terminology.va.gov/CodeSystem/personal-health-inventory",
+              "code": "moving-the-body",
+              "display": "Moving the Body"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan"
+        },
+        "issued": "2020-04-19T16:30:00.000Z",
+        "performer": [
+          {
+            "reference": "Patient/va-pat-meghan",
+            "display": "Meghan Anderson"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://terminology.va.gov/CodeSystem/personal-health-inventory",
+                  "code": "self-care-now-rating",
+                  "display": "Where I am Now"
+                }
+              ]
+            },
+            "valueInteger": 2
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://terminology.va.gov/CodeSystem/personal-health-inventory",
+                  "code": "self-care-future-rating",
+                  "display": "Where I Want to Be"
+                }
+              ]
+            },
+            "valueInteger": 4
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://terminology.va.gov/CodeSystem/personal-health-inventory",
+                  "code": "self-care-now-reasons",
+                  "display": "Where I am Now - Reasons"
+                }
+              ]
+            },
+            "valueString": "My back pain limits my exercise, especially running (I used to be a good runner)."
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-meghan-phi-food-drink"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-meghan-phi-food-drink",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.va.gov/CodeSystem/observation-category",
+                "code": "whole-health",
+                "display": "Whole Health"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://terminology.va.gov/CodeSystem/personal-health-inventory",
+              "code": "food-drink",
+              "display": "Food and Drink"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-meghan"
+        },
+        "issued": "2020-05-20T16:30:00.000Z",
+        "performer": [
+          {
+            "reference": "Patient/va-pat-meghan",
+            "display": "Meghan Anderson"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://terminology.va.gov/CodeSystem/personal-health-inventory",
+                  "code": "self-care-now-rating",
+                  "display": "Where I am Now"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://terminology.va.gov/CodeSystem/personal-health-inventory",
+                  "code": "self-care-future-rating",
+                  "display": "Where I Want to Be"
+                }
+              ]
+            },
+            "valueInteger": 5
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://terminology.va.gov/CodeSystem/personal-health-inventory",
+                  "code": "self-care-future-changes",
+                  "display": "Where I Want to Be - Changes"
+                }
+              ]
+            },
+            "valueString": "I want to start a Keto diet with my husband, but need help with menu planning."
+          }
+        ]
+      }
+    }
+  ]
+}
