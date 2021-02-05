@@ -1,0 +1,217 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-dan-lab-covid"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-dan-lab-lab-covid",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "94534-5",
+              "display": "SARS coronavirus 2 RdRp gene [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan"
+        },
+        "effectiveDateTime": "2020-08-19",
+        "performer": [
+          {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260373001",
+              "display": "Detected"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-dan-lab-bilirubin"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-dan-lab-lab-bilirubin",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1975-2",
+              "display": "Bilirubin.total [Mass/volume] in Serum or Plasma"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan"
+        },
+        "effectiveDateTime": "2020-08-19",
+        "performer": [
+          {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 12.5,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org/",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-dan-lab-neutrophil"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-dan-lab-lab-neutrophil",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "751-8",
+              "display": "Neutrophils [#/volume] in Blood by Automated count"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan"
+        },
+        "effectiveDateTime": "2020-08-19",
+        "performer": [
+          {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 6.5,
+          "unit": "10^9/mL",
+          "system": "http://unitsofmeasure.org/",
+          "code": "10^9/mL"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/va-obs-dan-lab-lymphocytes"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "va-obs-dan-lab-lab-lymphocytes",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ],
+            "text": "Laboratory"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "731-0",
+              "display": "Lymphocytes [#/volume] in Blood by Automated count"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/va-pat-dan"
+        },
+        "effectiveDateTime": "2020-08-19",
+        "performer": [
+          {
+            "reference": "Practitioner/va-prac-visn6-francis",
+            "display": "Dr. Francis, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 0.9,
+          "unit": "10^9/mL",
+          "system": "http://unitsofmeasure.org/",
+          "code": "10^9/mL"
+        }
+      }
+    }
+  ]
+}
