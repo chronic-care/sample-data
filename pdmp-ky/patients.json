@@ -1,0 +1,294 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Patient/pdmp-ky-patient-1"
+      },
+      "resource": {
+        "resourceType": "Patient",
+        "id": "pdmp-ky-patient-1",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "SS"
+                }
+              ]
+            },
+            "system": "http://hl7.org/fhir/sid/us-ssn",
+            "value": "121919720"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Green",
+            "given": [
+              "Rachel"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1972-12-19",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "3145 Broadway Apt A"
+            ],
+            "city": "Louisville",
+            "postalCode": "40211",
+            "state": "KY",
+            "country": "USA"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Patient/pdmp-ky-patient-2"
+      },
+      "resource": {
+        "resourceType": "Patient",
+        "id": "pdmp-ky-patient-2",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "SS"
+                }
+              ]
+            },
+            "system": "http://hl7.org/fhir/sid/us-ssn",
+            "value": "020121971"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Tribbiani",
+            "given": [
+              "Joey"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1971-02-12",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "657 Eastlawn Street"
+            ],
+            "city": "Louisville",
+            "postalCode": "40211",
+            "state": "KY",
+            "country": "USA"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Patient/pdmp-ky-patient-3"
+      },
+      "resource": {
+        "resourceType": "Patient",
+        "id": "pdmp-ky-patient-3",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "SS"
+                }
+              ]
+            },
+            "system": "http://hl7.org/fhir/sid/us-ssn",
+            "value": "051619710"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Geller",
+            "given": [
+              "Monica"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1971-05-16",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "3145 Broadway Apt A"
+            ],
+            "city": "Louisville",
+            "postalCode": "40211",
+            "state": "KY",
+            "country": "USA"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Patient/pdmp-ky-patient-4"
+      },
+      "resource": {
+        "resourceType": "Patient",
+        "id": "pdmp-ky-patient-4",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "SS"
+                }
+              ]
+            },
+            "system": "http://hl7.org/fhir/sid/us-ssn",
+            "value": "587964123"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Papa",
+            "given": [
+              "Alpha"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1921-01-01",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "123 N Test Street"
+            ],
+            "city": "Salt Lake City",
+            "postalCode": "84102",
+            "state": "UT",
+            "country": "USA"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Patient/pdmp-ky-patient-5"
+      },
+      "resource": {
+        "resourceType": "Patient",
+        "id": "pdmp-ky-patient-5",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "SS"
+                }
+              ]
+            },
+            "system": "http://hl7.org/fhir/sid/us-ssn",
+            "value": "404130791"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Geller",
+            "given": [
+              "Ross"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1970-04-13",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "2341 Lexington Road"
+            ],
+            "city": "Bardstown",
+            "postalCode": "40004",
+            "state": "KY",
+            "country": "USA"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Patient/pdmp-ky-patient-6"
+      },
+      "resource": {
+        "resourceType": "Patient",
+        "id": "pdmp-ky-patient-6",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "SS"
+                }
+              ]
+            },
+            "system": "http://hl7.org/fhir/sid/us-ssn",
+            "value": "124897878"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Buffay",
+            "given": [
+              "Phoebe"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1970-08-19",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "3145 Broadway AptB"
+            ],
+            "city": "Louisville",
+            "postalCode": "40211",
+            "state": "KY",
+            "country": "USA"
+          }
+        ]
+      }
+    }
+  ]
+}
