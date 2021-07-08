@@ -130,7 +130,7 @@
           }
         ],
         "gender": "female",
-        "birthDate": "1984-02-06",
+        "birthDate": "1984-02-03",
         "telecom": [
           {
             "system": "phone",
@@ -148,9 +148,9 @@
             "line": [
               "7247 Breen St."
             ],
-            "city": "Baltimore",
-            "postalCode": "21208",
-            "state": "MD",
+            "city": "Louisville",
+            "postalCode": "40211",
+            "state": "KY",
             "country": "USA"
           }
         ]

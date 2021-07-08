@@ -1,0 +1,255 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Patient/pdmp-ky-clark-kent"
+      },
+      "resource": {
+        "resourceType": "Patient",
+        "id": "pdmp-ky-clark-kent",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "SS"
+                }
+              ]
+            },
+            "system": "http://hl7.org/fhir/sid/us-ssn",
+            "value": "801929237"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "Kent",
+            "given": [
+              "Clark"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1965-01-12",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "8 Millcreek Park"
+            ],
+            "city": "Frankfort",
+            "postalCode": "40601",
+            "state": "KY",
+            "country": "USA"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/pdmp-ky-clark-kent-back-pain"
+      },
+      "resource": {
+        "resourceType": "Condition",
+        "id": "pdmp-ky-clark-kent-back-pain",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Low back pain</div>"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ],
+          "text": "Active"
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ],
+          "text": "Confirmed"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ],
+            "text": "Problem"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "278860009",
+              "display": "Chronic low back pain (finding)"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "M54.5",
+              "display": "Low back pain"
+            }
+          ],
+          "text": "Chronic low back pain"
+        },
+        "subject": {
+          "reference": "Patient/pdmp-ky-clark-kent",
+          "display": "Clark Kent"
+        },
+        "onsetDateTime": "2018-05-31",
+        "asserter": {
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/pdmp-ky-clark-kent-opioid"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "pdmp-ky-clark-kent-opioid",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/3.0/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1049221",
+              "display": "acetaminophen 325 MG / oxycodone hydrochloride 5 MG Oral Tablet"
+            }
+          ]
+        },
+        "authoredOn": "2021-06-29T16:02:00.000Z",
+        "subject": {
+          "reference": "Patient/pdmp-ky-clark-kent",
+          "display": "Clark Kent"
+        },
+        "requester": {
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        },
+        "dosageInstruction" : [
+          {
+            "text": "Two pills every 6 hours",
+            "timing" : {
+              "repeat" : {
+                "frequency" : 1,
+                "period" : 6.0,
+                "periodUnit" : "h"
+              }
+            },
+            "asNeededBoolean" : false,
+            "doseAndRate" : [
+              {
+                "doseQuantity" : {
+                  "value" : 10,
+                  "unit" : "mg",
+                  "system" : "http://unitsofmeasure.org",
+                  "code" : "mg"
+                }
+              }
+            ]
+          }
+        ],
+        "dispenseRequest" : {
+          "validityPeriod" : {
+            "start" : "2021-06-29",
+            "end" : "2021-07-29"
+          },
+          "numberOfRepeatsAllowed" : 0,
+          "quantity" : {
+            "value" : 240,
+            "unit" : "tablet"
+          },
+          "expectedSupplyDuration" : {
+            "value" : 30,
+            "unit" : "Day",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "d"
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/pdmp-ky-clark-kent-ibuprofen"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "pdmp-ky-clark-kent-ibuprofen",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/3.0/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "status": "active",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "197806",
+              "display": "Ibuprofen 600 MG Oral Tablet"
+            }
+          ],
+          "text": "Ibuprofen 600 MG Oral Tablet"
+        },
+        "authoredOn": "2020-01-10T13:01:00.000Z",
+        "subject": {
+          "reference": "Patient/pdmp-ky-clark-kent",
+          "display": "Clark Kent"
+        },
+        "requester": {
+          "reference": "Practitioner/va-prac-visn6-francis",
+          "display": "Dr. Francis, MD"
+        },
+        "dosageInstruction": [
+          {
+            "text": "Take two tablets, three times per day.",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2020-01-10"
+                },
+                "frequency": 3,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

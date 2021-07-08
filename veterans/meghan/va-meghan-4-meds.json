@@ -27,7 +27,7 @@
           ],
           "text": "Clonazepam 0.5 MG Oral Tablet"
         },
-        "authoredOn": "2019-11-07T16:02:00.000Z",
+        "authoredOn": "2021-05-07T16:02:00.000Z",
         "subject": {
           "reference": "Patient/va-pat-meghan",
           "display": "Meghan"
@@ -47,8 +47,8 @@
             "timing": {
               "repeat": {
                 "boundsPeriod": {
-                  "start": "2019-11-07",
-                  "end": "2020-06-30"
+                  "start": "2021-05-07",
+                  "end": "2021-08-30"
                 },
                 "frequency": 3,
                 "period": 1,
