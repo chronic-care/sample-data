@@ -398,7 +398,23 @@
           "unit": "%",
           "system": "http://unitsofmeasure.org/",
           "code": "%"
-        }
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 4.0,
+              "unit": "%",
+              "system": "http://unitsofmeasure.org/",
+              "code": "%"
+            },
+            "high": {
+              "value": 5.6,
+              "unit": "%",
+              "system": "http://unitsofmeasure.org/",
+              "code": "%"
+            }
+          }
+        ]
       }
     }
   ]

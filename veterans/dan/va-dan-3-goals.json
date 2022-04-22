@@ -85,7 +85,7 @@
           "reference": "Patient/va-pat-dan",
           "display": "Dan"
         },
-        "startDate": "2019-11-30",
+        "startDate": "2021-01-30",
         "target": [
           {
             "measure": {
@@ -163,13 +163,13 @@
           "text": "High"
         },
         "description": {
-          "text": "Fasting blood glucose level < 108 mg/dL"
+          "text": "Stabilize fasting blood glucose level"
         },
         "subject": {
           "reference": "Patient/va-pat-dan",
           "display": "Dan"
         },
-        "startDate": "2019-11-30",
+        "startDate": "2020-11-30",
         "target": [
           {
             "measure": {
@@ -183,7 +183,7 @@
               "text": "Glucose in blood"
             },
             "detailQuantity": {
-              "value": 108,
+              "value": 100,
               "comparator": "<",
               "unit": "mg/dL",
               "system": "http://unitsofmeasure.org/",
